@@ -53,4 +53,9 @@
    を実行する。(立ち上がりまで 5 分くらいかかるかもです)
    ここでエラーが起こる場合は tensorflow のバージョンなどを確認してください
 
-5. brigade-visualizer に戻って、client.py を実行する
+5. brigade-visualizer に戻って、python client.py を実行する
+
+## その他
+
+- data 以下にはキーワードを bert を使ってベクトル化したものが入っています。順序は client.py の順序を参考にしてください
+- brigade_homepage のベクトルも仮で算出しましたが、ページ内の全文書を bert に入れるとよくないみたいです(1 文書を 25 単語以内にしてくださいという warn が出ました)。後で直した方が良いかもです。
