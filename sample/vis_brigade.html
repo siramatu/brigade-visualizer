@@ -18,6 +18,17 @@ var nodes = null;
 var edges = null;
 var network = null;
 
+var LENGTH_MAIN = 1000,
+  LENGTH_SERVER = 150,
+  LENGTH_SUB = 50,
+  WIDTH_SCALE = 1,
+  GREEN = "green",
+  RED = "#C5000B",
+  ORANGE = "orange",
+  //GRAY = '#666666',
+  BLUE = "#2B7CE9"
+  GRAY = "gray",
+  BLACK = "#2B1B17";
 
 
 // Called when the Visualization API is loaded.
@@ -838,22 +849,19 @@ function draw() {
   ];
 
 
-  var LENGTH_MAIN = 10000,
-  LENGTH_SERVER = 150,
-  LENGTH_SUB = 1000,
-  WIDTH_SCALE = 10,
-  GREEN = "green",
-  RED = "#C5000B",
-  ORANGE = "orange",
-  //GRAY = '#666666',
-  GRAY = "gray",
-  BLACK = "#2B1B17";
-
-
   //ブリゲードノードをプロット
   for (let i=0; i<10; i++) {
     let name = arr_brigede[i];
-    nodes.push({ id: name, label: name, group: "brigade", value: 10 });
+    nodes.push({
+      id: name,
+      label: name,
+      group: "brigade",
+      value: 10,
+      font: {
+        size: 64,
+        color: BLACK
+      },
+    });
   }
 
   //ブリゲード間の距離
@@ -927,7 +935,7 @@ function draw() {
     },
     edges: {
       color: GRAY,
-      smooth: false,
+      smooth: true,
     },
     physics: {
       barnesHut: { gravitationalConstant: -30000 },
@@ -947,7 +955,32 @@ function draw() {
     },
   };
   network = new vis.Network(container, data, options);
+
+  // ノードクリック処理
+  network.on("click", function (params) {
+    // クリックはvisのnodeか判定
+    if (params.nodes.length == 1) {
+      console.log(params.nodes[0] + 'がクリックされました');
+      console.log("関係のあるブリゲード・キーワード：");
+      // クリックされたnodeに関するedgesのidを取得してループ
+      params.edges.forEach(function (id) {
+        // edgesでループ
+        edges.forEach(function (e) {
+          if (e.id == id) {
+            // idが一致して、node名がfromに一致するかtoに一致するか
+            if (e.from == params.nodes[0]) {
+              console.log(e.to);
+            } else {
+              console.log(e.from);
+            }
+          }
+        });
+      });
+    }
+  });
+
 }
+
 
 window.addEventListener("load", () => {
   draw();
