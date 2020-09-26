@@ -1,0 +1,338 @@
+<html>
+  <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet">
+    <style type="text/css">
+      #mynetwork {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #000;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+  </head>
+  <body>
+    <div id="mynetwork"></div>
+    <script type="text/javascript">
+
+var nodes = null;
+var edges = null;
+var network = null;
+
+var LENGTH_MAIN = 1000,
+  LENGTH_SERVER = 150,
+  LENGTH_SUB = 50,
+  WIDTH_SCALE = 10,
+  GREEN = "green",
+  RED = "#C5000B",
+  ORANGE = "orange",
+  //GRAY = '#666666',
+  GRAY = "gray",
+  BLACK = "#2B1B17";
+
+// Called when the Visualization API is loaded.
+function draw() {
+  // Create a data table with nodes.
+  nodes = [];
+
+  // Create a data table with links.
+  edges = [];
+
+  arr_brigede = [
+  "CODE for GIFU",
+  "Code for Saga",
+  "Code for NAGAREYAMA", 
+  "Code for Nagoya",
+  "Code for SAITAMA",
+  "CODE for AIZU",
+  "Code for MIKAWA",
+  "Code for Gumyoji",
+  "Code for kumagaya",
+  "Code for Kangawa",
+  "Code for Aomori",
+  "ハウモリ",
+  "Code for Kobe",
+  "Code for Sabae",
+  "Code for WAKO",
+  "Code for Suginami",
+  "Code for AICHI",
+  "Code for Toyota",
+  "Code for Fukuoka",
+  "Code for TODA",
+  "Code for Tokushima",
+  "Code for Mitaka / Musashino",
+  "Code for INAGI",
+  "Code for Kusatsu",
+  "Code for Sasayama+Tamba",
+  "Code for Akita",
+  "Code For Kitakyusyu",
+  "Code for Fuchu",
+  "Code for Niigata",
+  "Code for Hachioji",
+  "Code for Shiga / Biwako",
+  "Code for SAKE",
+  "Code for Shinagawa",
+  "Code for 中野",
+  "Code for Muroran",
+  "Code for SUSONO"
+  ];
+
+  for (let i=0; i<arr_brigede.length; i++) {
+    let name = arr_brigede[i];
+    nodes.push({ id: name, label: name, group: "brigade", value: 10 });
+  }
+
+  let arr_edges = [
+  "Code for Niigata,Code for Kusatsu,0.720082299823096"
+,"Code for Akita,Code for Shiga / Biwako,0.672672793996313"
+,"Code for Akita,Code for Suginami,0.667124384994991"
+,"Code for SUSONO,Code for Hachioji,0.657375735133917"
+,"Code for Shiga / Biwako,Code for Suginami,0.648203723552164"
+,"Code for Sabae,Code for Shiga / Biwako,0.643119694284408"
+,"Code for TODA,Code for NAGAREYAMA ,0.632455532033676"
+,"Code for NAGAREYAMA ,Code for Kusatsu,0.623609564462324"
+,"Code for Kusatsu,Code for Fukuoka,0.617213399848368"
+,"Code for Niigata,Code for Saga,0.617213399848368"
+,"Code for Sabae,Code for Suginami,0.614192268639994"
+,"Code for Kobe,Code for Kusatsu,0.613139339484966"
+,"Code for SAITAMA,Code for Shiga / Biwako,0.606339062590832"
+,"Code for Sabae,CODE for AIZU,0.600245047998781"
+,"Code for Mitaka / Musashino,Code for INAGI ,0.594811877479463"
+,"Code for Kusatsu,Code for Akita,0.592999453328881"
+,"Code for TODA,Code for Saga,0.591607978309962"
+,"Code for TODA,Code for Kusatsu,0.591607978309962"
+,"Code for Sabae,Code for MIKAWA,0.589767824619589"
+,"Code for Sabae,Code for Akita,0.588348405414552"
+,"Code for Kusatsu,Code for Shiga / Biwako,0.583383351196948"
+,"Code for kumagaya,Code for SAITAMA,0.583333333333333"
+,"Code for Niigata,Code for 中野,0.58025885318566"
+,"Code for Sabae,Code for Niigata,0.578351744823806"
+,"Code for MIKAWA,Code for Akita,0.57831493196624"
+,"Code for Niigata,Code for kumagaya,0.577350269189626"
+,"Code for Kusatsu,Code for Saga,0.571428571428572"
+,"Code for Kusatsu,Code for Suginami,0.571428571428572"
+,"Code for 中野,Code for Aomori,0.56980288229819"
+,"Code for Mitaka / Musashino,Code for Fuchu,0.568535243614961"
+,"Code for Sabae,Code for Nagoya,0.567774973957669"
+,"Code for Mitaka / Musashino,Code for Suginami,0.566946709513841"
+,"Code for Akita,Code for Muroran,0.566138517072298"
+,"Code for Niigata,Code for Suginami,0.565778949861004"
+,"Code for 中野,Code for Kusatsu,0.564076074817766"
+,"Code for Fuchu,Code for Saga,0.564076074817766"
+,"ハウモリ,Code for SUSONO,0.564076074817766"
+,"Code for Niigata,Code for MIKAWA,0.56180064773359"
+,"Code for Niigata,Code for Shiga / Biwako,0.560112033611204"
+,"Code for Sabae,Code for TODA,0.559016994374947"
+,"Code for Hachioji,Code for Akita,0.558156305651438"
+,"Code for Sabae,Code for Hachioji,0.553398590529466"
+,"Code for INAGI ,Code for Fuchu,0.55337157109286"
+,"Code for Kobe,Code for Fuchu,0.55337157109286"
+,"Code for Sasayama+Tamba,Code for INAGI ,0.55337157109286"
+,"Code for Kobe,Code for Saga,0.551825405536469"
+,"Code for SUSONO,Code for Kobe,0.551825405536469"
+,"Code for Mitaka / Musashino,Code for NAGAREYAMA ,0.54997194092287"
+,"Code for Niigata,Code for TODA,0.547722557505166"
+,"Code for Sasayama+Tamba,Code for SAKE,0.544949260913066"
+,"Code for Niigata,Code for Mitaka / Musashino,0.544331053951817"
+,"Code for Hachioji,CODE for AIZU,0.54232614454664"
+,"Code for NAGAREYAMA ,Code for Kobe,0.535303379031311"
+,"Code for SUSONO,Code for NAGAREYAMA ,0.534522483824849"
+,"Code for SUSONO,Code for SAITAMA,0.534522483824849"
+,"Code for Mitaka / Musashino,Code for Aomori,0.534522483824849"
+,"Code for Niigata,Code for Akita,0.533760512683624"
+,"CODE for GIFU,Code for Nagoya,0.533113989983183"
+,"Code for Fuchu,Code for AICHI,0.532181156390174"
+,"Code for Mitaka / Musashino,Code for SAITAMA,0.530330085889911"
+,"Code for Sabae,Code for Gumyoji,0.530330085889911"
+,"Code for Niigata,Code for Nagoya,0.529812942826017"
+,"Code for Niigata,Code for INAGI ,0.529812942826017"
+,"Code for SAITAMA,Code for Fuchu,0.527644853011086"
+,"Code for Sabae,Code for INAGI ,0.527219618674978"
+,"Code for Mitaka / Musashino,Code for Hachioji,0.52704627669473"
+,"Code for TODA,Code For Kitakyusyu,0.52704627669473"
+,"Code for TODA,Code for Gumyoji,0.52704627669473"
+,"Code for TODA,Code for Akita,0.526234811584218"
+,"Code for MIKAWA,Code for INAGI ,0.526201360558434"
+,"Code for Aomori,Code for Akita,0.524142418360959"
+,"Code for Sabae,Code for Kusatsu,0.519701150387687"
+,"Code for Kusatsu,CODE for AIZU,0.518562978841732"
+,"Code for Saga,Code for Shiga / Biwako,0.518562978841732"
+,"CODE for AIZU,Code for Suginami,0.518562978841732"
+,"Code for Gumyoji,Code for SAKE,0.516397779494322"
+,"Code for Niigata,Code for Hachioji,0.516397779494322"
+,"Code for Mitaka / Musashino,Code for Shiga / Biwako,0.514495755427527"
+,"Code for SUSONO,Code for Niigata,0.51434449987364"
+,"Code for Niigata,CODE for AIZU,0.51343603081027"
+,"Code for Niigata,Code for NAGAREYAMA ,0.513200239279667"
+,"Code for Hachioji,Code for INAGI ,0.512989176042577"
+,"Code for MIKAWA,Code for Muroran,0.510753918455249"
+,"Code for SUSONO,Code for TODA,0.50709255283711"
+,"Code for MIKAWA,Code for Shiga / Biwako,0.505721737424174"
+,"Code for Aomori,Code for Suginami,0.505076272276105"
+,"Code for Aomori,Code for Kusatsu,0.505076272276105"
+,"Code for Mitaka / Musashino,Code for Kusatsu,0.50395263067897"
+,"Code for NAGAREYAMA ,Code for Aomori,0.50395263067897"
+,"Code For Kitakyusyu,Code for Aomori,0.50395263067897"
+,"Code for WAKO,Code for Aomori,0.50395263067897"
+,"Code for Gumyoji,Code for Fuchu,0.502518907629606"
+,"Code for WAKO,Code for 中野,0.502518907629606"
+,"ハウモリ,Code for NAGAREYAMA ,0.502518907629606"
+,"ハウモリ,Code for Gumyoji,0.502518907629606"
+,"Code for NAGAREYAMA ,Code for 中野,0.502518907629606"
+,"Code for 中野,Code for Shinagawa,0.501745206004255"
+,"Code for MIKAWA,Code for Kusatsu,0.501550391317818"
+,"CODE for AIZU,Code for Nagoya,0.500773395667191"
+,"Code for Niigata,Code for Fukuoka,0.5"
+,"Code for SUSONO,Code for Kusatsu,0.5"
+,"Code for SUSONO,Code for Saga,0.5"
+,"Code for Sabae,Code for Mitaka / Musashino,0.5"
+,"Code for Mitaka / Musashino,Code for 中野,0.497468338163091"
+,"Code for Shiga / Biwako,Code for Muroran,0.495073771488337"
+,"Code for TODA,Code for Hachioji,0.494974746830583"
+,"Code for Mitaka / Musashino,Code for MIKAWA,0.49147318718299"
+,"Code for SUSONO,Code for INAGI ,0.490511471587973"
+,"Code for Nagoya,Code for Saga,0.490511471587973"
+,"Code for INAGI ,Code for Suginami,0.490511471587973"
+,"CODE for GIFU,Code for TODA,0.489897948556636"
+,"Code for Hachioji,Code for Shiga / Biwako,0.488093530091976"
+,"Code for Mitaka / Musashino,Code for SAKE,0.486864495560148"
+,"Code for Sabae,Code for Kobe,0.486664263392288"
+,"Code for kumagaya,Code for MIKAWA,0.486533632799841"
+,"Code for Tokushima,Code for MIKAWA,0.486533632799841"
+,"Code for Sabae,Code for SAITAMA,0.486135912065751"
+,"Code for Niigata,Code for Kobe,0.485661864257183"
+,"Code for SAITAMA,Code for Akita,0.485362671697076"
+,"Code For Kitakyusyu,Code for Shiga / Biwako,0.485071250072666"
+,"Code for Gumyoji,Code for Shiga / Biwako,0.485071250072666"
+,"Code for kumagaya,Code for Shiga / Biwako,0.485071250072666"
+,"ハウモリ,Code for Nagoya,0.484200124706252"
+,"ハウモリ,Code for Kobe,0.484200124706252"
+,"Code for Kusatsu,Code for Fuchu,0.483493778415228"
+,"Code for SUSONO,Code for Fuchu,0.483493778415228"
+,"Code for NAGAREYAMA ,Code for Fukuoka,0.481125224324688"
+,"Code for Niigata,Code for SAITAMA,0.481125224324688"
+,"Code for Hachioji,Code for Suginami,0.478091443733757"
+,"Code for TODA,Code for Aomori,0.478091443733757"
+,"Code for Hachioji,Code for Saga,0.478091443733757"
+,"Code for Kusatsu,Code for Hachioji,0.478091443733757"
+,"Code for TODA,Code for SAITAMA,0.474341649025257"
+,"Code for Sabae,Code for Saga,0.472455591261534"
+,"Code for Hachioji,Code for Fuchu,0.471939903724269"
+,"ハウモリ,Code for Hachioji,0.471939903724269"
+,"Code for WAKO,Code for Mitaka / Musashino,0.471404520791032"
+,"Code for Sabae,Code For Kitakyusyu,0.471404520791032"
+,"CODE for AIZU,Code for Shiga / Biwako,0.470588235294118"
+,"Code for SAITAMA,Code for MIKAWA,0.469157431628418"
+,"Code for Nagoya,Code for Muroran,0.468292905790847"
+,"Code for Sabae,Code for Aomori,0.467707173346743"
+,"Code for SAITAMA,Code for Saga,0.467707173346743"
+,"Code for SAITAMA,Code for Suginami,0.467707173346743"
+,"ハウモリ,CODE for GIFU,0.467099366496914"
+,"ハウモリ,Code for SAKE,0.467099366496914"
+,"Code for Niigata,Code for Fuchu,0.464207082548528"
+,"Code for Kobe,Code for Fukuoka,0.463586324972765"
+,"Code for Fukuoka,Code for Saga,0.462910049886276"
+,"Code For Kitakyusyu,Code for Akita,0.462250163521024"
+,"Code for NAGAREYAMA ,Code for Shinagawa,0.462250163521024"
+,"Code for WAKO,Code for Akita,0.462250163521024"
+,"Code for WAKO,Code for Shinagawa,0.462250163521024"
+,"Code for Tokushima,Code for Akita,0.462250163521024"
+,"Code for kumagaya,Code for Akita,0.462250163521024"
+,"Code for Hachioji,Code for SAKE,0.461880215351701"
+,"Code for Kobe,Code for Hachioji,0.461690258438319"
+,"Code for SAITAMA,Code for INAGI ,0.458831467741123"
+,"Code For Kitakyusyu,Code for Kobe,0.458831467741123"
+,"Code for SAITAMA,Code for Nagoya,0.458831467741123"
+,"Code for WAKO,Code for INAGI ,0.458831467741123"
+,"Code for Kobe,Code for SAITAMA,0.458831467741123"
+,"Code for Kobe,Code for Gumyoji,0.458831467741123"
+,"Code for Mitaka / Musashino,Code for Akita,0.457604315322429"
+,"Code for WAKO,Code for AICHI,0.457604315322429"
+,"Code for Mitaka / Musashino,Code for Shinagawa,0.457604315322429"
+,"Code for TODA,Code for Fukuoka,0.456435464587638"
+,"Code for Sabae,CODE for GIFU,0.456435464587638"
+,"ハウモリ,Code for Fuchu,0.454545454545455"
+,"Code for SUSONO,Code for Shiga / Biwako,0.453742606486515"
+,"ハウモリ,Code for SAITAMA,0.452267016866645"
+,"Code for SAITAMA,Code for Sasayama+Tamba,0.452267016866645"
+,"Code for SAITAMA,Code for SAKE,0.451848057057532"
+,"Code for Sabae,Code for AICHI,0.450693909432999"
+  ];
+
+  for (let i=0; i<arr_edges.length; i++) {
+    let cols = arr_edges[i].split(",");
+    edges.push({
+      from: cols[0],
+      to: cols[1],
+      length: LENGTH_MAIN * (1-parseFloat(cols[2])),
+      width: WIDTH_SCALE * parseFloat(cols[2]),
+      label:cols[2],
+    });
+  }
+
+  // legend
+  var mynetwork = document.getElementById("mynetwork");
+  var x = -mynetwork.clientWidth / 2 + 50;
+  var y = -mynetwork.clientHeight / 2 + 50;
+  var step = 70;
+  nodes.push({
+    id: 1001,
+    x: x,
+    y: y + step,
+    label: "brigade",
+    group: "brigade",
+    value: 1,
+    fixed: true,
+    physics: false,
+  });
+  nodes.push({
+    id: 1002,
+    x: x,
+    y: y + 2 * step,
+    label: "keyword",
+    group: "keyword",
+    value: 1,
+    fixed: true,
+    physics: false,
+  });
+
+  // create a network
+  var container = document.getElementById("mynetwork");
+  var data = {
+    nodes: nodes,
+    edges: edges,
+  };
+  var options = {
+    nodes: {
+      scaling: {
+        min: 16,
+        max: 32,
+      },
+    },
+    edges: {
+      color: GRAY,
+      smooth: false,
+    },
+    physics: {
+      barnesHut: { gravitationalConstant: -30000 },
+      stabilization: { iterations: 2500 },
+    },
+    groups: {
+      brigade: {
+        shape: "triangle",
+        color: "#FF9900", // orange
+      },
+      keyword: {
+        shape: "dot",
+        color: "#2B7CE9", // blue
+      },
+    },
+  };
+  network = new vis.Network(container, data, options);
+}
+
+window.addEventListener("load", () => {
+  draw();
+});
+    </script>
+  </body>
+</html>
