@@ -28,7 +28,7 @@
                 :value="item.name">
               </el-option>
             </el-select>
-          <el-button v-on:click="draw()">draw</el-button>
+          <el-button v-on:click="draw()" v-loading.fullscreen.lock="fullscreenLoading">draw</el-button>
           <br><br>
           <div id="mynetwork"></div>
           <el-dialog :visible.sync="visible" title="message">
@@ -57,6 +57,7 @@
             selectedValue:'',
             message:'',
             activeName: 'first',
+            fullscreenLoading: false,
             brigades:null,
             keywords:null,
             brigade_distance:null,
@@ -75,6 +76,8 @@
             this.visible = true;
             return;
           }
+
+          this.fullscreenLoading = true;
 
           //選択されたブリゲードと距離の近いブリゲードを取得する
           //let bg_arr = []
@@ -197,11 +200,8 @@
               },
             },
           };
-          console.log("draw start******************");
           network = new vis.Network(container, data, options);
-          console.log("draw end******************");
-
-
+          network.on("afterDrawing", () => {this.fullscreenLoading = false;});
         }
       },
       mounted: function () {
