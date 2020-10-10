@@ -31,12 +31,13 @@
           <el-button v-on:click="draw()" v-loading.fullscreen.lock="fullscreenLoading">draw</el-button>
           <br><br>
           <div id="mynetwork"></div>
+          <p>選択したブリゲードに近い上位5件のブリゲードを表示しています</p>
           <el-dialog :visible.sync="visible" title="message">
             <p>{{message}}</p>
           </el-dialog>
         </el-tab-pane>
         <el-tab-pane label="About" name="second">
-          About
+          <iframe width="100%" height="500" src="https://hackmd.io/@TGL6KqgYTmyO2qgobnL2pg/Hy4uJ5CLD/" frameborder="0"></iframe>
         </el-tab-pane>
       </el-tabs>
       </el-main>
