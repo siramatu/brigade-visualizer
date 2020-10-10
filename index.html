@@ -13,9 +13,9 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet">
   <style type="text/css">
     #mynetwork {
-      width: 100%;
+      width: 99%;
       height: 500px;
-      border: 1px solid #909399;
+      border: 1px solid #d0d0d0;
     }
   </style>
 </head>
@@ -90,10 +90,10 @@
           let bg_map = new Map();
           bg_map.set(this.selectedValue,'1.0');
           let rows = this.brigade_distance;
-          console.log("rows:"+rows.length);
+          //console.log("rows:"+rows.length);
           for (let i=0;i<rows.length;i++) {
             let cols = rows[i].split(",");
-            console.log(this.selectedValue+":"+cols[0]+":"+(this.selectedValue === cols[0]));
+            //console.log(this.selectedValue+":"+cols[0]+":"+(this.selectedValue === cols[0]));
             if (this.selectedValue === cols[0]) {
               bg_map.set(cols[1],cols[2]);//to
             } else if (this.selectedValue === cols[1]) {
