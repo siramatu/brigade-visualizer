@@ -208,8 +208,12 @@
         //JSONデータの読み込み
         axios.get("./json/brigades.json").then(response => (this.brigades = response.data));
         axios.get("./json/keywords.json").then(response => (this.keywords = response.data));
-        axios.get("./json/brigade-distance.json").then(response => (this.brigade_distance = response.data));
-        axios.get("./json/brigade-keyword-distance.json").then(response => (this.brigade_keyword_distance = response.data));
+        axios.get("./json/brigade-distance-bert.json").then(response => (this.brigade_distance = response.data));
+        axios.get("./json/brigade-keyword-distance-bert.json").then(response => (this.brigade_keyword_distance = response.data));
+
+        // bertを用いないで計算したベクトルにする場合は以下をコメントアウト
+        // axios.get("./json/brigade-distance.json").then(response => (this.brigade_distance = response.data));
+        // axios.get("./json/brigade-keyword-distance.json").then(response => (this.brigade_keyword_distance = response.data));
       }
     })
   </script>
