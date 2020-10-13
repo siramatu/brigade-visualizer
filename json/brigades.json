@@ -1,17 +1,122 @@
 [
-    {"name":"CODE for GIFU"},
-    {"name":"Code for Saga"},
-    {"name":"Code for NAGAREYAMA "},
-    {"name":"Code for Nagoya"},
-    {"name":"Code for SAITAMA"},
-    {"name":"CODE for AIZU"},
-    {"name":"Code for MIKAWA"},
-    {"name":"Code for kumagaya"},
-    {"name":"Code for Kangawa"},
-    {"name":"Code for Aomori"},
-    {"name":"ハウモリ "},
-    {"name":"Code for Kobe"},
-    {"name":"Code for Sabae"},
-    {"name":"Code for WAKO"},
-    {"name":"Code for Suginami"}    
+   {
+      "name": "CODE for AIZU"
+   },
+   {
+      "name": "CODE for GIFU"
+   },
+   {
+      "name": "Code For Kitakyusyu"
+   },
+   {
+      "name": "Code for AICHI"
+   },
+   {
+      "name": "Code for Akita"
+   },
+   {
+      "name": "Code for Aomori"
+   },
+   {
+      "name": "Code for Fuchu"
+   },
+   {
+      "name": "Code for Fukuoka"
+   },
+   {
+      "name": "Code for Gumyoji"
+   },
+   {
+      "name": "Code for Hachioji"
+   },
+   {
+      "name": "Code for INAGI"
+   },
+   {
+      "name": "Code for INZAI"
+   },
+   {
+      "name": "Code for Kanagawa"
+   },
+   {
+      "name": "Code for Kobe"
+   },
+   {
+      "name": "Code for Kumagaya"
+   },
+   {
+      "name": "Code for Kusatsu"
+   },
+   {
+      "name": "Code for MIKAWA"
+   },
+   {
+      "name": "Code for Mitaka / Musashino"
+   },
+   {
+      "name": "Code for Muroran"
+   },
+   {
+      "name": "Code for NAGAREYAMA"
+   },
+   {
+      "name": "Code for Nagoya"
+   },
+   {
+      "name": "Code for Niigata"
+   },
+   {
+      "name": "Code for SAITAMA"
+   },
+   {
+      "name": "Code for SAKE"
+   },
+   {
+      "name": "Code for SENDAI"
+   },
+   {
+      "name": "Code for SUSONO"
+   },
+   {
+      "name": "Code for Sabae"
+   },
+   {
+      "name": "Code for Saga"
+   },
+   {
+      "name": "Code for Sasayama+Tamba"
+   },
+   {
+      "name": "Code for Shiga / Biwako"
+   },
+   {
+      "name": "Code for Shinagawa"
+   },
+   {
+      "name": "Code for Shiogama"
+   },
+   {
+      "name": "Code for Suginami"
+   },
+   {
+      "name": "Code for TODA"
+   },
+   {
+      "name": "Code for Tokushima"
+   },
+   {
+      "name": "Code for Toshima"
+   },
+   {
+      "name": "Code for Toyota"
+   },
+   {
+      "name": "Code for WAKO"
+   },
+   {
+      "name": "Code for 中野"
+   },
+   {
+      "name": "ハウモリ"
+   }
 ]
