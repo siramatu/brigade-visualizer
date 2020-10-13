@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head prefix=”og: http://ogp.me/ns#”>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta property="og:url" content="https://siramatu.github.io/brigade-visualizer/" />
+  <meta property="og:title" content="Brigade Visualiser" />
+  <meta property="og:description" content="各地ブリゲードの特徴を分かりやすく伝えたい" />
+  <meta property="og:image" content="https://siramatu.github.io/brigade-visualizer/img/ogp.png" />
   <title>BRIGADE-VISUALIZER</title>
   <!-- import CSS -->
   <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet">
   <style type="text/css">
     #mynetwork {
-      width: 100%;
+      width: 99%;
       height: 500px;
-      border: 1px solid #909399;
+      border: 1px solid #d0d0d0;
     }
   </style>
 </head>
@@ -28,15 +33,16 @@
                 :value="item.name">
               </el-option>
             </el-select>
-          <el-button v-on:click="draw()">draw</el-button>
+          <el-button v-on:click="draw()" v-loading.fullscreen.lock="fullscreenLoading">draw</el-button>
           <br><br>
           <div id="mynetwork"></div>
+          <p>選択したブリゲードに近い上位5件のブリゲードを表示しています</p>
           <el-dialog :visible.sync="visible" title="message">
             <p>{{message}}</p>
           </el-dialog>
         </el-tab-pane>
         <el-tab-pane label="About" name="second">
-          About
+          <iframe width="100%" height="500" src="https://hackmd.io/@TGL6KqgYTmyO2qgobnL2pg/Hy4uJ5CLD/" frameborder="0"></iframe>
         </el-tab-pane>
       </el-tabs>
       </el-main>
@@ -57,6 +63,7 @@
             selectedValue:'',
             message:'',
             activeName: 'first',
+            fullscreenLoading: false,
             brigades:null,
             keywords:null,
             brigade_distance:null,
@@ -76,16 +83,20 @@
             return;
           }
 
+          this.fullscreenLoading = true;
+
           //選択されたブリゲードと距離の近いブリゲードを取得する
           //let bg_arr = []
           let bg_map = new Map();
           bg_map.set(this.selectedValue,'1.0');
           let rows = this.brigade_distance;
+          //console.log("rows:"+rows.length);
           for (let i=0;i<rows.length;i++) {
             let cols = rows[i].split(",");
-            if (this.selectedValue == cols[0]) {
+            //console.log(this.selectedValue+":"+cols[0]+":"+(this.selectedValue === cols[0]));
+            if (this.selectedValue === cols[0]) {
               bg_map.set(cols[1],cols[2]);//to
-            } else if (this.selectedValue == cols[1]) {
+            } else if (this.selectedValue === cols[1]) {
               bg_map.set(cols[0],cols[2]);//from
             }
           }
@@ -197,16 +208,50 @@
               },
             },
           };
-          console.log("draw start******************");
           network = new vis.Network(container, data, options);
-          console.log("draw end******************");
-
-
+          network.on("afterDrawing", () => {this.fullscreenLoading = false;});
         }
       },
       mounted: function () {
         //JSONデータの読み込み
-        axios.get("./json/brigades.json").then(response => (this.brigades = response.data));
+        //axios.get("./json/brigades.json").then(response => (this.brigades = response.data));
+        this.brigades = [ 
+    {"name":"Code for AICHI"}, 
+    {"name":"CODE for AIZU"},
+    {"name":"Code for Akita"}, 
+    {"name":"Code for Aomori"},
+    {"name":"Code for Fuchu"}, 
+    {"name":"Code for Fukuoka"}, 
+    {"name":"CODE for GIFU"},
+    {"name":"Code for Gumyoji"}, 
+    {"name":"Code for Hachioji"}, 
+    {"name":"Code for INAGI "}, 
+    {"name":"Code For Kitakyusyu"}, 
+    {"name":"Code for Kobe"},
+    {"name":"Code for Kumagaya"},
+    {"name":"Code for Kusatsu"}, 
+    {"name":"Code for MIKAWA"},
+    {"name":"Code for Mitaka / Musashino"}, 
+    {"name":"Code for Muroran"}, 
+    {"name":"Code for NAGAREYAMA "},
+    {"name":"Code for Nagoya"},
+    {"name":"Code for Niigata"}, 
+    {"name":"Code for Sabae"},
+    {"name":"Code for Saga"},
+    {"name":"Code for SAITAMA"},
+    {"name":"Code for SAKE"}, 
+    {"name":"Code for Sasayama+Tamba"}, 
+    {"name":"Code for Shiga / Biwako"}, 
+    {"name":"Code for Shinagawa"}, 
+    {"name":"Code for Suginami"}, 
+    {"name":"Code for SUSONO"},
+    {"name":"Code for TODA"}, 
+    {"name":"Code for Tokushima"}, 
+    {"name":"Code for WAKO"},
+    {"name":"Code for 中野"}, 
+    {"name":"ハウモリ "}
+];
+//console.log("brigades:"+this.brigades);
         axios.get("./json/keywords.json").then(response => (this.keywords = response.data));
         axios.get("./json/brigade-distance-bert.json").then(response => (this.brigade_distance = response.data));
         axios.get("./json/brigade-keyword-distance-bert.json").then(response => (this.brigade_keyword_distance = response.data));
