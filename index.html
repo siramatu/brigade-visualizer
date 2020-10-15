@@ -214,44 +214,8 @@
       },
       mounted: function () {
         //JSONデータの読み込み
-        //axios.get("./json/brigades.json").then(response => (this.brigades = response.data));
-        this.brigades = [ 
-    {"name":"Code for AICHI"}, 
-    {"name":"CODE for AIZU"},
-    {"name":"Code for Akita"}, 
-    {"name":"Code for Aomori"},
-    {"name":"Code for Fuchu"}, 
-    {"name":"Code for Fukuoka"}, 
-    {"name":"CODE for GIFU"},
-    {"name":"Code for Gumyoji"}, 
-    {"name":"Code for Hachioji"}, 
-    {"name":"Code for INAGI "}, 
-    {"name":"Code For Kitakyusyu"}, 
-    {"name":"Code for Kobe"},
-    {"name":"Code for Kumagaya"},
-    {"name":"Code for Kusatsu"}, 
-    {"name":"Code for MIKAWA"},
-    {"name":"Code for Mitaka / Musashino"}, 
-    {"name":"Code for Muroran"}, 
-    {"name":"Code for NAGAREYAMA "},
-    {"name":"Code for Nagoya"},
-    {"name":"Code for Niigata"}, 
-    {"name":"Code for Sabae"},
-    {"name":"Code for Saga"},
-    {"name":"Code for SAITAMA"},
-    {"name":"Code for SAKE"}, 
-    {"name":"Code for Sasayama+Tamba"}, 
-    {"name":"Code for Shiga / Biwako"}, 
-    {"name":"Code for Shinagawa"}, 
-    {"name":"Code for Suginami"}, 
-    {"name":"Code for SUSONO"},
-    {"name":"Code for TODA"}, 
-    {"name":"Code for Tokushima"}, 
-    {"name":"Code for WAKO"},
-    {"name":"Code for 中野"}, 
-    {"name":"ハウモリ "}
-];
-//console.log("brigades:"+this.brigades);
+        axios.get("./json/brigades.json").then(response => (this.brigades = response.data));
+        //console.log("brigades:"+this.brigades);
         axios.get("./json/keywords.json").then(response => (this.keywords = response.data));
         axios.get("./json/brigade-distance-bert.json").then(response => (this.brigade_distance = response.data));
         axios.get("./json/brigade-keyword-distance-bert.json").then(response => (this.brigade_keyword_distance = response.data));
