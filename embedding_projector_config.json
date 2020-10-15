@@ -1,0 +1,16 @@
+{
+    "embeddings": [
+      {
+        "tensorName": "brigade_distance:00000",
+        "tensorShape": [40, 768],
+        "tensorPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/387c66fa5eca94979984f2798b1945523de88832/bert/runs/00000/brigade_distance/tensors.tsv",
+        "metadataPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/387c66fa5eca94979984f2798b1945523de88832/bert/runs/00000/brigade_distance/metadata.tsv"
+      },
+      {
+        "tensorName": "brigade_keyword_distance:00000",
+        "tensorShape": [121, 768],
+        "tensorPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/387c66fa5eca94979984f2798b1945523de88832/bert/runs/00000/brigade_keyword_distance/tensors.tsv",
+        "metadataPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/387c66fa5eca94979984f2798b1945523de88832/bert/runs/00000/brigade_keyword_distance/metadata.tsv"
+      }
+    ]
+  }
