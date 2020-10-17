@@ -4,6 +4,11 @@ tensor_path: "00000/brigade_distance/tensors.tsv"
 metadata_path: "00000/brigade_distance/metadata.tsv"
 }
 embeddings {
+tensor_name: "keyword_distance:00000"
+tensor_path: "00000/keyword_distance/tensors.tsv"
+metadata_path: "00000/keyword_distance/metadata.tsv"
+}
+embeddings {
 tensor_name: "brigade_keyword_distance:00000"
 tensor_path: "00000/brigade_keyword_distance/tensors.tsv"
 metadata_path: "00000/brigade_keyword_distance/metadata.tsv"
