@@ -17,6 +17,11 @@
       height: 500px;
       border: 1px solid #d0d0d0;
     }
+    #keywordnetwork {
+      width: 99%;
+      height: 500px;
+      border: 1px solid #52B4CD;
+    }
   </style>
 </head>
 <body>
@@ -24,7 +29,7 @@
     <el-header><img src="./img/logo.png" height="90px"></el-header>
     <el-main>
       <el-tabs v-model="activeName" @tab-click="handleClick">
-        <el-tab-pane label="Top" name="first">
+        <el-tab-pane label="Top" name="top">
             <el-select v-model="selectedValue" placeholder="選択してください">
               <el-option
                 v-for="item in brigades"
@@ -36,17 +41,31 @@
           <el-button v-on:click="draw()" v-loading.fullscreen.lock="fullscreenLoading">draw</el-button>
           <br><br>
           <div id="mynetwork"></div>
-          <p>選択したブリゲードに近い上位5件のブリゲードを表示しています</p>
+          <p>選択したブリゲードに近い上位{{max_node}}件のブリゲードを表示しています</p>
           <p>Embedding Projectorで見る場合は<a target="_blank" href="https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/siramatu/brigade-visualizer/master/embedding_projector_config.json">こちら</a>をクリック</p>
-          <el-dialog :visible.sync="visible" title="message">
-            <p>{{message}}</p>
-          </el-dialog>
         </el-tab-pane>
-        <el-tab-pane label="About" name="second">
+        <el-tab-pane label="Keyword" name="keyword">
+            <el-select v-model="selectedKeyword" placeholder="選択してください">
+              <el-option
+                v-for="item in keywords"
+                :key="item.keyword"
+                :label="item.keyword"
+                :value="item.keyword">
+              </el-option>
+            </el-select>
+          <el-button v-on:click="drawKeyword()" v-loading.fullscreen.lock="fullscreenLoading">draw</el-button>
+          <br><br>
+          <div id="keywordnetwork"></div>
+          <p>選択したキーワードに関心度の高い上位{{max_node}}件のブリゲードを表示しています</p>
+      </el-tab-pane>
+        <el-tab-pane label="About" name="about">
           <iframe width="100%" height="500" src="https://hackmd.io/@TGL6KqgYTmyO2qgobnL2pg/Hy4uJ5CLD/" frameborder="0"></iframe>
         </el-tab-pane>
       </el-tabs>
       </el-main>
+      <el-dialog :visible.sync="visible" title="message">
+        <p>{{message}}</p>
+      </el-dialog>
   </div>
 </body>
   <!-- import Vue before Element -->
@@ -56,14 +75,19 @@
   <script src="https://unpkg.com/element-ui/lib/index.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script>
+    var LENGTH_BRIGADE = 8000, //ブリゲード間の距離の重み
+    LENGTH_KEYWORD = 100,//ブリゲード-キーワード間の距離の重み
+    MAX_NODE = 5; //表示件数
     new Vue({
       el: '#app',
       data: function() {
         return { 
             visible: false ,
             selectedValue:'',
+            selectedKeyword:'',
+            max_node:MAX_NODE,
             message:'',
-            activeName: 'first',
+            activeName: 'top',
             fullscreenLoading: false,
             brigades:null,
             keywords:null,
@@ -84,8 +108,33 @@
             return;
           }
 
-          this.fullscreenLoading = true;
+          this.fullscreenLoading = true;//描画中
 
+          //選択されたブリゲードと距離の近いブリゲードを取得する
+          let bg_map = this.selectedBrigade(MAX_NODE);
+
+          //ネットワーク図の描画
+          this.drawNetwork(bg_map,"mynetwork",this.selectedValue);
+
+        },
+        drawKeyword:function() {
+          console.log("drawKeyword***********************");
+          //入力チェック
+          if (this.selectedKeyword == '') {
+            this.message = "キーワードを選択して下さい";
+            this.visible = true;
+            return;
+          }
+
+          this.fullscreenLoading = true;//描画中
+
+          //選択されたキーワードと距離の近いブリゲードを取得する
+          let bg_map = this.selectedBrigadeKeyword(MAX_NODE);
+
+          //ネットワーク図の描画
+          this.drawNetwork(bg_map,"keywordnetwork",this.selectedKeyword);
+        },
+        selectedBrigade:function(max_cnt) {
           //選択されたブリゲードと距離の近いブリゲードを取得する
           //let bg_arr = []
           let bg_map = new Map();
@@ -101,32 +150,52 @@
               bg_map.set(cols[0],cols[2]);//from
             }
           }
+          return this.filterBrigade(bg_map,max_cnt+1);//自分のブリゲードを含むためcnt+1
+        },
+        selectedBrigadeKeyword:function(max_cnt) {
+          console.log("selectedBrigadeKeyword***********************");
+          //選択されたキーワードと距離の近いブリゲードを取得する
+          //let bg_arr = []
+          let bg_map = new Map();
+          //bg_map.set(this.selectedValue,'1.0');
+          let rows = this.brigade_keyword_distance;
+          //console.log("rows:"+rows.length);
+          for (let i=0;i<rows.length;i++) {
+            let cols = rows[i].split(",");
+            //console.log(this.selectedKeyword+":"+cols[1]+":"+(this.selectedKeyword === cols[1]));
+            if (this.selectedKeyword === cols[1]) {//キーワードが一致するもの
+              //console.log(cols[0]+":"+cols[2]);
+              bg_map.set(cols[0],cols[2]);//to
+            }
+          }
+          return this.filterBrigade(bg_map,max_cnt);
+        },
+        filterBrigade:function(bg_map,max_cnt) {
           //valueで並び替え
           Array.from(bg_map.keys()).sort(
             function (a,b){
                 return parseFloat(bg_map.get(a)) - parseFloat(bg_map.get(b))
               }
             );
-
+          let cnt = 0;
+          for (var key of bg_map.keys()) {
+            //console.log(key+":"+bg_map.get(key));
+            if (cnt >= max_cnt) {//上位のみ表示
+              bg_map.delete(key);//表示しないものは削除
+            }
+            cnt++;
+          }
+          return bg_map;
+        },
+        drawNetwork:function(bg_map,container_id,selected) {
           // Create a data table with nodes.
           var nodes = [];
           // Create a data table with links.
           var edges = [];
-          var LENGTH_MAIN = 8000,
-          LENGTH_SUB = 100,
-          MAX_NODE = 5;
-          //ブリゲードノードをプロット
-          // let arr_brigade = bg_map.keys();
-          // console.log("arr_brigade:"+arr_brigade.length);
-          let cnt = 0;
+
+          //ブリゲードのプロット
           for (var key of bg_map.keys()) {
-            console.log(key+":"+bg_map.get(key));
-            if (cnt <= MAX_NODE) {//上位のみ表示
-              nodes.push({ id: key, label: key, group: (key == this.selectedValue)?"selected":"brigade", value: 10 });
-            } else {
-              bg_map.delete(key);//表示しないものは削除
-            }
-            cnt++;
+            nodes.push({ id: key, label: key, group: (key == selected)?"selected":"brigade", value: 10 });
           }
 
           //ブリゲード間の距離
@@ -137,7 +206,7 @@
             edges.push({
               from: cols[0],
               to: cols[1],
-              length: LENGTH_MAIN * (1-parseFloat(cols[2])),
+              length: LENGTH_BRIGADE * (1-parseFloat(cols[2])),
               width: 1,
               label:cols[2],
               smooth:true,
@@ -154,7 +223,7 @@
             edges.push({
               from: cols[0],
               to: cols[1],
-              length: LENGTH_SUB * (1-parseFloat(cols[2])),
+              length: LENGTH_KEYWORD * (1-parseFloat(cols[2])),
               width: 1,
               smooth:true,
             });
@@ -166,12 +235,10 @@
           for (let i=0; i<rows.length; i++) {
             let name = rows[i].keyword;
             if (!ky_map.has(name)) continue;
-            nodes.push({ id: name, label: name, group: "keyword", value: 5 });
+            nodes.push({ id: name, label: name, group: (name == selected)?"selected_keyword":"keyword", value: 5 });
           }
-
-
           // create a network
-          var container = document.getElementById("mynetwork");
+          var container = document.getElementById(container_id);
           var data = {
             nodes: nodes,
             edges: edges,
@@ -207,11 +274,16 @@
                 color: "#409EFF", // blue
                 font: "32px arial #409EFF",
               },
+              selected_keyword: {
+                shape: "dot",
+                color: "#FF0000", // orange
+                font: "40px arial #FF0000",
+              },
             },
           };
           network = new vis.Network(container, data, options);
           network.on("afterDrawing", () => {this.fullscreenLoading = false;});
-        }
+        },
       },
       mounted: function () {
         //JSONデータの読み込み
