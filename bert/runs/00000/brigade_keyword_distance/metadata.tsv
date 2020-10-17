@@ -1,121 +1,127 @@
-CODE for GIFU
-Code for Saga
-Code for NAGAREYAMA
-Code for Nagoya
-Code for SAITAMA
-CODE for AIZU
-Code for MIKAWA
-Code for Gumyoji
-Code for Kumagaya
-Code for Kanagawa
-Code for Aomori
-ハウモリ
-Code for Kobe
-Code for Sabae
-Code for WAKO
-Code for Suginami
-Code for AICHI
-Code for Toyota
-Code for Fukuoka
-Code for TODA
-Code for Tokushima
-Code for Mitaka / Musashino
-Code for INAGI
-Code for Kusatsu
-Code for Sasayama+Tamba
-Code For Kitakyusyu
-Code for Fuchu
-Code for Niigata
-Code for Hachioji
-Code for Shiga / Biwako
-Code for SAKE
-Code for Shinagawa
-Code for 中野
-Code for Muroran
-Code for SUSONO
-Code for INZAI
-Code for Akita
-Code for Shiogama
-Code for Toshima
-Code for SENDAI
-COVID-19
-異文化交流
-河川
-健康
-福祉
-まちづくり
-林業
-GIS・位置空間情報
-オープンデータ
-プログラミング
-FOSS4G
-MA ヒーローズリーグ
-RESASアプリコンテスト
-アーバンデータチャレンジ
-オープンソースカンファレンス
-SDGs
-交通
-地域アーカイブ
-防災
-グラレコ・ファシリテーション
-ノーコード
-可視化
-佐賀大学Dフェス
-教育
-子育て
-Wikipedia・Wikidata
-チャレンジオープンガバナンス
-観光
-障害者支援
-機械学習
-LODチャレンジ
-Startup Weekend
-環境
-官民協働
-農業
-IoT
-SNS
-ドローン
-産業
-文化
-ブロックチェーン
-NASA Space Apps Challenge
-公共施設
-市民活動連携・地域活動連携
-食
-生活
-スマートスピーカー
-通信(5G・LoRa)
-医療
-都市計画
-チャットボット
-宇宙
-公園
-政治
-ロボット
-高齢者支援
-商店街活性化
-LGBTQ・ジェンダー
-スタートアップ
-ゲーム
-WEB
-地方創生☆政策アイデアコンテスト
-Call for Code
-GUGEN
-Maker Faire
-人材育成
-課題解決思考
-祭り
-Code for JAPAN サミット神戸 出展
-道路
-地図
-トマソン
-防犯
-日本酒
-データセンター
-デザイン
-Code for Japan Summit 2020 ロゴデザイン(採用)
-漁業
-LIFE-TECH INNOVATION SENDAI
-OpenDataDay2019
-Tech for Non-Tech
+label	category
+CODE for GIFU	brigade
+Code for Saga	brigade
+Code for NAGAREYAMA	brigade
+Code for Nagoya	brigade
+Code for SAITAMA	brigade
+CODE for AIZU	brigade
+Code for MIKAWA	brigade
+Code for Gumyoji	brigade
+Code for Kumagaya	brigade
+Code for Kanagawa	brigade
+Code for Aomori	brigade
+ハウモリ	brigade
+Code for Kobe	brigade
+Code for Sabae	brigade
+Code for WAKO	brigade
+Code for Suginami	brigade
+Code for AICHI	brigade
+Code for Toyota	brigade
+Code for Fukuoka	brigade
+Code for TODA	brigade
+Code for Tokushima	brigade
+Code for Mitaka / Musashino	brigade
+Code for INAGI	brigade
+Code for Kusatsu	brigade
+Code for Sasayama+Tamba	brigade
+Code For Kitakyusyu	brigade
+Code for Fuchu	brigade
+Code for Niigata	brigade
+Code for Hachioji	brigade
+Code for Shiga / Biwako	brigade
+Code for SAKE	brigade
+Code for Shinagawa	brigade
+Code for 中野	brigade
+Code for Muroran	brigade
+Code for SUSONO	brigade
+Code for INZAI	brigade
+Code for Akita	brigade
+Code for Shiogama	brigade
+Code for Toshima	brigade
+Code for SENDAI	brigade
+Code for Yamagata	brigade
+Code for Ichikawa	brigade
+Code for Nerima	brigade
+COVID-19	keyword
+異文化交流	keyword
+河川	keyword
+健康	keyword
+福祉	keyword
+まちづくり	keyword
+林業	keyword
+GIS・位置空間情報	keyword
+オープンデータ	keyword
+プログラミング	keyword
+FOSS4G	keyword
+MA ヒーローズリーグ	keyword
+RESASアプリコンテスト	keyword
+アーバンデータチャレンジ	keyword
+オープンソースカンファレンス	keyword
+SDGs	keyword
+交通	keyword
+地域アーカイブ	keyword
+防災	keyword
+グラレコ・ファシリテーション	keyword
+ノーコード	keyword
+可視化	keyword
+佐賀大学Dフェス	keyword
+教育	keyword
+子育て	keyword
+Wikipedia・Wikidata	keyword
+チャレンジオープンガバナンス	keyword
+観光	keyword
+障害者支援	keyword
+機械学習	keyword
+LODチャレンジ	keyword
+Startup Weekend	keyword
+環境	keyword
+官民協働	keyword
+農業	keyword
+IoT	keyword
+SNS	keyword
+ドローン	keyword
+産業	keyword
+文化	keyword
+ブロックチェーン	keyword
+NASA Space Apps Challenge	keyword
+公共施設	keyword
+市民活動連携・地域活動連携	keyword
+食	keyword
+生活	keyword
+スマートスピーカー	keyword
+通信(5G・LoRa)	keyword
+医療	keyword
+都市計画	keyword
+チャットボット	keyword
+宇宙	keyword
+公園	keyword
+政治	keyword
+ロボット	keyword
+高齢者支援	keyword
+商店街活性化	keyword
+LGBTQ・ジェンダー	keyword
+スタートアップ	keyword
+ゲーム	keyword
+WEB	keyword
+地方創生☆政策アイデアコンテスト	keyword
+Call for Code	keyword
+GUGEN	keyword
+Maker Faire	keyword
+人材育成	keyword
+課題解決思考	keyword
+祭り	keyword
+Code for JAPAN サミット神戸 出展	keyword
+道路	keyword
+地図	keyword
+トマソン	keyword
+防犯	keyword
+日本酒	keyword
+データセンター	keyword
+デザイン	keyword
+Code for Japan Summit 2020 ロゴデザイン(採用)	keyword
+漁業	keyword
+LIFE-TECH INNOVATION SENDAI	keyword
+OpenDataDay2019	keyword
+Tech for Non-Tech	keyword
+SEO	keyword
+マイクラカップ2019	keyword
