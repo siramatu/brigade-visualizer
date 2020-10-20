@@ -1,22 +1,22 @@
 {
-    "embeddings": [
-      {
-        "tensorName": "brigade_keyword_distance:00000",
-        "tensorShape": [132, 768],
-        "tensorPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/master/bert/runs/00000/brigade_keyword_distance/tensors.tsv",
-        "metadataPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/master/bert/runs/00000/brigade_keyword_distance/metadata.tsv"
-      },
-      {
-        "tensorName": "brigade_distance:00000",
-        "tensorShape": [44, 768],
-        "tensorPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/master/bert/runs/00000/brigade_distance/tensors.tsv",
-        "metadataPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/master/bert/runs/00000/brigade_distance/metadata.tsv"
-      },
-      {
-        "tensorName": "keyword_distance:00000",
-        "tensorShape": [88, 768],
-        "tensorPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/master/bert/runs/00000/keyword_distance/tensors.tsv",
-        "metadataPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/master/bert/runs/00000/keyword_distance/metadata.tsv"
-      }
-    ]
-  }
+  "embeddings": [
+    {
+      "tensorName": "brigade_keyword_distance:00000",
+      "tensorShape": [136, 768],
+      "tensorPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/master/bert/runs/00000/brigade_keyword_distance/tensors.tsv",
+      "metadataPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/master/bert/runs/00000/brigade_keyword_distance/metadata.tsv"
+    },
+    {
+      "tensorName": "brigade_distance:00000",
+      "tensorShape": [46, 768],
+      "tensorPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/master/bert/runs/00000/brigade_distance/tensors.tsv",
+      "metadataPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/master/bert/runs/00000/brigade_distance/metadata.tsv"
+    },
+    {
+      "tensorName": "keyword_distance:00000",
+      "tensorShape": [90, 768],
+      "tensorPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/master/bert/runs/00000/keyword_distance/tensors.tsv",
+      "metadataPath": "https://raw.githubusercontent.com/siramatu/brigade-visualizer/master/bert/runs/00000/keyword_distance/metadata.tsv"
+    }
+  ]
+}
