@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <meta property="og:url" content="https://siramatu.github.io/brigade-visualizer/" />
-  <meta property="og:title" content="Brigade Visualiser" />
-  <meta property="og:description" content="各地ブリゲードの特徴を分かりやすく伝えたい" />
+  <meta property="og:title" content="CivicTech 俯瞰図鑑" />
+  <meta property="og:description" content="各地シビックテックコミュニティの特徴と関連性を分かりやすく伝えたい" />
   <meta property="og:image" content="https://siramatu.github.io/brigade-visualizer/img/ogp.png" />
-  <title>BRIGADE-VISUALIZER</title>
+  <title>CivicTech 俯瞰図鑑</title>
   <!-- import CSS -->
   <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 </head>
 <body>
   <div id="app">
-    <el-header><img src="./img/logo.png" height="90px"></el-header>
+    <el-header><img src="./img/logo.png" height="80px"></el-header>
     <el-main>
       <el-tabs v-model="activeName" @tab-click="handleClick">
         <el-tab-pane label="Top" name="top">
@@ -41,7 +41,7 @@
           <el-button v-on:click="draw()" v-loading.fullscreen.lock="fullscreenLoading">draw</el-button>
           <br><br>
           <div id="mynetwork"></div>
-          <p>選択したブリゲードに近い上位{{max_node}}件のブリゲードを表示しています</p>
+          <p>選択したコミュニティに近い上位{{max_node}}件のコミュニティを表示しています</p>
           <p>Embedding Projectorで見る場合は<a target="_blank" href="https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/siramatu/brigade-visualizer/master/embedding_projector_config.json">こちら</a>をクリック</p>
         </el-tab-pane>
         <el-tab-pane label="Keyword" name="keyword">
@@ -56,8 +56,12 @@
           <el-button v-on:click="drawKeyword()" v-loading.fullscreen.lock="fullscreenLoading">draw</el-button>
           <br><br>
           <div id="keywordnetwork"></div>
-          <p>選択したキーワードに関心度の高い上位{{max_node}}件のブリゲードを表示しています</p>
-      </el-tab-pane>
+          <p>選択したキーワードに関心度の高い上位{{max_node}}件のコミュニティを表示しています</p>
+        </el-tab-pane>
+        <el-tab-pane label="entry" name="entry">
+          コミュニティを登録したい方はこちらのアンケートにお答えください
+          <iframe width="100%" height="500" src="https://forms.gle/21TLsqKQQLTaCHKd6" frameborder="0"></iframe>
+        </el-tab-pane>
         <el-tab-pane label="About" name="about">
           <iframe width="100%" height="500" src="https://hackmd.io/@TGL6KqgYTmyO2qgobnL2pg/Hy4uJ5CLD/" frameborder="0"></iframe>
         </el-tab-pane>
@@ -75,8 +79,8 @@
   <script src="https://unpkg.com/element-ui/lib/index.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script>
-    var LENGTH_BRIGADE = 8000, //ブリゲード間の距離の重み
-    LENGTH_KEYWORD = 100,//ブリゲード-キーワード間の距離の重み
+    var LENGTH_BRIGADE = 8000, //コミュニティ間の距離の重み
+    LENGTH_KEYWORD = 100,//コミュニティ-キーワード間の距離の重み
     MAX_NODE = 5; //表示件数
     new Vue({
       el: '#app',
@@ -103,14 +107,14 @@
           console.log("draw***********************");
           //入力チェック
           if (this.selectedValue == '') {
-            this.message = "ブリゲードを選択して下さい";
+            this.message = "コミュニティを選択して下さい";
             this.visible = true;
             return;
           }
 
           this.fullscreenLoading = true;//描画中
 
-          //選択されたブリゲードと距離の近いブリゲードを取得する
+          //選択されたコミュニティと距離の近いコミュニティを取得する
           let bg_map = this.selectedBrigade(MAX_NODE);
 
           //ネットワーク図の描画
@@ -128,14 +132,14 @@
 
           this.fullscreenLoading = true;//描画中
 
-          //選択されたキーワードと距離の近いブリゲードを取得する
+          //選択されたキーワードと距離の近いコミュニティを取得する
           let bg_map = this.selectedBrigadeKeyword(MAX_NODE);
 
           //ネットワーク図の描画
           this.drawNetwork(bg_map,"keywordnetwork",this.selectedKeyword);
         },
         selectedBrigade:function(max_cnt) {
-          //選択されたブリゲードと距離の近いブリゲードを取得する
+          //選択されたコミュニティと距離の近いコミュニティを取得する
           //let bg_arr = []
           let bg_map = new Map();
           bg_map.set(this.selectedValue,'1.0');
@@ -150,11 +154,11 @@
               bg_map.set(cols[0],cols[2]);//from
             }
           }
-          return this.filterBrigade(bg_map,max_cnt+1);//自分のブリゲードを含むためcnt+1
+          return this.filterBrigade(bg_map,max_cnt+1);//自分のコミュニティを含むためcnt+1
         },
         selectedBrigadeKeyword:function(max_cnt) {
           console.log("selectedBrigadeKeyword***********************");
-          //選択されたキーワードと距離の近いブリゲードを取得する
+          //選択されたキーワードと距離の近いコミュニティを取得する
           //let bg_arr = []
           let bg_map = new Map();
           //bg_map.set(this.selectedValue,'1.0');
@@ -193,12 +197,12 @@
           // Create a data table with links.
           var edges = [];
 
-          //ブリゲードのプロット
+          //コミュニティのプロット
           for (var key of bg_map.keys()) {
             nodes.push({ id: key, label: key, group: (key == selected)?"selected":"brigade", value: 10 });
           }
 
-          //ブリゲード間の距離
+          //コミュニティ間の距離
           rows = this.brigade_distance;
           for (let i=0; i<rows.length; i++) {
             let cols = rows[i].split(",");
@@ -213,7 +217,7 @@
             });
           }
 
-          //ブリゲードとキーワード間の距離
+          //コミュニティとキーワード間の距離
           let ky_map = new Map();
           rows = this.brigade_keyword_distance;
           for (let i=0; i<rows.length; i++) {
@@ -284,12 +288,25 @@
           network = new vis.Network(container, data, options);
           network.on("afterDrawing", () => {this.fullscreenLoading = false;});
         },
+        sortKeyword:function(keywords){
+          let arr = keywords;
+          if (arr) {
+            //nameで並び替え
+            arr = Array.from(keywords).sort(
+              function (a,b){
+                  //console.log(a.keyword+":"+b.keyword+":"+((a.keyword > b.keyword) ? 1 : -1));
+                  return ((a.keyword > b.keyword) ? 1 : -1);
+                }
+              );
+          }
+          return arr;
+        },
       },
       mounted: function () {
         //JSONデータの読み込み
         axios.get("./json/brigades.json").then(response => (this.brigades = response.data));
         //console.log("brigades:"+this.brigades);
-        axios.get("./json/keywords.json").then(response => (this.keywords = response.data));
+        axios.get("./json/keywords.json").then(response => (this.keywords = this.sortKeyword(response.data)));
         axios.get("./json/brigade-distance-bert.json").then(response => (this.brigade_distance = response.data));
         axios.get("./json/brigade-keyword-distance-bert.json").then(response => (this.brigade_keyword_distance = response.data));
 
