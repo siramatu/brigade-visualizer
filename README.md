@@ -32,7 +32,7 @@ cd brigade-visualizer
 - 絶賛募集中！
 
 ## LICENCE
-
+- The MIT Licence (MIT)
 
 ## References
 - [ブリゲードマッピング (HackMD)](https://hackmd.io/dIkr2aCxQxibgoBO5DZS2w?view)
