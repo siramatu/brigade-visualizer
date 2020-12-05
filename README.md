@@ -2,7 +2,7 @@ brigade-visualizer
 ====
 全国各地やテーマごとに様々あるCode forブリゲードの関係性をマッピングする
 
-## 動画紹介（画像クリックで動画ページにジャンプします）
+#### 動画紹介（画像クリックで動画ページにジャンプします）
 [![](https://img.youtube.com/vi/IPwUui4IRh8/0.jpg)](https://www.youtube.com/watch?v=IPwUui4IRh8)
 
 ## Description
