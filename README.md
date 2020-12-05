@@ -1,7 +1,7 @@
 brigade-visualizer
 ====
 全国各地やテーマごとに様々あるCode forブリゲードの関係性をマッピングする
-
+[![](https://img.youtube.com/vi/IPwUui4IRh8/0.jpg)](https://www.youtube.com/watch?v=IPwUui4IRh8)
 ## Description
 - シビックテックに新しく興味をもってくれた人に、各地ブリゲードの特徴をわかりやすく伝えたい。
 - 既にシビックテック活動をしている人にも、他の地域のブリゲードの特徴がわかるようにしたい。
