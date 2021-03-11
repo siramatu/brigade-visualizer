@@ -57,6 +57,7 @@
           <br><br>
           <div id="keywordnetwork"></div>
           <p>選択したキーワードに関心度の高い上位{{max_node}}件のコミュニティを表示しています</p>
+          <p>Embedding Projectorで見る場合は<a target="_blank" href="https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/siramatu/brigade-visualizer/master/embedding_projector_config.json">こちら</a>をクリック</p>
         </el-tab-pane>
         <el-tab-pane label="Entry" name="entry">
           コミュニティを登録したい方はこちらのアンケートにお答えください
@@ -94,6 +95,7 @@
             activeName: 'top',
             fullscreenLoading: false,
             brigades:null,
+            brigade_crawling:null,
             keywords:null,
             brigade_distance:null,
             brigade_keyword_distance:null
@@ -144,16 +146,17 @@
           let bg_map = new Map();
           bg_map.set(this.selectedValue,'1.0');
           let rows = this.brigade_distance;
-          //console.log("rows:"+rows.length);
-          for (let i=0;i<rows.length;i++) {
-            let cols = rows[i].split(",");
-            //console.log(this.selectedValue+":"+cols[0]+":"+(this.selectedValue === cols[0]));
-            if (this.selectedValue === cols[0]) {
-              bg_map.set(cols[1],cols[2]);//to
-            } else if (this.selectedValue === cols[1]) {
-              bg_map.set(cols[0],cols[2]);//from
+          //console.log("rows: "+rows.length);
+
+          rows.forEach(col => {
+            if (this.selectedValue === col.civicname1){
+              bg_map.set(col.civicname2, col.distance);//to
             }
-          }
+            else if(this.selectedValue === col.civicname2){
+              bg_map.set(col.civicname1, col.distance);//from
+            }
+          });
+
           return this.filterBrigade(bg_map,max_cnt+1);//自分のコミュニティを含むためcnt+1
         },
         selectedBrigadeKeyword:function(max_cnt) {
@@ -164,14 +167,15 @@
           //bg_map.set(this.selectedValue,'1.0');
           let rows = this.brigade_keyword_distance;
           //console.log("rows:"+rows.length);
-          for (let i=0;i<rows.length;i++) {
-            let cols = rows[i].split(",");
-            //console.log(this.selectedKeyword+":"+cols[1]+":"+(this.selectedKeyword === cols[1]));
-            if (this.selectedKeyword === cols[1]) {//キーワードが一致するもの
-              //console.log(cols[0]+":"+cols[2]);
-              bg_map.set(cols[0],cols[2]);//to
+
+          rows.forEach(col => {
+            // console.log(this.selectedKeyword+":"+col.keyword+":"+(this.selectedKeyword === col.keyword));
+            if (this.selectedKeyword === col.keyword){
+              // console.log(col.civicname+" : "+col.distance);
+              bg_map.set(col.civicname, col.distance);//to
             }
-          }
+          });
+
           return this.filterBrigade(bg_map,max_cnt);
         },
         filterBrigade:function(bg_map,max_cnt) {
@@ -204,35 +208,41 @@
 
           //コミュニティ間の距離
           rows = this.brigade_distance;
-          for (let i=0; i<rows.length; i++) {
-            let cols = rows[i].split(",");
-            if (!bg_map.has(cols[0])&&!bg_map.has(cols[1])) continue;
+          rows.forEach(col => {
+            if (!bg_map.has(col.civicname1)&&!bg_map.has(col.civicname2)) {
+              // continue;
+              // See: https://masteringjs.io/tutorials/fundamentals/foreach-continue
+              return;
+            }
             edges.push({
-              from: cols[0],
-              to: cols[1],
-              length: LENGTH_BRIGADE * (1-parseFloat(cols[2])),
+              from: col.civicname1,
+              to: col.civicname2,
+              length: LENGTH_BRIGADE * (1-parseFloat(col.distance)),
               width: 1,
-              label:cols[2],
+              label: col.distance,
               smooth:true,
             });
-          }
+          });
 
           //コミュニティとキーワード間の距離
           let ky_map = new Map();
           rows = this.brigade_keyword_distance;
-          for (let i=0; i<rows.length; i++) {
-            let cols = rows[i].split(",");
-            if (!bg_map.has(cols[0])) continue;
-            //console.log(cols[0]);
+          rows.forEach(col => {
+            if (!bg_map.has(col.civicname)){
+              // continue;
+              // See: https://masteringjs.io/tutorials/fundamentals/foreach-continue
+              return;
+            } 
+            //console.log(col.civicname);
             edges.push({
-              from: cols[0],
-              to: cols[1],
-              length: LENGTH_KEYWORD * (1-parseFloat(cols[2])),
+              from: col.civicname,
+              to: col.keyword,
+              length: LENGTH_KEYWORD * (1-parseFloat(col.distance)),
               width: 1,
               smooth:true,
             });
-            ky_map.set(cols[1],'');//keyword
-          }
+            ky_map.set(col.keyword,'');//keyword
+          });
 
           //キーワードノードをプロット
           rows = this.keywords;
@@ -306,8 +316,11 @@
         //JSONデータの読み込み
         axios.get("./json/brigades.json").then(response => (this.brigades = response.data));
         //console.log("brigades:"+this.brigades);
+        axios.get("./json/brigades_crawling.json").then(response => (this.brigades_crawling = response.data));
         axios.get("./json/keywords.json").then(response => (this.keywords = this.sortKeyword(response.data)));
+
         axios.get("./json/brigade-distance-bert.json").then(response => (this.brigade_distance = response.data));
+        axios.get("./json/brigade-distance-bert_crawling.json").then(response => (this.brigade_distance_crawling = response.data));
         axios.get("./json/brigade-keyword-distance-bert.json").then(response => (this.brigade_keyword_distance = response.data));
 
         // bertを用いないで計算したベクトルにする場合は以下をコメントアウト
