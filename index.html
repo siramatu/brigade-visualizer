@@ -30,9 +30,17 @@
     <el-main>
       <el-tabs v-model="activeName" @tab-click="handleClick">
         <el-tab-pane label="Top" name="top">
-            <el-select v-model="selectedValue" placeholder="選択してください">
+            <el-select v-model="selectedSource" placeholder="選択してください" @change="handleSelectSource">
               <el-option
-                v-for="item in brigades"
+                v-for="source in sources"
+                :key="source.value"
+                :label="source.label"
+                :value="source.value">
+              </el-option>
+            </el-select>
+            <el-select v-model="selectedValue" :disabled="this.isSelectedBrigades" placeholder="選択してください">
+              <el-option
+                v-for="item in brigades[selectedSource]"
                 :key="item.name"
                 :label="item.name"
                 :value="item.name">
@@ -88,22 +96,39 @@
       data: function() {
         return { 
             visible: false ,
+            selectedSource:'',
             selectedValue:'',
             selectedKeyword:'',
             max_node:MAX_NODE,
             message:'',
             activeName: 'top',
             fullscreenLoading: false,
-            brigades:null,
-            brigade_crawling:null,
+            // いくつかのブリゲードでは，クローリングが間に合わなかったため，クローリング結果とアンケート結果では，表示可能なブリゲード数が異なる
+            sources: [
+              {value: "questionnaire", label: "アンケート結果"},
+              {value: "crawling", label: "クローリング結果"},
+            ],
+            brigades: {
+              "questionnaire": null,
+              "crawling": null
+            },
+            isSelectedBrigades: true,
             keywords:null,
-            brigade_distance:null,
+            brigade_distance:{
+              "questionnaire": null,
+              "crawling": null
+            },
             brigade_keyword_distance:null
         }
       },
       methods: {
         handleClick(tab, event) {
             console.log(tab, event);
+        },
+        handleSelectSource(select){
+          console.log(select, event);
+          this.isSelectedBrigades = false;
+          this.selectedValue = '';
         },
         draw: function() {//描画処理
           console.log("draw***********************");
@@ -145,7 +170,7 @@
           //let bg_arr = []
           let bg_map = new Map();
           bg_map.set(this.selectedValue,'1.0');
-          let rows = this.brigade_distance;
+          let rows = this.brigade_distance[this.selectedSource];
           //console.log("rows: "+rows.length);
 
           rows.forEach(col => {
@@ -206,8 +231,15 @@
             nodes.push({ id: key, label: key, group: (key == selected)?"selected":"brigade", value: 10 });
           }
 
-          //コミュニティ間の距離
-          rows = this.brigade_distance;
+          // コミュニティ間の距離
+          // クローリング結果に関しては，文章の中から重要となる単語を抜き出していないので．
+          // keywordに関しては，アンケート結果のみを用いる．
+          if(this.activeName === "top"){
+            rows = this.brigade_distance[this.selectedSource];
+          }
+          else if(this.activeName === "keyword"){
+            rows = this.brigade_distance["questionnaire"];
+          }
           rows.forEach(col => {
             if (!bg_map.has(col.civicname1)&&!bg_map.has(col.civicname2)) {
               // continue;
@@ -224,33 +256,36 @@
             });
           });
 
-          //コミュニティとキーワード間の距離
-          let ky_map = new Map();
-          rows = this.brigade_keyword_distance;
-          rows.forEach(col => {
-            if (!bg_map.has(col.civicname)){
-              // continue;
-              // See: https://masteringjs.io/tutorials/fundamentals/foreach-continue
-              return;
-            } 
-            //console.log(col.civicname);
-            edges.push({
-              from: col.civicname,
-              to: col.keyword,
-              length: LENGTH_KEYWORD * (1-parseFloat(col.distance)),
-              width: 1,
-              smooth:true,
+          if (this.activeName === "keyword" || this.selectedSource === "questionnaire"){
+            //コミュニティとキーワード間の距離
+            let ky_map = new Map();
+            rows = this.brigade_keyword_distance;
+            rows.forEach(col => {
+              if (!bg_map.has(col.civicname)){
+                // continue;
+                // See: https://masteringjs.io/tutorials/fundamentals/foreach-continue
+                return;
+              } 
+              //console.log(col.civicname);
+              edges.push({
+                from: col.civicname,
+                to: col.keyword,
+                length: LENGTH_KEYWORD * (1-parseFloat(col.distance)),
+                width: 1,
+                smooth:true,
+              });
+              ky_map.set(col.keyword,'');//keyword
             });
-            ky_map.set(col.keyword,'');//keyword
-          });
 
-          //キーワードノードをプロット
-          rows = this.keywords;
-          for (let i=0; i<rows.length; i++) {
-            let name = rows[i].keyword;
-            if (!ky_map.has(name)) continue;
-            nodes.push({ id: name, label: name, group: (name == selected)?"selected_keyword":"keyword", value: 5 });
+            //キーワードノードをプロット
+            rows = this.keywords;
+            for (let i=0; i<rows.length; i++) {
+              let name = rows[i].keyword;
+              if (!ky_map.has(name)) continue;
+              nodes.push({ id: name, label: name, group: (name == selected)?"selected_keyword":"keyword", value: 5 });
+            }
           }
+
           // create a network
           var container = document.getElementById(container_id);
           var data = {
@@ -314,13 +349,12 @@
       },
       mounted: function () {
         //JSONデータの読み込み
-        axios.get("./json/brigades.json").then(response => (this.brigades = response.data));
-        //console.log("brigades:"+this.brigades);
-        axios.get("./json/brigades_crawling.json").then(response => (this.brigades_crawling = response.data));
+        axios.get("./json/brigades.json").then(response => (this.brigades["questionnaire"] = response.data));
+        axios.get("./json/brigades_crawling.json").then(response => (this.brigades["crawling"] = response.data));
         axios.get("./json/keywords.json").then(response => (this.keywords = this.sortKeyword(response.data)));
 
-        axios.get("./json/brigade-distance-bert.json").then(response => (this.brigade_distance = response.data));
-        axios.get("./json/brigade-distance-bert_crawling.json").then(response => (this.brigade_distance_crawling = response.data));
+        axios.get("./json/brigade-distance-bert.json").then(response => (this.brigade_distance["questionnaire"] = response.data));
+        axios.get("./json/brigade-distance-bert_crawling.json").then(response => (this.brigade_distance["crawling"] = response.data));
         axios.get("./json/brigade-keyword-distance-bert.json").then(response => (this.brigade_keyword_distance = response.data));
 
         // bertを用いないで計算したベクトルにする場合は以下をコメントアウト
