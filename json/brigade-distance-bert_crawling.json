@@ -22,7 +22,7 @@
    {
       "civicname1": "Code for Sabae",
       "civicname2": "Code for Saga",
-      "distance": 0.998977541923523
+      "distance": 0.9989774227142334
    },
    {
       "civicname1": "Code for Kusatsu",
@@ -32,7 +32,7 @@
    {
       "civicname1": "Code for Kusatsu",
       "civicname2": "Code for Saga",
-      "distance": 0.9989195466041565
+      "distance": 0.9989196062088013
    },
    {
       "civicname1": "Code for Kusatsu",
@@ -47,7 +47,7 @@
    {
       "civicname1": "CODE for GIFU",
       "civicname2": "Code for MIKAWA",
-      "distance": 0.9988510012626648
+      "distance": 0.99885094165802
    },
    {
       "civicname1": "Code for Fukuoka",
@@ -77,12 +77,12 @@
    {
       "civicname1": "Code for Saga",
       "civicname2": "Code for SAKE",
-      "distance": 0.9987220168113708
+      "distance": 0.9987220764160156
    },
    {
       "civicname1": "Code for SUSONO",
       "civicname2": "Code for TODA",
-      "distance": 0.9986651539802551
+      "distance": 0.9986652731895447
    },
    {
       "civicname1": "Code for NAGAREYAMA",
@@ -192,7 +192,7 @@
    {
       "civicname1": "Code for MIKAWA",
       "civicname2": "Code for Saga",
-      "distance": 0.9983429908752441
+      "distance": 0.9983428120613098
    },
    {
       "civicname1": "Code for INAGI",
@@ -317,7 +317,7 @@
    {
       "civicname1": "Code for MIKAWA",
       "civicname2": "Code for Sabae",
-      "distance": 0.9979945421218872
+      "distance": 0.9979943633079529
    },
    {
       "civicname1": "Code for Hachioji",
@@ -342,7 +342,7 @@
    {
       "civicname1": "Code for Sabae",
       "civicname2": "Code for TODA",
-      "distance": 0.9979156851768494
+      "distance": 0.9979157447814941
    },
    {
       "civicname1": "Code for Hachioji",
@@ -422,7 +422,7 @@
    {
       "civicname1": "Code for MIKAWA",
       "civicname2": "Code for Shinagawa",
-      "distance": 0.9976921677589417
+      "distance": 0.9976919889450073
    },
    {
       "civicname1": "Code for INAGI",
@@ -442,12 +442,12 @@
    {
       "civicname1": "Code for INAGI",
       "civicname2": "Code for Niigata",
-      "distance": 0.9975418448448181
+      "distance": 0.9975419044494629
    },
    {
       "civicname1": "Code for Saga",
       "civicname2": "Code for SAITAMA",
-      "distance": 0.9975377917289734
+      "distance": 0.9975376129150391
    },
    {
       "civicname1": "Code for INAGI",
@@ -527,7 +527,7 @@
    {
       "civicname1": "Code for Kanagawa",
       "civicname2": "Code for MIKAWA",
-      "distance": 0.9973872303962708
+      "distance": 0.997387170791626
    },
    {
       "civicname1": "Code for AICHI",
@@ -572,7 +572,7 @@
    {
       "civicname1": "Code for MIKAWA",
       "civicname2": "Code for Niigata",
-      "distance": 0.997300386428833
+      "distance": 0.9973002672195435
    },
    {
       "civicname1": "Code for Hachioji",
@@ -602,12 +602,12 @@
    {
       "civicname1": "Code for Hachioji",
       "civicname2": "Code for Shiga / Biwako",
-      "distance": 0.9972320795059204
+      "distance": 0.9972321391105652
    },
    {
       "civicname1": "Code for Shiga / Biwako",
       "civicname2": "Code for Tokushima",
-      "distance": 0.9972175359725952
+      "distance": 0.9972176551818848
    },
    {
       "civicname1": "Code for Hachioji",
@@ -672,7 +672,7 @@
    {
       "civicname1": "Code for NAGAREYAMA",
       "civicname2": "Code for Shiga / Biwako",
-      "distance": 0.9970966577529907
+      "distance": 0.9970965385437012
    },
    {
       "civicname1": "Code for Niigata",
@@ -702,7 +702,7 @@
    {
       "civicname1": "Code for MIKAWA",
       "civicname2": "Code for SUSONO",
-      "distance": 0.9970343112945557
+      "distance": 0.9970341920852661
    },
    {
       "civicname1": "Code for Kumagaya",
@@ -742,7 +742,7 @@
    {
       "civicname1": "Code for Niigata",
       "civicname2": "Code for TODA",
-      "distance": 0.9969556927680969
+      "distance": 0.9969558119773865
    },
    {
       "civicname1": "Code for Kumagaya",
@@ -787,7 +787,7 @@
    {
       "civicname1": "Code for Kumagaya",
       "civicname2": "Code for Shiga / Biwako",
-      "distance": 0.9968811273574829
+      "distance": 0.9968811869621277
    },
    {
       "civicname1": "Code for Nagoya",
@@ -835,14 +835,14 @@
       "distance": 0.9967765212059021
    },
    {
+      "civicname1": "Code for AICHI",
+      "civicname2": "Code for MIKAWA",
+      "distance": 0.9967728853225708
+   },
+   {
       "civicname1": "Code for Fukuoka",
       "civicname2": "Code for SAITAMA",
       "distance": 0.996772825717926
-   },
-   {
-      "civicname1": "Code for AICHI",
-      "civicname2": "Code for MIKAWA",
-      "distance": 0.9967727661132812
    },
    {
       "civicname1": "Code for Hachioji",
@@ -927,7 +927,7 @@
    {
       "civicname1": "Code for Saga",
       "civicname2": "Code for 中野",
-      "distance": 0.9965859055519104
+      "distance": 0.9965858459472656
    },
    {
       "civicname1": "Code for Fuchu",
@@ -937,7 +937,7 @@
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "CODE for GIFU",
-      "distance": 0.996557891368866
+      "distance": 0.9965580701828003
    },
    {
       "civicname1": "Code for Kumagaya",
@@ -977,7 +977,7 @@
    {
       "civicname1": "Code for AICHI",
       "civicname2": "Code for Shiga / Biwako",
-      "distance": 0.9964458346366882
+      "distance": 0.9964459538459778
    },
    {
       "civicname1": "Code for Hachioji",
@@ -992,7 +992,7 @@
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "Code for Kumagaya",
-      "distance": 0.9964163303375244
+      "distance": 0.9964163899421692
    },
    {
       "civicname1": "Code for SAITAMA",
@@ -1082,7 +1082,7 @@
    {
       "civicname1": "Code for MIKAWA",
       "civicname2": "Code for WAKO",
-      "distance": 0.9962388873100281
+      "distance": 0.9962387681007385
    },
    {
       "civicname1": "Code for Saga",
@@ -1092,7 +1092,7 @@
    {
       "civicname1": "Code for Niigata",
       "civicname2": "Code for Sasayama+Tamba",
-      "distance": 0.9962127208709717
+      "distance": 0.9962127804756165
    },
    {
       "civicname1": "Code for SAITAMA",
@@ -1177,7 +1177,7 @@
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "Code for MIKAWA",
-      "distance": 0.9959408640861511
+      "distance": 0.9959408044815063
    },
    {
       "civicname1": "Code for Gumyoji",
@@ -1202,12 +1202,12 @@
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "Code for Nagoya",
-      "distance": 0.9959151148796082
+      "distance": 0.9959152936935425
    },
    {
       "civicname1": "Code for Saga",
       "civicname2": "Code for Shinagawa",
-      "distance": 0.9959069490432739
+      "distance": 0.9959070682525635
    },
    {
       "civicname1": "CODE for AIZU",
@@ -1237,7 +1237,7 @@
    {
       "civicname1": "Code for MIKAWA",
       "civicname2": "Code for 中野",
-      "distance": 0.9958397150039673
+      "distance": 0.9958397746086121
    },
    {
       "civicname1": "Code for Shinagawa",
@@ -1342,7 +1342,7 @@
    {
       "civicname1": "Code for SAKE",
       "civicname2": "Code for Sasayama+Tamba",
-      "distance": 0.9954805970191956
+      "distance": 0.9954806566238403
    },
    {
       "civicname1": "Code for Kanagawa",
@@ -1397,7 +1397,7 @@
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "Code for Shinagawa",
-      "distance": 0.9953239560127258
+      "distance": 0.9953240752220154
    },
    {
       "civicname1": "Code for AICHI",
@@ -1502,7 +1502,7 @@
    {
       "civicname1": "Code for Shinagawa",
       "civicname2": "Code for Suginami",
-      "distance": 0.9950410723686218
+      "distance": 0.9950409531593323
    },
    {
       "civicname1": "Code for Fukuoka",
@@ -1582,7 +1582,7 @@
    {
       "civicname1": "Code for Shiga / Biwako",
       "civicname2": "Code for SUSONO",
-      "distance": 0.9947099685668945
+      "distance": 0.9947100281715393
    },
    {
       "civicname1": "Code for Kobe",
@@ -1597,7 +1597,7 @@
    {
       "civicname1": "Code for AICHI",
       "civicname2": "Code for Saga",
-      "distance": 0.9946951866149902
+      "distance": 0.9946951270103455
    },
    {
       "civicname1": "CODE for GIFU",
@@ -1632,7 +1632,7 @@
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "Code for INAGI",
-      "distance": 0.9945398569107056
+      "distance": 0.9945399761199951
    },
    {
       "civicname1": "CODE for AIZU",
@@ -1647,7 +1647,7 @@
    {
       "civicname1": "Code for Toyota",
       "civicname2": "Code for WAKO",
-      "distance": 0.9945038557052612
+      "distance": 0.994503915309906
    },
    {
       "civicname1": "Code for AICHI",
@@ -1657,7 +1657,7 @@
    {
       "civicname1": "Code for Fukuoka",
       "civicname2": "Code for Shiga / Biwako",
-      "distance": 0.9944853782653809
+      "distance": 0.9944854378700256
    },
    {
       "civicname1": "Code for Shiga / Biwako",
@@ -1682,7 +1682,7 @@
    {
       "civicname1": "Code for Fuchu",
       "civicname2": "Code for Shiga / Biwako",
-      "distance": 0.9944037199020386
+      "distance": 0.994403600692749
    },
    {
       "civicname1": "Code for Kanagawa",
@@ -1722,12 +1722,12 @@
    {
       "civicname1": "Code for Shiga / Biwako",
       "civicname2": "Code for Shinagawa",
-      "distance": 0.9942432641983032
+      "distance": 0.9942433834075928
    },
    {
       "civicname1": "Code for Kobe",
       "civicname2": "Code for Niigata",
-      "distance": 0.9942221641540527
+      "distance": 0.9942222833633423
    },
    {
       "civicname1": "Code for MIKAWA",
@@ -1757,7 +1757,7 @@
    {
       "civicname1": "Code for Sabae",
       "civicname2": "Code for Sasayama+Tamba",
-      "distance": 0.9940504431724548
+      "distance": 0.9940505027770996
    },
    {
       "civicname1": "Code for Kumagaya",
@@ -1772,17 +1772,17 @@
    {
       "civicname1": "Code for NAGAREYAMA",
       "civicname2": "Code for WAKO",
-      "distance": 0.9939488172531128
+      "distance": 0.9939489364624023
    },
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "Code for Kobe",
-      "distance": 0.9939445853233337
+      "distance": 0.9939446449279785
    },
    {
       "civicname1": "Code for AICHI",
       "civicname2": "Code for WAKO",
-      "distance": 0.9939307570457458
+      "distance": 0.9939306974411011
    },
    {
       "civicname1": "Code for AICHI",
@@ -1792,12 +1792,12 @@
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "Code for Niigata",
-      "distance": 0.993904709815979
+      "distance": 0.9939047694206238
    },
    {
       "civicname1": "Code for Kumagaya",
       "civicname2": "Code for Sabae",
-      "distance": 0.9938102960586548
+      "distance": 0.9938104152679443
    },
    {
       "civicname1": "Code for Sabae",
@@ -1807,12 +1807,12 @@
    {
       "civicname1": "Code for Niigata",
       "civicname2": "ハウモリ",
-      "distance": 0.9937195181846619
+      "distance": 0.9937196373939514
    },
    {
       "civicname1": "Code for Shinagawa",
       "civicname2": "Code for SUSONO",
-      "distance": 0.993702232837677
+      "distance": 0.9937022924423218
    },
    {
       "civicname1": "Code for SAKE",
@@ -1827,7 +1827,7 @@
    {
       "civicname1": "Code for Kobe",
       "civicname2": "Code for SAITAMA",
-      "distance": 0.9936524629592896
+      "distance": 0.99365234375
    },
    {
       "civicname1": "Code for TODA",
@@ -1847,12 +1847,12 @@
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "Code for Fukuoka",
-      "distance": 0.9935747385025024
+      "distance": 0.9935747981071472
    },
    {
       "civicname1": "Code for Kobe",
       "civicname2": "Code for WAKO",
-      "distance": 0.9935556650161743
+      "distance": 0.9935557842254639
    },
    {
       "civicname1": "Code for AICHI",
@@ -1877,7 +1877,7 @@
    {
       "civicname1": "Code for Fukuoka",
       "civicname2": "Code for WAKO",
-      "distance": 0.9933899641036987
+      "distance": 0.9933900833129883
    },
    {
       "civicname1": "Code for AICHI",
@@ -1907,7 +1907,7 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for SAITAMA",
-      "distance": 0.9931901097297668
+      "distance": 0.9931899309158325
    },
    {
       "civicname1": "CODE for AIZU",
@@ -1927,7 +1927,7 @@
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "Code for 中野",
-      "distance": 0.9929990172386169
+      "distance": 0.9929990768432617
    },
    {
       "civicname1": "CODE for AIZU",
@@ -1937,12 +1937,12 @@
    {
       "civicname1": "Code for Suginami",
       "civicname2": "Code for WAKO",
-      "distance": 0.9929362535476685
+      "distance": 0.9929361343383789
    },
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "Code for SUSONO",
-      "distance": 0.9929272532463074
+      "distance": 0.9929273128509521
    },
    {
       "civicname1": "Code for Nagoya",
@@ -1952,7 +1952,7 @@
    {
       "civicname1": "Code for Kanagawa",
       "civicname2": "Code for Shiga / Biwako",
-      "distance": 0.9928494691848755
+      "distance": 0.992849588394165
    },
    {
       "civicname1": "Code for Nagoya",
@@ -1982,17 +1982,17 @@
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "Code for WAKO",
-      "distance": 0.992753803730011
+      "distance": 0.9927537441253662
    },
    {
       "civicname1": "Code For Kitakyusyu",
       "civicname2": "Code for Shiga / Biwako",
-      "distance": 0.9926751255989075
+      "distance": 0.992675244808197
    },
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "Code for Sabae",
-      "distance": 0.9926344752311707
+      "distance": 0.9926345944404602
    },
    {
       "civicname1": "Code For Kitakyusyu",
@@ -2012,7 +2012,7 @@
    {
       "civicname1": "Code for Shiga / Biwako",
       "civicname2": "Code for TODA",
-      "distance": 0.992495059967041
+      "distance": 0.9924952387809753
    },
    {
       "civicname1": "Code for Kanagawa",
@@ -2042,7 +2042,7 @@
    {
       "civicname1": "Code for INAGI",
       "civicname2": "Code for WAKO",
-      "distance": 0.9922335743904114
+      "distance": 0.9922334551811218
    },
    {
       "civicname1": "Code for Niigata",
@@ -2062,12 +2062,12 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for Tokushima",
-      "distance": 0.9921019673347473
+      "distance": 0.9921019077301025
    },
    {
       "civicname1": "Code for TODA",
       "civicname2": "Code for WAKO",
-      "distance": 0.9920961856842041
+      "distance": 0.9920960664749146
    },
    {
       "civicname1": "CODE for AIZU",
@@ -2092,7 +2092,7 @@
    {
       "civicname1": "Code for Tokushima",
       "civicname2": "ハウモリ",
-      "distance": 0.9918497204780579
+      "distance": 0.9918497800827026
    },
    {
       "civicname1": "Code for Kobe",
@@ -2117,12 +2117,12 @@
    {
       "civicname1": "Code for SUSONO",
       "civicname2": "Code for WAKO",
-      "distance": 0.991629421710968
+      "distance": 0.9916293621063232
    },
    {
       "civicname1": "Code for Hachioji",
       "civicname2": "Code for WAKO",
-      "distance": 0.9916072487831116
+      "distance": 0.991607129573822
    },
    {
       "civicname1": "Code for Kobe",
@@ -2137,7 +2137,7 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for Sasayama+Tamba",
-      "distance": 0.9914243221282959
+      "distance": 0.9914242029190063
    },
    {
       "civicname1": "Code For Kitakyusyu",
@@ -2147,12 +2147,12 @@
    {
       "civicname1": "Code for Mitaka / Musashino",
       "civicname2": "Code for Niigata",
-      "distance": 0.9913403391838074
+      "distance": 0.9913402795791626
    },
    {
       "civicname1": "Code for WAKO",
       "civicname2": "Code for 中野",
-      "distance": 0.9911391735076904
+      "distance": 0.9911391139030457
    },
    {
       "civicname1": "Code for NAGAREYAMA",
@@ -2182,7 +2182,7 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for Shiga / Biwako",
-      "distance": 0.990723729133606
+      "distance": 0.9907236695289612
    },
    {
       "civicname1": "Code For Kitakyusyu",
@@ -2192,7 +2192,7 @@
    {
       "civicname1": "Code for Akita",
       "civicname2": "Code for Aomori",
-      "distance": 0.9905173182487488
+      "distance": 0.9905171990394592
    },
    {
       "civicname1": "Code for SAITAMA",
@@ -2202,7 +2202,7 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for NAGAREYAMA",
-      "distance": 0.9903782606124878
+      "distance": 0.990378201007843
    },
    {
       "civicname1": "Code for Mitaka / Musashino",
@@ -2247,7 +2247,7 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for Nagoya",
-      "distance": 0.9898599982261658
+      "distance": 0.989859938621521
    },
    {
       "civicname1": "Code for Sasayama+Tamba",
@@ -2262,12 +2262,12 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for INAGI",
-      "distance": 0.9897158145904541
+      "distance": 0.9897156953811646
    },
    {
       "civicname1": "Code for Tokushima",
       "civicname2": "Code for WAKO",
-      "distance": 0.989715039730072
+      "distance": 0.9897149801254272
    },
    {
       "civicname1": "Code for Gumyoji",
@@ -2277,7 +2277,7 @@
    {
       "civicname1": "Code for Sasayama+Tamba",
       "civicname2": "Code for WAKO",
-      "distance": 0.9896173477172852
+      "distance": 0.9896174073219299
    },
    {
       "civicname1": "Code for Mitaka / Musashino",
@@ -2357,7 +2357,7 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for Saga",
-      "distance": 0.9889441132545471
+      "distance": 0.9889441728591919
    },
    {
       "civicname1": "Code for Fukuoka",
@@ -2367,7 +2367,7 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for Suginami",
-      "distance": 0.9887529611587524
+      "distance": 0.9887528419494629
    },
    {
       "civicname1": "Code for Hachioji",
@@ -2387,7 +2387,7 @@
    {
       "civicname1": "Code for MIKAWA",
       "civicname2": "ハウモリ",
-      "distance": 0.9884779453277588
+      "distance": 0.9884778261184692
    },
    {
       "civicname1": "Code For Kitakyusyu",
@@ -2412,7 +2412,7 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for Kumagaya",
-      "distance": 0.9881070256233215
+      "distance": 0.988106906414032
    },
    {
       "civicname1": "Code for Gumyoji",
@@ -2422,7 +2422,7 @@
    {
       "civicname1": "Code for Fukuoka",
       "civicname2": "Code for Mitaka / Musashino",
-      "distance": 0.9880500435829163
+      "distance": 0.988050103187561
    },
    {
       "civicname1": "Code for Aomori",
@@ -2437,7 +2437,7 @@
    {
       "civicname1": "Code for Kanagawa",
       "civicname2": "Code For Kitakyusyu",
-      "distance": 0.9877289533615112
+      "distance": 0.9877290725708008
    },
    {
       "civicname1": "Code For Kitakyusyu",
@@ -2467,7 +2467,7 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for SAKE",
-      "distance": 0.9874401092529297
+      "distance": 0.9874399900436401
    },
    {
       "civicname1": "Code for Gumyoji",
@@ -2477,22 +2477,22 @@
    {
       "civicname1": "Code for AICHI",
       "civicname2": "Code for Aomori",
-      "distance": 0.9873245358467102
+      "distance": 0.9873244762420654
    },
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "Code for Aomori",
-      "distance": 0.9873059391975403
+      "distance": 0.9873058795928955
    },
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for Sabae",
-      "distance": 0.9872164726257324
+      "distance": 0.9872163534164429
    },
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "Code for Gumyoji",
-      "distance": 0.9871742129325867
+      "distance": 0.9871743321418762
    },
    {
       "civicname1": "Code for Gumyoji",
@@ -2532,12 +2532,12 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for MIKAWA",
-      "distance": 0.9865437150001526
+      "distance": 0.986543595790863
    },
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for Kusatsu",
-      "distance": 0.9865390658378601
+      "distance": 0.9865389466285706
    },
    {
       "civicname1": "Code for Gumyoji",
@@ -2577,7 +2577,7 @@
    {
       "civicname1": "Code for Gumyoji",
       "civicname2": "Code for SAITAMA",
-      "distance": 0.985729455947876
+      "distance": 0.9857295155525208
    },
    {
       "civicname1": "Code for Gumyoji",
@@ -2587,7 +2587,7 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for WAKO",
-      "distance": 0.9856045842170715
+      "distance": 0.9856045246124268
    },
    {
       "civicname1": "Code for Aomori",
@@ -2597,7 +2597,7 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "CODE for GIFU",
-      "distance": 0.9854632616043091
+      "distance": 0.9854630827903748
    },
    {
       "civicname1": "Code for Gumyoji",
@@ -2672,12 +2672,12 @@
    {
       "civicname1": "Code for Akita",
       "civicname2": "Code for WAKO",
-      "distance": 0.9843078851699829
+      "distance": 0.9843077659606934
    },
    {
       "civicname1": "Code for Akita",
       "civicname2": "Code for Shinagawa",
-      "distance": 0.9841285347938538
+      "distance": 0.9841286540031433
    },
    {
       "civicname1": "Code for Gumyoji",
@@ -2702,7 +2702,7 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for Muroran",
-      "distance": 0.9836581945419312
+      "distance": 0.9836580157279968
    },
    {
       "civicname1": "Code for Kanagawa",
@@ -2712,17 +2712,17 @@
    {
       "civicname1": "Code for Akita",
       "civicname2": "Code for SAITAMA",
-      "distance": 0.9835831522941589
+      "distance": 0.9835832715034485
    },
    {
       "civicname1": "CODE for AIZU",
       "civicname2": "ハウモリ",
-      "distance": 0.9834144115447998
+      "distance": 0.9834144711494446
    },
    {
       "civicname1": "Code for Kumagaya",
       "civicname2": "Code for Mitaka / Musashino",
-      "distance": 0.9832075238227844
+      "distance": 0.9832075834274292
    },
    {
       "civicname1": "CODE for AIZU",
@@ -2787,7 +2787,7 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code For Kitakyusyu",
-      "distance": 0.9816933274269104
+      "distance": 0.9816932678222656
    },
    {
       "civicname1": "CODE for GIFU",
@@ -2837,7 +2837,7 @@
    {
       "civicname1": "Code for Aomori",
       "civicname2": "Code for Gumyoji",
-      "distance": 0.9802196025848389
+      "distance": 0.9802195429801941
    },
    {
       "civicname1": "Code for Akita",
@@ -2857,7 +2857,7 @@
    {
       "civicname1": "Code for Mitaka / Musashino",
       "civicname2": "Code for Shinagawa",
-      "distance": 0.9795138835906982
+      "distance": 0.9795140624046326
    },
    {
       "civicname1": "Code for Akita",
@@ -2927,7 +2927,7 @@
    {
       "civicname1": "Code for Mitaka / Musashino",
       "civicname2": "Code for WAKO",
-      "distance": 0.9760386347770691
+      "distance": 0.9760385751724243
    },
    {
       "civicname1": "Code for Akita",
@@ -2967,7 +2967,7 @@
    {
       "civicname1": "Code for Muroran",
       "civicname2": "Code for WAKO",
-      "distance": 0.9730706810951233
+      "distance": 0.9730706214904785
    },
    {
       "civicname1": "Code for Gumyoji",
@@ -3067,7 +3067,7 @@
    {
       "civicname1": "Code for Muroran",
       "civicname2": "Code for Niigata",
-      "distance": 0.9652858376502991
+      "distance": 0.9652857780456543
    },
    {
       "civicname1": "Code for MIKAWA",
@@ -3082,7 +3082,7 @@
    {
       "civicname1": "Code for Muroran",
       "civicname2": "Code for Saga",
-      "distance": 0.9640839695930481
+      "distance": 0.9640839099884033
    },
    {
       "civicname1": "CODE for GIFU",
@@ -3092,7 +3092,7 @@
    {
       "civicname1": "Code for Muroran",
       "civicname2": "Code for SAKE",
-      "distance": 0.9635688662528992
+      "distance": 0.9635689854621887
    },
    {
       "civicname1": "Code for Kusatsu",
