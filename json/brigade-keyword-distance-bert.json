@@ -1,674 +1,3362 @@
 [
-   "Code for Kanagawa,教育,0.9857245087623596",
-   "Code for Shiogama,教育,0.9848015308380127",
-   "Code for INAGI,教育,0.9842169880867004",
-   "Code for TODA,教育,0.9842098951339722",
-   "Code for Hachioji,教育,0.9839563965797424",
-   "Code for Shinagawa,教育,0.9829499125480652",
-   "Code for Sasayama+Tamba,防災,0.982459306716919",
-   "Code for Hachioji,防災,0.9823665618896484",
-   "Code for Niigata,教育,0.9823643565177917",
-   "Code for TODA,防災,0.9822978973388672",
-   "Code for NAGAREYAMA,教育,0.9819438457489014",
-   "Code for 中野,教育,0.9817503094673157",
-   "Code for WAKO,教育,0.981682538986206",
-   "Code for Aomori,教育,0.9816344380378723",
-   "Code for INZAI,教育,0.981473982334137",
-   "Code for Mitaka / Musashino,教育,0.9814637303352356",
-   "Code for SAKE,健康,0.9811418056488037",
-   "Code for YOKOHAMA,教育,0.9810675382614136",
-   "Code for Sabae,教育,0.9809185266494751",
-   "Code for Kanagawa,医療,0.9804214835166931",
-   "Code for CAT,教育,0.9803295135498047",
-   "Code for Shinagawa,健康,0.9802477359771729",
-   "Code for Fukuoka,教育,0.9799981713294983",
-   "Code for Shiogama,プログラミング,0.9799858927726746",
-   "Code for Yamagata,教育,0.9798213839530945",
-   "Code for WAKO,福祉,0.9797152876853943",
-   "Code for SUSONO,防災,0.9796217083930969",
-   "Code for Sasayama+Tamba,産業,0.9795102477073669",
-   "Code for Kanazawa,教育,0.9794341325759888",
-   "Code for Ichikawa,防災,0.9792823195457458",
-   "Code for INAGI,防災,0.9791796803474426",
-   "Code for Toyota,教育,0.9790111184120178",
-   "Code for SAKE,環境,0.9789717197418213",
-   "Code for Niigata,防災,0.9786638021469116",
-   "Code for SAKE,プログラミング,0.97849440574646",
-   "Code for SAKE,産業,0.9784897565841675",
-   "Code for CAT,健康,0.9783059358596802",
-   "Code for Saga,防災,0.9781480431556702",
-   "Code for TODA,プログラミング,0.9780511856079102",
-   "Code for Shiogama,産業,0.9772982001304626",
-   "Code for Kusatsu,教育,0.9772489666938782",
-   "Code for SAKE,観光,0.9772341251373291",
-   "Code for Yamagata,健康,0.9772189855575562",
-   "CODE for GIFU,健康,0.9771771430969238",
-   "Code for WAKO,文化,0.97666996717453",
-   "Code for CAT,防災,0.9760112166404724",
-   "Code for Aomori,機械学習,0.9759289622306824",
-   "Code for Sabae,防災,0.9759218096733093",
-   "CODE for AIZU,教育,0.9759033918380737",
-   "Code for Hachioji,プログラミング,0.975840151309967",
-   "Code for Sasayama+Tamba,観光,0.9758336544036865",
-   "Code for Muroran,生活,0.9757524728775024",
-   "Code for Kanagawa,観光,0.9756745100021362",
-   "Code for Shiogama,観光,0.9755206108093262",
-   "Code for Hachioji,産業,0.9754564166069031",
-   "Code for Suginami,教育,0.9749794006347656",
-   "Code for SENDAI,教育,0.9748876690864563",
-   "Code for Shinagawa,医療,0.9747363924980164",
-   "Code for Muroran,交通,0.9745806455612183",
-   "Code for Kanazawa,防災,0.9744855761528015",
-   "Code for Nagoya,防災,0.9744269251823425",
-   "Code for Kobe,プログラミング,0.9743600487709045",
-   "Code for Aomori,プログラミング,0.9743213057518005",
-   "Code for Shinagawa,プログラミング,0.9741128087043762",
-   "Code for AICHI,教育,0.9740954637527466",
-   "Code for Sabae,プログラミング,0.9739983677864075",
-   "Code for Kanagawa,機械学習,0.9739835858345032",
-   "Code for NAGAREYAMA,プログラミング,0.973937451839447",
-   "Code for Mitaka / Musashino,プログラミング,0.9739091396331787",
-   "Code for Saga,プログラミング,0.9738789796829224",
-   "Code for Kobe,宇宙,0.9736756682395935",
-   "Code for Muroran,観光,0.9735119342803955",
-   "Code for SUSONO,プログラミング,0.9734869003295898",
-   "Code for CAT,環境,0.9734289050102234",
-   "Code for Shiogama,機械学習,0.9732754826545715",
-   "Code for Toyota,ロボット,0.9732303619384766",
-   "Code for YOKOHAMA,プログラミング,0.973118007183075",
-   "Code for Niigata,プログラミング,0.97304368019104",
-   "Code for INAGI,生活,0.9730199575424194",
-   "Code for Shinagawa,機械学習,0.9729042053222656",
-   "Code For Kitakyusyu,機械学習,0.972789466381073",
-   "Code for Nagoya,プログラミング,0.9727837443351746",
-   "Code for Sasayama+Tamba,生活,0.9727121591567993",
-   "Code for Fukuoka,宇宙,0.9727036952972412",
-   "Code for Ichikawa,観光,0.9726563096046448",
-   "Code for 中野,プログラミング,0.9725661277770996",
-   "Code for Kanazawa,プログラミング,0.9724051356315613",
-   "Code for Kumagaya,防災,0.9722100496292114",
-   "Code for Toyota,ドローン,0.9721536636352539",
-   "Code for Fukuoka,機械学習,0.9720219373703003",
-   "Code for Nerima,生活,0.972007691860199",
-   "Code for Niigata,オープンソースカンファレンス,0.9718344211578369",
-   "Code for Hachioji,防犯,0.9717825651168823",
-   "Code for Hachioji,オープンソースカンファレンス,0.9717749953269958",
-   "Code for Niigata,地方創生☆政策アイデアコンテスト,0.9716191291809082",
-   "Code for Mitaka / Musashino,環境,0.9715871810913086",
-   "Code for Toyota,ゲーム,0.9715363383293152",
-   "Code for Fuchu,プログラミング,0.9712269306182861",
-   "Code for CAT,機械学習,0.9711209535598755",
-   "Code for WAKO,高齢者支援,0.9711031317710876",
-   "Code for Toyota,課題解決思考,0.9710706472396851",
-   "CODE for GIFU,プログラミング,0.9710173010826111",
-   "Code for Toyota,人材育成,0.9709320664405823",
-   "Code for Akita,観光,0.9709221124649048",
-   "Code for Niigata,観光,0.9708958864212036",
-   "Code for INAGI,観光,0.9707398414611816",
-   "Code for SUSONO,生活,0.9707076549530029",
-   "Code for Akita,GIS・位置空間情報,0.9706605672836304",
-   "Code for SUSONO,防犯,0.9705866575241089",
-   "Code for Sabae,宇宙,0.9704626202583313",
-   "Code for CAT,保護猫,0.9704227447509766",
-   "Code For Kitakyusyu,GIS・位置空間情報,0.9700742959976196",
-   "Code for Muroran,GIS・位置空間情報,0.9700040221214294",
-   "Code for Hachioji,都市計画,0.9699016213417053",
-   "Code for Kanagawa,都市計画,0.9696572422981262",
-   "Code for Toshima,市民活動連携・地域活動連携,0.9695977568626404",
-   "Code for Kusatsu,GIS・位置空間情報,0.9695248603820801",
-   "Code for MIKAWA,生活,0.9694581627845764",
-   "Code for Mitaka / Musashino,産業,0.9694404006004333",
-   "Code for Nagoya,機械学習,0.9694129228591919",
-   "Code for CAT,林業,0.9692752361297607",
-   "Code for Yamagata,プログラミング,0.9692746996879578",
-   "Code for Mitaka / Musashino,生活,0.9692018628120422",
-   "Code for CAT,観光,0.9691763520240784",
-   "Code for SAITAMA,プログラミング,0.9691497087478638",
-   "Code for MIKAWA,産業,0.9690235257148743",
-   "Code for Nagoya,オープンソースカンファレンス,0.9689760208129883",
-   "Code for Akita,交通,0.9689624905586243",
-   "Code for INZAI,デザイン,0.9689369201660156",
-   "Code for SENDAI,生活,0.9689001441001892",
-   "Code for AICHI,LGBTQ・ジェンダー,0.9688626527786255",
-   "Code for Nerima,文化,0.9688587784767151",
-   "Code for Nerima,プログラミング,0.9688423275947571",
-   "Code for MIKAWA,観光,0.9688209891319275",
-   "Code for Sabae,産業,0.9688068628311157",
-   "Code for Hachioji,生活,0.9687446355819702",
-   "Code for Saga,GIS・位置空間情報,0.968694269657135",
-   "Code for Niigata,障害者支援,0.9686585664749146",
-   "ハウモリ,MA ヒーローズリーグ,0.9685506820678711",
-   "Code for Nerima,障害者支援,0.9685316681861877",
-   "Code for SENDAI,福祉,0.9684566855430603",
-   "Code for Sabae,機械学習,0.9684380888938904",
-   "Code for Shiga / Biwako,環境,0.9684098362922668",
-   "Code for Yamagata,生活,0.9683005809783936",
-   "Code for Shiogama,オープンソースカンファレンス,0.9682628512382507",
-   "ハウモリ,プログラミング,0.9681941866874695",
-   "Code for Gumyoji,プログラミング,0.9681428670883179",
-   "Code for SAITAMA,防災,0.9680841565132141",
-   "Code for Kanazawa,LGBTQ・ジェンダー,0.9680532217025757",
-   "Code for INAGI,文化,0.9679105877876282",
-   "Code for Shiogama,ゲーム,0.9679001569747925",
-   "Code for Sabae,観光,0.9678443670272827",
-   "Code for Kanazawa,機械学習,0.9678201079368591",
-   "Code for Kobe,チャットボット,0.9676772356033325",
-   "Code for CAT,地域猫,0.9676259160041809",
-   "Code for 中野,文化,0.9676225781440735",
-   "Code for Kobe,オープンデータ,0.967434823513031",
-   "Code for Nerima,異文化交流,0.9672912955284119",
-   "Code for Niigata,異文化交流,0.9671420454978943",
-   "CODE for GIFU,林業,0.9670336842536926",
-   "Code for Saga,オープンデータ,0.9669968485832214",
-   "Code for Nagoya,観光,0.9669541120529175",
-   "CODE for AIZU,オープンソースカンファレンス,0.9669328927993774",
-   "Code For Kitakyusyu,ドローン,0.9667398929595947",
-   "Code for Kumagaya,GIS・位置空間情報,0.9667392373085022",
-   "Code for Niigata,GIS・位置空間情報,0.966709554195404",
-   "Code for Kobe,ドローン,0.9666854739189148",
-   "Code for SUSONO,GIS・位置空間情報,0.9666841626167297",
-   "Code for Muroran,オープンデータ,0.966430127620697",
-   "Code for Fuchu,オープンデータ,0.966404378414154",
-   "Code for Kobe,GIS・位置空間情報,0.9661911129951477",
-   "Code for SUSONO,オープンデータ,0.9661242365837097",
-   "Code for Sasayama+Tamba,文化,0.9661040902137756",
-   "Code for Shiga / Biwako,GIS・位置空間情報,0.9660714864730835",
-   "CODE for AIZU,MA ヒーローズリーグ,0.9660625457763672",
-   "Code for SAKE,農業,0.9659148454666138",
-   "Code for YOKOHAMA,GIS・位置空間情報,0.9659071564674377",
-   "Code for Hachioji,オープンデータ,0.965892493724823",
-   "Code for Yamagata,障害者支援,0.9658306837081909",
-   "Code for Nagoya,GIS・位置空間情報,0.9657340049743652",
-   "Code for AICHI,防災,0.965656042098999",
-   "Code for Sabae,オープンソースカンファレンス,0.9656258225440979",
-   "Code for Kusatsu,アーバンデータチャレンジ,0.9656050801277161",
-   "Code for TODA,GIS・位置空間情報,0.9656033515930176",
-   "Code for MIKAWA,GIS・位置空間情報,0.9655439853668213",
-   "Code for NAGAREYAMA,オープンデータ,0.9655373096466064",
-   "Code for SAITAMA,環境,0.9654788374900818",
-   "Code for SAKE,日本酒,0.96538907289505",
-   "Code for Nagoya,障害者支援,0.9653673768043518",
-   "Code for Fukuoka,オープンデータ,0.9653581380844116",
-   "Code for Hachioji,GIS・位置空間情報,0.9653310775756836",
-   "Code for Ichikawa,オープンデータ,0.9652782082557678",
-   "Code for Nerima,観光,0.9652414321899414",
-   "Code for Fuchu,ドローン,0.9651105999946594",
-   "Code for AICHI,プログラミング,0.9650554060935974",
-   "CODE for GIFU,オープンソースカンファレンス,0.9649675488471985",
-   "Code for Sasayama+Tamba,農業,0.9649618864059448",
-   "Code for Yamagata,文化,0.9649364948272705",
-   "Code for Mitaka / Musashino,障害者支援,0.9648791551589966",
-   "CODE for GIFU,MA ヒーローズリーグ,0.9648157358169556",
-   "Code for Nagoya,MA ヒーローズリーグ,0.9648017883300781",
-   "Code for SAKE,文化,0.9646727442741394",
-   "Code for Kanazawa,GIS・位置空間情報,0.964575469493866",
-   "Code for Suginami,GIS・位置空間情報,0.9644290804862976",
-   "CODE for GIFU,福祉,0.9644124507904053",
-   "Code for Shiga / Biwako,観光,0.964378833770752",
-   "Code for CAT,殺処分ゼロ,0.9643771648406982",
-   "Code for INAGI,異文化交流,0.9643202424049377",
-   "Code for Niigata,交通,0.9642151594161987",
-   "Code for Aomori,オープンデータ,0.9642021656036377",
-   "Code for Ichikawa,地域アーカイブ,0.9641550779342651",
-   "Code for Kusatsu,チャレンジオープンガバナンス,0.964137077331543",
-   "Code for INZAI,データセンター,0.9641063809394836",
-   "Code for WAKO,プログラミング,0.9640912413597107",
-   "Code for Saga,地域アーカイブ,0.9640017747879028",
-   "Code for Aomori,官民協働,0.9639711976051331",
-   "Code for Yamagata,観光,0.9639264941215515",
-   "Code For Kitakyusyu,オープンデータ,0.9638171792030334",
-   "Code for CAT,LGBTQ・ジェンダー,0.963779866695404",
-   "Code for Niigata,地図,0.9637370109558105",
-   "Code for Niigata,地域アーカイブ,0.9637051224708557",
-   "Code for Toyota,アーバンデータチャレンジ,0.9636557698249817",
-   "Code for Akita,オープンデータ,0.963585376739502",
-   "Code for MIKAWA,通信(5G・LoRa),0.9635772109031677",
-   "Code for 中野,地域アーカイブ,0.9635474681854248",
-   "Code for YOKOHAMA,文化,0.9633989930152893",
-   "CODE for AIZU,GIS・位置空間情報,0.9633845090866089",
-   "Code for Kusatsu,オープンデータ,0.9633521437644958",
-   "Code for SUSONO,文化,0.9633240103721619",
-   "Code for Niigata,文化,0.9633156061172485",
-   "Code for Hachioji,公園,0.9632646441459656",
-   "Code for SUSONO,アーバンデータチャレンジ,0.963252067565918",
-   "Code for INAGI,政治,0.9632497429847717",
-   "Code for Yamagata,高齢者支援,0.9632433652877808",
-   "Code for Hachioji,文化,0.9632237553596497",
-   "Code for Niigata,オープンデータ,0.9631434082984924",
-   "Code for Kanagawa,オープンデータ,0.9631140232086182",
-   "Code for Sabae,GIS・位置空間情報,0.9630983471870422",
-   "ハウモリ,チャットボット,0.9630796313285828",
-   "Code for Kusatsu,地域アーカイブ,0.9629911780357361",
-   "Code for Shiogama,文化,0.9629887342453003",
-   "Code for SUSONO,チャレンジオープンガバナンス,0.9629378914833069",
-   "Code for MIKAWA,文化,0.9629132747650146",
-   "Code for 中野,オープンデータ,0.9629121422767639",
-   "Code for Muroran,アーバンデータチャレンジ,0.9628719687461853",
-   "Code for Fukuoka,地域アーカイブ,0.962843120098114",
-   "Code for Suginami,商店街活性化,0.9626766443252563",
-   "Code for Kumagaya,観光,0.9626293182373047",
-   "Code for Kobe,アーバンデータチャレンジ,0.9625623226165771",
-   "Code for Nagoya,福祉,0.9623866677284241",
-   "Code for CAT,ゲーム,0.9623837471008301",
-   "Code for Kanazawa,MA ヒーローズリーグ,0.962372899055481",
-   "Code for Shiogama,高齢者支援,0.9623652696609497",
-   "Code for MIKAWA,交通,0.9623532891273499",
-   "Code for INZAI,子育て,0.9623488187789917",
-   "Code for SENDAI,プログラミング,0.9623357057571411",
-   "Code for Kobe,チャレンジオープンガバナンス,0.9622655510902405",
-   "Code for Suginami,オープンソースカンファレンス,0.9622050523757935",
-   "Code for Sabae,通信(5G・LoRa),0.9622026681900024",
-   "Code for Sabae,MA ヒーローズリーグ,0.9621509313583374",
-   "Code for Akita,アーバンデータチャレンジ,0.962084949016571",
-   "Code for Fukuoka,アーバンデータチャレンジ,0.9620088934898376",
-   "Code for TODA,オープンデータ,0.9619780778884888",
-   "Code for Shiogama,GIS・位置空間情報,0.9618284106254578",
-   "Code for SENDAI,子育て,0.9617951512336731",
-   "CODE for AIZU,障害者支援,0.9617717266082764",
-   "Code for Sabae,ロボット,0.9617616534233093",
-   "Code for Tokushima,祭り,0.9617494940757751",
-   "Code for CAT,チャットボット,0.9617056846618652",
-   "Code for Saga,アーバンデータチャレンジ,0.9616819620132446",
-   "Code for CAT,GIS・位置空間情報,0.9616331458091736",
-   "Code for CAT,異文化交流,0.9614899754524231",
-   "ハウモリ,オープンデータ,0.9614845514297485",
-   "CODE for GIFU,GIS・位置空間情報,0.9614835381507874",
-   "CODE for AIZU,産業,0.9613687992095947",
-   "Code for Hachioji,公共施設,0.9612970948219299",
-   "Code for Fuchu,アーバンデータチャレンジ,0.961294412612915",
-   "Code for Saga,交通,0.9612125754356384",
-   "Code for INAGI,ロボット,0.9611892700195312",
-   "Code for Yamagata,異文化交流,0.9611837267875671",
-   "Code for SAKE,オープンデータ,0.961175262928009",
-   "Code for Nagoya,オープンデータ,0.9611630439758301",
-   "Code for NAGAREYAMA,チャレンジオープンガバナンス,0.9610697627067566",
-   "Code for AICHI,福祉,0.961000382900238",
-   "Code for AICHI,Maker Faire,0.9609929323196411",
-   "Code for INZAI,Code for Japan Summit 2020 ロゴデザイン(採用),0.9609896540641785",
-   "Code for SAITAMA,観光,0.9609386324882507",
-   "Code for Niigata,アーバンデータチャレンジ,0.9608869552612305",
-   "Code for Shiga / Biwako,都市計画,0.9608516693115234",
-   "Code for MIKAWA,地域アーカイブ,0.9608107805252075",
-   "Code For Kitakyusyu,官民協働,0.9607416987419128",
-   "Code for YOKOHAMA,都市計画,0.96073317527771",
-   "Code for AICHI,機械学習,0.9606885313987732",
-   "Code for Shinagawa,子育て,0.9605813026428223",
-   "Code for 中野,チャレンジオープンガバナンス,0.9605218172073364",
-   "Code for Kusatsu,官民協働,0.960402250289917",
-   "Code for 中野,チャットボット,0.9603955149650574",
-   "Code for Shiogama,オープンデータ,0.9603739976882935",
-   "Code for AICHI,MA ヒーローズリーグ,0.9602912664413452",
-   "Code for Sabae,交通,0.9600775241851807",
-   "Code for Saga,佐賀大学Dフェス,0.9600393176078796",
-   "Code for CAT,オープンデータ,0.9599915742874146",
-   "Code for Niigata,チャレンジオープンガバナンス,0.9599860310554504",
-   "Code for Kusatsu,グラレコ・ファシリテーション,0.9599511027336121",
-   "Code for Akita,公共施設,0.9597679376602173",
-   "Code for Shinagawa,ドローン,0.9597491025924683",
-   "Code for INAGI,子育て,0.9596672058105469",
-   "Code for TODA,子育て,0.9596601724624634",
-   "Code for Gumyoji,アーバンデータチャレンジ,0.9595772624015808",
-   "Code for YOKOHAMA,ドローン,0.9595683217048645",
-   "Code for Gumyoji,チャレンジオープンガバナンス,0.9595385193824768",
-   "Code for YOKOHAMA,政治,0.9594525694847107",
-   "Code for 中野,子育て,0.9594466090202332",
-   "ハウモリ,アーバンデータチャレンジ,0.9593030214309692",
-   "Code for INAGI,オープンデータ,0.959283173084259",
-   "Code for Shiogama,漁業,0.9592692852020264",
-   "Code for INAGI,ドローン,0.9592615962028503",
-   "Code for MIKAWA,ドローン,0.9591397047042847",
-   "ハウモリ,文化,0.9591394662857056",
-   "Code For Kitakyusyu,Startup Weekend,0.9591072201728821",
-   "Code for Suginami,観光,0.9589375257492065",
-   "Code for Nagoya,アーバンデータチャレンジ,0.958896279335022",
-   "Code for Kobe,公園,0.9588178396224976",
-   "Code for Ichikawa,チャレンジオープンガバナンス,0.9587318897247314",
-   "Code for YOKOHAMA,地域アーカイブ,0.9586359858512878",
-   "CODE for AIZU,オープンデータ,0.958602249622345",
-   "Code for Kanazawa,都市計画,0.9585493206977844",
-   "Code for Kobe,グラレコ・ファシリテーション,0.958467423915863",
-   "CODE for AIZU,文化,0.9584452509880066",
-   "CODE for GIFU,異文化交流,0.9584324955940247",
-   "Code for Fukuoka,公園,0.9583995342254639",
-   "Code for MIKAWA,オープンデータ,0.9581875205039978",
-   "Code for 中野,官民協働,0.958156406879425",
-   "Code for Hachioji,アーバンデータチャレンジ,0.958153486251831",
-   "Code for Nagoya,交通,0.9581392407417297",
-   "Code for Shiga / Biwako,交通,0.9579055309295654",
-   "Code for Kobe,農業,0.9578840136528015",
-   "Code for CAT,公園,0.957883358001709",
-   "Code for CAT,文化,0.9578805565834045",
-   "Code for Toshima,ノーコード,0.9578050971031189",
-   "Code for YOKOHAMA,オープンデータ,0.9577892422676086",
-   "Code for Toyota,ノーコード,0.9577868580818176",
-   "Code for Kanazawa,オープンデータ,0.9577613472938538",
-   "Code for Tokushima,MA ヒーローズリーグ,0.9577348828315735",
-   "Code for NAGAREYAMA,子育て,0.9577320218086243",
-   "Code for Ichikawa,政治,0.95771324634552",
-   "CODE for AIZU,チャレンジオープンガバナンス,0.957654595375061",
-   "Code for Shiga / Biwako,オープンデータ,0.9573161005973816",
-   "Code for Mitaka / Musashino,子育て,0.9572134017944336",
-   "Code for SUSONO,官民協働,0.957191526889801",
-   "Code for Yamagata,子育て,0.9569669961929321",
-   "Code for Nagoya,Startup Weekend,0.9569201469421387",
-   "Code for Shiga / Biwako,チャレンジオープンガバナンス,0.9568814039230347",
-   "CODE for AIZU,アーバンデータチャレンジ,0.9568682312965393",
-   "Code for Tokushima,子育て,0.9567698836326599",
-   "Code for Tokushima,GIS・位置空間情報,0.9566887021064758",
-   "Code for Yamagata,都市計画,0.956684410572052",
-   "Code for Kumagaya,アーバンデータチャレンジ,0.9566830396652222",
-   "Code for Sabae,政治,0.9566318392753601",
-   "Code for Sasayama+Tamba,オープンデータ,0.9566302299499512",
-   "Code for WAKO,まちづくり,0.9566296339035034",
-   "Code for Sabae,オープンデータ,0.9565848708152771",
-   "Code for Niigata,官民協働,0.9564718008041382",
-   "Code for Shiga / Biwako,アーバンデータチャレンジ,0.9564339518547058",
-   "Code for TODA,アーバンデータチャレンジ,0.9564208984375",
-   "Code for Mitaka / Musashino,オープンデータ,0.9563969373703003",
-   "Code for Fukuoka,グラレコ・ファシリテーション,0.9563629627227783",
-   "Code for SENDAI,Tech for Non-Tech,0.956307053565979",
-   "Code for YOKOHAMA,ガジェットまつり,0.9562812447547913",
-   "CODE for GIFU,オープンデータ,0.9561456441879272",
-   "Code for Nerima,官民協働,0.9560579657554626",
-   "Code for AICHI,地方創生☆政策アイデアコンテスト,0.9559522867202759",
-   "Code for Hachioji,官民協働,0.9557808637619019",
-   "Code for Saga,グラレコ・ファシリテーション,0.9557308554649353",
-   "Code for Tokushima,交通,0.9556777477264404",
-   "Code for Mitaka / Musashino,農業,0.9555864334106445",
-   "Code for AICHI,高齢者支援,0.9553340673446655",
-   "Code for Gumyoji,オープンデータ,0.955309271812439",
-   "Code for YOKOHAMA,子育て,0.9552701115608215",
-   "Code for MIKAWA,子育て,0.9551050662994385",
-   "Code for Shiga / Biwako,Startup Weekend,0.9549292325973511",
-   "Code for Kanazawa,政治,0.9549087285995483",
-   "Code for Kanazawa,アーバンデータチャレンジ,0.9548983573913574",
-   "Code for Kanazawa,Startup Weekend,0.9547692537307739",
-   "Code for Niigata,グラレコ・ファシリテーション,0.9547672867774963",
-   "Code for Kobe,官民協働,0.9545646905899048",
-   "Code for SAITAMA,GIS・位置空間情報,0.9545537233352661",
-   "Code for CAT,アーバンデータチャレンジ,0.9545305967330933",
-   "Code for SAITAMA,ドローン,0.9543830156326294",
-   "Code for Fuchu,グラレコ・ファシリテーション,0.9543471336364746",
-   "Code for MIKAWA,アーバンデータチャレンジ,0.9542837142944336",
-   "Code for Nagoya,グラレコ・ファシリテーション,0.9542083144187927",
-   "Code for Niigata,道路,0.9540780186653137",
-   "Code for Shinagawa,スマートスピーカー,0.9539765119552612",
-   "Code for Sabae,チャレンジオープンガバナンス,0.9536124467849731",
-   "Code for MIKAWA,公共施設,0.9535688757896423",
-   "Code for Yamagata,ゲーム,0.9535148739814758",
-   "CODE for AIZU,ブロックチェーン,0.9534673690795898",
-   "Code for INAGI,官民協働,0.9532323479652405",
-   "Code for AICHI,ゲーム,0.9532261490821838",
-   "Code for Shinagawa,チャレンジオープンガバナンス,0.9531491994857788",
-   "Code for Shiga / Biwako,官民協働,0.9530180096626282",
-   "Code for WAKO,官民協働,0.9530057311058044",
-   "Code for Kanazawa,子育て,0.9529368877410889",
-   "Code for Suginami,オープンデータ,0.9528127908706665",
-   "Code for Sabae,河川,0.9528087377548218",
-   "Code for Niigata,子育て,0.9527212381362915",
-   "Code for Sabae,アーバンデータチャレンジ,0.9526841640472412",
-   "Code for Sabae,子育て,0.9526429176330566",
-   "Code for Kobe,政治,0.9525492191314697",
-   "CODE for GIFU,アーバンデータチャレンジ,0.9525372982025146",
-   "Code for MIKAWA,官民協働,0.9524400234222412",
-   "Code for AICHI,Call for Code,0.952372133731842",
-   "Code for SAITAMA,農業,0.952109158039093",
-   "Code for Sabae,Startup Weekend,0.9520471692085266",
-   "Code for NAGAREYAMA,ノーコード,0.951952338218689",
-   "Code for Kusatsu,子育て,0.9519090056419373",
-   "Code for Sasayama+Tamba,Code for JAPAN サミット神戸 出展,0.9518895149230957",
-   "Code for MIKAWA,河川,0.951824963092804",
-   "Code for Kobe,ノーコード,0.9516665935516357",
-   "Code for Suginami,官民協働,0.9515279531478882",
-   "Code for Fuchu,ノーコード,0.9513163566589355",
-   "Code for Sabae,公共施設,0.9512317180633545",
-   "Code for YOKOHAMA,官民協働,0.9511750340461731",
-   "Code for SAITAMA,オープンデータ,0.9511465430259705",
-   "Code for Fukuoka,子育て,0.951084554195404",
-   "Code for AICHI,Startup Weekend,0.9510681629180908",
-   "Code for Kanazawa,官民協働,0.9509725570678711",
-   "Code for CAT,子育て,0.95087069272995",
-   "Code for CAT,スマートスピーカー,0.9508259296417236",
-   "CODE for GIFU,河川,0.9506388306617737",
-   "CODE for AIZU,官民協働,0.9505215287208557",
-   "Code for CAT,官民協働,0.950227677822113",
-   "Code for Ichikawa,ノーコード,0.9498895406723022",
-   "Code for Mitaka / Musashino,官民協働,0.9497867822647095",
-   "Code for INZAI,まちづくり,0.9496686458587646",
-   "Code for MIKAWA,スマートスピーカー,0.9495894908905029",
-   "Code for Saga,ノーコード,0.9493745565414429",
-   "Code for Ichikawa,可視化,0.9489915370941162",
-   "Code for Yamagata,官民協働,0.9488612413406372",
-   "Code for Sabae,官民協働,0.948813259601593",
-   "Code for Kanazawa,グラレコ・ファシリテーション,0.948679506778717",
-   "Code for WAKO,市民活動連携・地域活動連携,0.94862300157547",
-   "Code for SUSONO,ノーコード,0.9484468102455139",
-   "Code for Hachioji,可視化,0.9481756091117859",
-   "Code for Fuchu,可視化,0.9474846124649048",
-   "Code for SAKE,可視化,0.9474706649780273",
-   "Code for Kumagaya,まちづくり,0.947420060634613",
-   "Code for AICHI,アーバンデータチャレンジ,0.9472419619560242",
-   "Code for Hachioji,ノーコード,0.9470803737640381",
-   "Code for Saga,可視化,0.9470752477645874",
-   "Code for Kanagawa,まちづくり,0.946995198726654",
-   "ハウモリ,ノーコード,0.9466621279716492",
-   "Code for Kusatsu,可視化,0.9463387131690979",
-   "Code for CAT,グラレコ・ファシリテーション,0.9462653398513794",
-   "Code for Kobe,可視化,0.9459155201911926",
-   "Code for Ichikawa,まちづくり,0.9451313614845276",
-   "Code for Niigata,可視化,0.9449252486228943",
-   "Code for INAGI,まちづくり,0.9443907141685486",
-   "Code for INZAI,ノーコード,0.9443605542182922",
-   "Code for SAITAMA,アーバンデータチャレンジ,0.9438329339027405",
-   "Code for Hachioji,まちづくり,0.9438210725784302",
-   "Code for Shinagawa,まちづくり,0.9436932802200317",
-   "Code for SAKE,まちづくり,0.9436281323432922",
-   "Code for NAGAREYAMA,まちづくり,0.9433497190475464",
-   "Code for CAT,ライタソン,0.9432674646377563",
-   "Code for Sasayama+Tamba,まちづくり,0.9432130455970764",
-   "Code for INAGI,可視化,0.9431800842285156",
-   "Code for TODA,まちづくり,0.942767322063446",
-   "Code for INAGI,ノーコード,0.9425837993621826",
-   "Code for Kusatsu,まちづくり,0.9425235390663147",
-   "Code for Tokushima,オープンデータ,0.9424920678138733",
-   "Code for Kusatsu,市民活動連携・地域活動連携,0.9423536658287048",
-   "Code for INZAI,市民活動連携・地域活動連携,0.9422963857650757",
-   "Code for SENDAI,OpenDataDay2019,0.9422722458839417",
-   "Code for Nagoya,可視化,0.9420042037963867",
-   "Code for SAITAMA,官民協働,0.9417294859886169",
-   "Code for CAT,マイニャンバー,0.9416764974594116",
-   "Code for CAT,可視化,0.9414061307907104",
-   "Code for Niigata,トマソン,0.9413771629333496",
-   "Code for Shiga / Biwako,可視化,0.9413770437240601",
-   "Code for Kanazawa,ノーコード,0.9411962628364563",
-   "Code for SENDAI,まちづくり,0.9411022663116455",
-   "Code for YOKOHAMA,可視化,0.9410459399223328",
-   "Code for Gumyoji,まちづくり,0.9406206011772156",
-   "Code for SUSONO,まちづくり,0.9405543208122253",
-   "Code for Tokushima,COVID-19,0.9404597282409668",
-   "Code for Suginami,可視化,0.9403793215751648",
-   "Code for Akita,市民活動連携・地域活動連携,0.9402251839637756",
-   "Code for Mitaka / Musashino,可視化,0.9401789307594299",
-   "Code for Niigata,まちづくり,0.9400506615638733",
-   "Code for Mitaka / Musashino,ノーコード,0.9399846792221069",
-   "Code for Aomori,市民活動連携・地域活動連携,0.9399787783622742",
-   "Code for Nerima,市民活動連携・地域活動連携,0.939522922039032",
-   "Code for AICHI,グラレコ・ファシリテーション,0.9393009543418884",
-   "Code for 中野,市民活動連携・地域活動連携,0.9390183091163635",
-   "Code for Sabae,可視化,0.9388186931610107",
-   "Code for Yamagata,まちづくり,0.9387783408164978",
-   "Code for Kumagaya,市民活動連携・地域活動連携,0.9385665059089661",
-   "Code for SENDAI,オープンデータ,0.9381576180458069",
-   "Code for Fuchu,まちづくり,0.9380728602409363",
-   "Code for YOKOHAMA,まちづくり,0.93802809715271",
-   "Code for Shiogama,まちづくり,0.9377375841140747",
-   "Code for Kusatsu,Wikipedia・Wikidata,0.9376344084739685",
-   "Code for Mitaka / Musashino,まちづくり,0.9375787973403931",
-   "CODE for AIZU,可視化,0.9373589158058167",
-   "Code For Kitakyusyu,まちづくり,0.9372735023498535",
-   "Code for YOKOHAMA,Minatomirai Activate Program,0.9371629953384399",
-   "ハウモリ,まちづくり,0.9371095299720764",
-   "Code for Shiga / Biwako,まちづくり,0.9355009198188782",
-   "Code for Saga,まちづくり,0.9352791905403137",
-   "Code for NAGAREYAMA,Wikipedia・Wikidata,0.9349861741065979",
-   "CODE for GIFU,まちづくり,0.9345320463180542",
-   "Code for Kobe,まちづくり,0.9343839883804321",
-   "Code for Hachioji,市民活動連携・地域活動連携,0.9341623187065125",
-   "Code for Niigata,市民活動連携・地域活動連携,0.9341508746147156",
-   "Code for Ichikawa,市民活動連携・地域活動連携,0.9340288639068604",
-   "Code for AICHI,ノーコード,0.9339213967323303",
-   "Code for Suginami,まちづくり,0.9337859153747559",
-   "Code for Sabae,まちづくり,0.933732807636261",
-   "Code for INAGI,市民活動連携・地域活動連携,0.9335667490959167",
-   "Code for Kobe,Wikipedia・Wikidata,0.9334466457366943",
-   "Code for AICHI,スタートアップ,0.9330337643623352",
-   "Code for CAT,まちづくり,0.9328418374061584",
-   "Code for SUSONO,Wikipedia・Wikidata,0.9323636293411255",
-   "Code for AICHI,可視化,0.9321956038475037",
-   "Code for Sasayama+Tamba,食,0.9320886135101318",
-   "Code for Fukuoka,Wikipedia・Wikidata,0.9318944215774536",
-   "Code for AICHI,まちづくり,0.9318896532058716",
-   "Code for Gumyoji,市民活動連携・地域活動連携,0.9318143725395203",
-   "Code for Shinagawa,市民活動連携・地域活動連携,0.9311462044715881",
-   "Code for Ichikawa,Wikipedia・Wikidata,0.931098461151123",
-   "Code for SAITAMA,LODチャレンジ,0.9309708476066589",
-   "Code for Yamagata,マイクラカップ2019,0.9309461116790771",
-   "Code for Kumagaya,Wikipedia・Wikidata,0.9305854439735413",
-   "Code for TODA,食,0.9305042624473572",
-   "Code for Shiogama,食,0.9304215908050537",
-   "Code for SAKE,市民活動連携・地域活動連携,0.9301466345787048",
-   "Code for Yamagata,市民活動連携・地域活動連携,0.9301059246063232",
-   "Code for Shiga / Biwako,市民活動連携・地域活動連携,0.9296810030937195",
-   "ハウモリ,Wikipedia・Wikidata,0.9294766783714294",
-   "Code for Suginami,市民活動連携・地域活動連携,0.929440975189209",
-   "Code for Fuchu,市民活動連携・地域活動連携,0.9293439984321594",
-   "Code for Nagoya,Wikipedia・Wikidata,0.9291754961013794",
-   "Code for Kanagawa,Wikipedia・Wikidata,0.9290469288825989",
-   "Code for Niigata,Wikipedia・Wikidata,0.9289383292198181",
-   "Code for Suginami,COVID-19,0.9284762144088745",
-   "Code for SAKE,食,0.9283127188682556",
-   "Code for MIKAWA,市民活動連携・地域活動連携,0.9280523657798767",
-   "Code for SENDAI,市民活動連携・地域活動連携,0.9269875288009644",
-   "Code for Mitaka / Musashino,市民活動連携・地域活動連携,0.926821231842041",
-   "Code For Kitakyusyu,食,0.9267911314964294",
-   "Code for AICHI,LODチャレンジ,0.9267714619636536",
-   "Code for SAITAMA,SDGs,0.926490843296051",
-   "CODE for AIZU,COVID-19,0.9263501167297363",
-   "Code for Ichikawa,食,0.9257155656814575",
-   "Code for YOKOHAMA,Wikipedia・Wikidata,0.9254230856895447",
-   "Code for Kanazawa,市民活動連携・地域活動連携,0.9241253137588501",
-   "Code for SAITAMA,まちづくり,0.9241141676902771",
-   "CODE for GIFU,COVID-19,0.9238955974578857",
-   "Code for SAKE,Wikipedia・Wikidata,0.9237568378448486",
-   "Code for Sabae,市民活動連携・地域活動連携,0.9232586026191711",
-   "Code for INAGI,食,0.9230228662490845",
-   "Code for MIKAWA,Wikipedia・Wikidata,0.9227010607719421",
-   "Code for YOKOHAMA,食,0.9225564002990723",
-   "Code for MIKAWA,食,0.9220362305641174",
-   "Code for CAT,市民活動連携・地域活動連携,0.9220224022865295",
-   "Code for Kanazawa,食,0.9219863414764404",
-   "Code for CAT,食,0.9219443202018738",
-   "Code for Yamagata,COVID-19,0.9209892153739929",
-   "Code for Tokushima,IoT,0.9207630753517151",
-   "Code for AICHI,SDGs,0.9207396507263184",
-   "Code for Kanazawa,COVID-19,0.9204088449478149",
-   "Code for Sabae,食,0.9202767014503479",
-   "Code for Shiga / Biwako,COVID-19,0.9195920825004578",
-   "Code for AICHI,市民活動連携・地域活動連携,0.918655276298523",
-   "Code for Sabae,COVID-19,0.9185174107551575",
-   "Code for Gumyoji,食,0.9182513356208801",
-   "Code for SAITAMA,IoT,0.9179427623748779",
-   "Code for Mitaka / Musashino,COVID-19,0.9170392751693726",
-   "CODE for AIZU,LODチャレンジ,0.9159256815910339",
-   "Code for Yamagata,Wikipedia・Wikidata,0.9155718088150024",
-   "Code for Suginami,SDGs,0.9143339991569519",
-   "Code for CAT,COVID-19,0.9142242670059204",
-   "Code for YOKOHAMA,COVID-19,0.9138463139533997",
-   "Code for MIKAWA,COVID-19,0.9135672450065613",
-   "Code for AICHI,IoT,0.9116571545600891",
-   "Code for Gumyoji,LODチャレンジ,0.9106356501579285",
-   "Code for Fukuoka,COVID-19,0.9094734787940979",
-   "ハウモリ,LODチャレンジ,0.9094651937484741",
-   "Code for Sabae,LODチャレンジ,0.9081891179084778",
-   "Code for Shiga / Biwako,LODチャレンジ,0.9077736139297485",
-   "Code for Yamagata,SDGs,0.9073575139045715",
-   "Code for Suginami,IoT,0.9066603779792786",
-   "Code for CAT,LODチャレンジ,0.905336856842041",
-   "Code for Mitaka / Musashino,SDGs,0.9037835001945496",
-   "Code for Saga,COVID-19,0.9037558436393738",
-   "Code for Aomori,COVID-19,0.903251051902771",
-   "Code for Shiga / Biwako,SDGs,0.9027634263038635",
-   "Code for Sabae,SDGs,0.9027225971221924",
-   "Code for Kanazawa,SDGs,0.9025428295135498",
-   "Code for Nagoya,LODチャレンジ,0.9020755887031555",
-   "Code For Kitakyusyu,COVID-19,0.9017526507377625",
-   "Code for CAT,SDGs,0.8999378681182861",
-   "Code for Shiogama,COVID-19,0.8998755216598511",
-   "Code for INZAI,COVID-19,0.8993578553199768",
-   "Code for TODA,COVID-19,0.8989868760108948",
-   "Code for NAGAREYAMA,COVID-19,0.8989663124084473",
-   "Code for Kobe,COVID-19,0.8989359140396118",
-   "Code for Yamagata,IoT,0.8981788158416748",
-   "Code for Akita,COVID-19,0.896934449672699",
-   "Code for Kumagaya,SDGs,0.8965402245521545",
-   "Code for Niigata,COVID-19,0.8963729739189148",
-   "Code for Kanazawa,IoT,0.8958742618560791",
-   "Code for MIKAWA,SDGs,0.8957780003547668",
-   "Code for Sabae,IoT,0.8956306576728821",
-   "Code for Shiga / Biwako,IoT,0.8954835534095764",
-   "Code for Mitaka / Musashino,IoT,0.8950767517089844",
-   "Code for Shinagawa,SDGs,0.894713282585144",
-   "Code for CAT,IoT,0.8914539813995361",
-   "Code for Fukuoka,SDGs,0.8905662298202515",
-   "Code for Nerima,IoT,0.8899930119514465",
-   "Code for SAITAMA,SNS,0.8893817663192749",
-   "Code for Kusatsu,COVID-19,0.8886361718177795",
-   "Code for MIKAWA,IoT,0.8881628513336182",
-   "Code for YOKOHAMA,IoT,0.8879572153091431",
-   "Code for Shinagawa,IoT,0.8862359523773193",
-   "Code for Tokushima,SNS,0.8853820562362671",
-   "Code for AICHI,SNS,0.883921205997467",
-   "Code for Saga,SDGs,0.883652925491333",
-   "Code for SENDAI,SNS,0.8817728161811829",
-   "Code for Fuchu,IoT,0.8807408809661865",
-   "Code for 中野,SDGs,0.8788706064224243",
-   "Code for SAKE,LODチャレンジ,0.8761107325553894",
-   "Code for Niigata,SDGs,0.8756695985794067",
-   "Code for Suginami,RESASアプリコンテスト,0.8735027313232422",
-   "Code for INAGI,IoT,0.872527003288269",
-   "Code for Hachioji,LODチャレンジ,0.8723087310791016",
-   "CODE for AIZU,NASA Space Apps Challenge,0.869806706905365",
-   "CODE for AIZU,RESASアプリコンテスト,0.8678964972496033",
-   "Code for WAKO,IoT,0.8675478100776672",
-   "Code for Yamagata,SNS,0.867007851600647",
-   "CODE for GIFU,RESASアプリコンテスト,0.8666367530822754",
-   "Code for Gumyoji,NASA Space Apps Challenge,0.8653679490089417",
-   "Code for SUSONO,IoT,0.8643198609352112",
-   "Code for Mitaka / Musashino,SNS,0.8621039986610413",
-   "Code for Sabae,NASA Space Apps Challenge,0.8611745834350586",
-   "Code for Kanazawa,SNS,0.8577944040298462",
-   "Code for CAT,SNS,0.8575946688652039",
-   "Code for Sabae,RESASアプリコンテスト,0.8572898507118225",
-   "Code for Nerima,SNS,0.8561859130859375",
-   "Code for Kumagaya,SNS,0.8557706475257874",
-   "Code for YOKOHAMA,SNS,0.8518610000610352",
-   "Code for MIKAWA,SNS,0.8511626124382019",
-   "Code for Nagoya,RESASアプリコンテスト,0.8511143922805786",
-   "Code for Fuchu,SNS,0.8471261858940125",
-   "Code for Shiogama,SNS,0.8446524143218994",
-   "Code for Sasayama+Tamba,SNS,0.8419025540351868",
-   "Code for INAGI,SNS,0.838884174823761",
-   "Code for Kanagawa,SNS,0.8357759118080139",
-   "Code for Kobe,NASA Space Apps Challenge,0.832531750202179",
-   "Code for SAITAMA,FOSS4G,0.8300732374191284",
-   "Code for Niigata,SNS,0.8297818303108215",
-   "Code for AICHI,WEB,0.8280277252197266",
-   "Code for Ichikawa,SNS,0.8245442509651184",
-   "Code for Yamagata,SEO,0.8119972944259644",
-   "CODE for GIFU,FOSS4G,0.8067691326141357",
-   "ハウモリ,FOSS4G,0.7955540418624878",
-   "Code for CAT,FOSS4G,0.792179524898529",
-   "Code for Nagoya,FOSS4G,0.7865047454833984",
-   "Code for AICHI,GUGEN,0.7181092500686646",
-   "Code for SENDAI,LIFE-TECH INNOVATION SENDAI,0.7050750851631165"
+   {
+      "civicname1": "Code for Kanagawa",
+      "civicname2": "教育",
+      "distance": 0.9857245087623596
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "教育",
+      "distance": 0.9848014116287231
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "教育",
+      "distance": 0.9842170476913452
+   },
+   {
+      "civicname1": "Code for TODA",
+      "civicname2": "教育",
+      "distance": 0.9842097759246826
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "教育",
+      "distance": 0.9839562773704529
+   },
+   {
+      "civicname1": "Code for Shinagawa",
+      "civicname2": "教育",
+      "distance": 0.98294997215271
+   },
+   {
+      "civicname1": "Code for Sasayama+Tamba",
+      "civicname2": "防災",
+      "distance": 0.982459306716919
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "防災",
+      "distance": 0.9823664426803589
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "教育",
+      "distance": 0.9823641777038574
+   },
+   {
+      "civicname1": "Code for TODA",
+      "civicname2": "防災",
+      "distance": 0.9822977185249329
+   },
+   {
+      "civicname1": "Code for NAGAREYAMA",
+      "civicname2": "教育",
+      "distance": 0.9819439053535461
+   },
+   {
+      "civicname1": "Code for 中野",
+      "civicname2": "教育",
+      "distance": 0.9817501306533813
+   },
+   {
+      "civicname1": "Code for WAKO",
+      "civicname2": "教育",
+      "distance": 0.9816825985908508
+   },
+   {
+      "civicname1": "Code for Aomori",
+      "civicname2": "教育",
+      "distance": 0.9816343784332275
+   },
+   {
+      "civicname1": "Code for INZAI",
+      "civicname2": "教育",
+      "distance": 0.9814739227294922
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "教育",
+      "distance": 0.9814637303352356
+   },
+   {
+      "civicname1": "Code for SAKE",
+      "civicname2": "健康",
+      "distance": 0.9811416864395142
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "教育",
+      "distance": 0.9810673594474792
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "教育",
+      "distance": 0.9809183478355408
+   },
+   {
+      "civicname1": "Code for Kanagawa",
+      "civicname2": "医療",
+      "distance": 0.9804213643074036
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "教育",
+      "distance": 0.9803295731544495
+   },
+   {
+      "civicname1": "Code for Shinagawa",
+      "civicname2": "健康",
+      "distance": 0.9802479147911072
+   },
+   {
+      "civicname1": "Code for Fukuoka",
+      "civicname2": "教育",
+      "distance": 0.9799982905387878
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "プログラミング",
+      "distance": 0.9799860119819641
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "教育",
+      "distance": 0.9798212647438049
+   },
+   {
+      "civicname1": "Code for WAKO",
+      "civicname2": "福祉",
+      "distance": 0.9797152280807495
+   },
+   {
+      "civicname1": "Code for SUSONO",
+      "civicname2": "防災",
+      "distance": 0.9796217679977417
+   },
+   {
+      "civicname1": "Code for Sasayama+Tamba",
+      "civicname2": "産業",
+      "distance": 0.9795104265213013
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "教育",
+      "distance": 0.9794341325759888
+   },
+   {
+      "civicname1": "Code for Ichikawa",
+      "civicname2": "防災",
+      "distance": 0.9792823195457458
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "防災",
+      "distance": 0.9791796803474426
+   },
+   {
+      "civicname1": "Code for Toyota",
+      "civicname2": "教育",
+      "distance": 0.9790112972259521
+   },
+   {
+      "civicname1": "Code for SAKE",
+      "civicname2": "環境",
+      "distance": 0.9789716005325317
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "防災",
+      "distance": 0.9786635637283325
+   },
+   {
+      "civicname1": "Code for SAKE",
+      "civicname2": "プログラミング",
+      "distance": 0.9784942865371704
+   },
+   {
+      "civicname1": "Code for SAKE",
+      "civicname2": "産業",
+      "distance": 0.9784896969795227
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "健康",
+      "distance": 0.978305995464325
+   },
+   {
+      "civicname1": "Code for Saga",
+      "civicname2": "防災",
+      "distance": 0.9781479835510254
+   },
+   {
+      "civicname1": "Code for TODA",
+      "civicname2": "プログラミング",
+      "distance": 0.9780510663986206
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "産業",
+      "distance": 0.9772982597351074
+   },
+   {
+      "civicname1": "Code for Kusatsu",
+      "civicname2": "教育",
+      "distance": 0.9772487282752991
+   },
+   {
+      "civicname1": "Code for SAKE",
+      "civicname2": "観光",
+      "distance": 0.9772340655326843
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "健康",
+      "distance": 0.9772189855575562
+   },
+   {
+      "civicname1": "CODE for GIFU",
+      "civicname2": "健康",
+      "distance": 0.9771768450737
+   },
+   {
+      "civicname1": "Code for WAKO",
+      "civicname2": "文化",
+      "distance": 0.9766701459884644
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "防災",
+      "distance": 0.9760112166404724
+   },
+   {
+      "civicname1": "Code for Aomori",
+      "civicname2": "機械学習",
+      "distance": 0.9759289622306824
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "防災",
+      "distance": 0.9759218096733093
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "教育",
+      "distance": 0.975903332233429
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "プログラミング",
+      "distance": 0.9758400321006775
+   },
+   {
+      "civicname1": "Code for Sasayama+Tamba",
+      "civicname2": "観光",
+      "distance": 0.9758336544036865
+   },
+   {
+      "civicname1": "Code for Muroran",
+      "civicname2": "生活",
+      "distance": 0.9757523536682129
+   },
+   {
+      "civicname1": "Code for Kanagawa",
+      "civicname2": "観光",
+      "distance": 0.9756745100021362
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "観光",
+      "distance": 0.9755204916000366
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "産業",
+      "distance": 0.9754565954208374
+   },
+   {
+      "civicname1": "Code for Suginami",
+      "civicname2": "教育",
+      "distance": 0.9749792218208313
+   },
+   {
+      "civicname1": "Code for SENDAI",
+      "civicname2": "教育",
+      "distance": 0.9748874306678772
+   },
+   {
+      "civicname1": "Code for Shinagawa",
+      "civicname2": "医療",
+      "distance": 0.9747362732887268
+   },
+   {
+      "civicname1": "Code for Muroran",
+      "civicname2": "交通",
+      "distance": 0.974580705165863
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "防災",
+      "distance": 0.9744853973388672
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "防災",
+      "distance": 0.9744268655776978
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "プログラミング",
+      "distance": 0.9743600487709045
+   },
+   {
+      "civicname1": "Code for Aomori",
+      "civicname2": "プログラミング",
+      "distance": 0.9743213057518005
+   },
+   {
+      "civicname1": "Code for Shinagawa",
+      "civicname2": "プログラミング",
+      "distance": 0.9741129279136658
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "教育",
+      "distance": 0.9740957021713257
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "プログラミング",
+      "distance": 0.973998486995697
+   },
+   {
+      "civicname1": "Code for Kanagawa",
+      "civicname2": "機械学習",
+      "distance": 0.9739834070205688
+   },
+   {
+      "civicname1": "Code for NAGAREYAMA",
+      "civicname2": "プログラミング",
+      "distance": 0.9739376306533813
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "プログラミング",
+      "distance": 0.9739091992378235
+   },
+   {
+      "civicname1": "Code for Saga",
+      "civicname2": "プログラミング",
+      "distance": 0.9738789796829224
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "宇宙",
+      "distance": 0.973675549030304
+   },
+   {
+      "civicname1": "Code for Muroran",
+      "civicname2": "観光",
+      "distance": 0.9735121130943298
+   },
+   {
+      "civicname1": "Code for SUSONO",
+      "civicname2": "プログラミング",
+      "distance": 0.9734869003295898
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "環境",
+      "distance": 0.9734289646148682
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "機械学習",
+      "distance": 0.973275363445282
+   },
+   {
+      "civicname1": "Code for Toyota",
+      "civicname2": "ロボット",
+      "distance": 0.9732305407524109
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "プログラミング",
+      "distance": 0.973118007183075
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "プログラミング",
+      "distance": 0.9730435013771057
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "生活",
+      "distance": 0.9730199575424194
+   },
+   {
+      "civicname1": "Code for Shinagawa",
+      "civicname2": "機械学習",
+      "distance": 0.9729039072990417
+   },
+   {
+      "civicname1": "Code For Kitakyusyu",
+      "civicname2": "機械学習",
+      "distance": 0.972789466381073
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "プログラミング",
+      "distance": 0.9727839231491089
+   },
+   {
+      "civicname1": "Code for Sasayama+Tamba",
+      "civicname2": "生活",
+      "distance": 0.9727120995521545
+   },
+   {
+      "civicname1": "Code for Fukuoka",
+      "civicname2": "宇宙",
+      "distance": 0.9727036952972412
+   },
+   {
+      "civicname1": "Code for Ichikawa",
+      "civicname2": "観光",
+      "distance": 0.97265625
+   },
+   {
+      "civicname1": "Code for 中野",
+      "civicname2": "プログラミング",
+      "distance": 0.9725661277770996
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "プログラミング",
+      "distance": 0.9724051356315613
+   },
+   {
+      "civicname1": "Code for Kumagaya",
+      "civicname2": "防災",
+      "distance": 0.9722100496292114
+   },
+   {
+      "civicname1": "Code for Toyota",
+      "civicname2": "ドローン",
+      "distance": 0.9721536040306091
+   },
+   {
+      "civicname1": "Code for Fukuoka",
+      "civicname2": "機械学習",
+      "distance": 0.9720220565795898
+   },
+   {
+      "civicname1": "Code for Nerima",
+      "civicname2": "生活",
+      "distance": 0.972007691860199
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "オープンソースカンファレンス",
+      "distance": 0.9718343615531921
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "防犯",
+      "distance": 0.9717825651168823
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "オープンソースカンファレンス",
+      "distance": 0.9717749953269958
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "地方創生☆政策アイデアコンテスト",
+      "distance": 0.9716191291809082
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "環境",
+      "distance": 0.9715871810913086
+   },
+   {
+      "civicname1": "Code for Toyota",
+      "civicname2": "ゲーム",
+      "distance": 0.9715365171432495
+   },
+   {
+      "civicname1": "Code for Fuchu",
+      "civicname2": "プログラミング",
+      "distance": 0.9712270498275757
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "機械学習",
+      "distance": 0.9711208939552307
+   },
+   {
+      "civicname1": "Code for WAKO",
+      "civicname2": "高齢者支援",
+      "distance": 0.9711030721664429
+   },
+   {
+      "civicname1": "Code for Toyota",
+      "civicname2": "課題解決思考",
+      "distance": 0.9710710048675537
+   },
+   {
+      "civicname1": "CODE for GIFU",
+      "civicname2": "プログラミング",
+      "distance": 0.9710173010826111
+   },
+   {
+      "civicname1": "Code for Toyota",
+      "civicname2": "人材育成",
+      "distance": 0.9709321856498718
+   },
+   {
+      "civicname1": "Code for Akita",
+      "civicname2": "観光",
+      "distance": 0.9709221124649048
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "観光",
+      "distance": 0.9708957672119141
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "観光",
+      "distance": 0.970740020275116
+   },
+   {
+      "civicname1": "Code for SUSONO",
+      "civicname2": "生活",
+      "distance": 0.9707075953483582
+   },
+   {
+      "civicname1": "Code for Akita",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9706606268882751
+   },
+   {
+      "civicname1": "Code for SUSONO",
+      "civicname2": "防犯",
+      "distance": 0.9705866575241089
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "宇宙",
+      "distance": 0.9704626202583313
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "保護猫",
+      "distance": 0.9704228639602661
+   },
+   {
+      "civicname1": "Code For Kitakyusyu",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9700743556022644
+   },
+   {
+      "civicname1": "Code for Muroran",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9700042009353638
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "都市計画",
+      "distance": 0.9699016213417053
+   },
+   {
+      "civicname1": "Code for Kanagawa",
+      "civicname2": "都市計画",
+      "distance": 0.9696571826934814
+   },
+   {
+      "civicname1": "Code for Toshima",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.969597578048706
+   },
+   {
+      "civicname1": "Code for Kusatsu",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9695248007774353
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "生活",
+      "distance": 0.9694584608078003
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "産業",
+      "distance": 0.9694405794143677
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "機械学習",
+      "distance": 0.9694129228591919
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "林業",
+      "distance": 0.9692752361297607
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "プログラミング",
+      "distance": 0.9692746996879578
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "生活",
+      "distance": 0.9692018032073975
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "観光",
+      "distance": 0.9691762924194336
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "プログラミング",
+      "distance": 0.9691497683525085
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "産業",
+      "distance": 0.969023585319519
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "オープンソースカンファレンス",
+      "distance": 0.9689760208129883
+   },
+   {
+      "civicname1": "Code for Akita",
+      "civicname2": "交通",
+      "distance": 0.968962550163269
+   },
+   {
+      "civicname1": "Code for INZAI",
+      "civicname2": "デザイン",
+      "distance": 0.9689368009567261
+   },
+   {
+      "civicname1": "Code for SENDAI",
+      "civicname2": "生活",
+      "distance": 0.9689000844955444
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "LGBTQ・ジェンダー",
+      "distance": 0.9688625931739807
+   },
+   {
+      "civicname1": "Code for Nerima",
+      "civicname2": "文化",
+      "distance": 0.9688589572906494
+   },
+   {
+      "civicname1": "Code for Nerima",
+      "civicname2": "プログラミング",
+      "distance": 0.9688425064086914
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "観光",
+      "distance": 0.9688209891319275
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "産業",
+      "distance": 0.9688069820404053
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "生活",
+      "distance": 0.9687444567680359
+   },
+   {
+      "civicname1": "Code for Saga",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.968694269657135
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "障害者支援",
+      "distance": 0.968658447265625
+   },
+   {
+      "civicname1": "ハウモリ",
+      "civicname2": "MA ヒーローズリーグ",
+      "distance": 0.9685505628585815
+   },
+   {
+      "civicname1": "Code for Nerima",
+      "civicname2": "障害者支援",
+      "distance": 0.9685316681861877
+   },
+   {
+      "civicname1": "Code for SENDAI",
+      "civicname2": "福祉",
+      "distance": 0.9684565663337708
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "機械学習",
+      "distance": 0.9684381484985352
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "環境",
+      "distance": 0.9684098362922668
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "生活",
+      "distance": 0.9683006405830383
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "オープンソースカンファレンス",
+      "distance": 0.9682628512382507
+   },
+   {
+      "civicname1": "ハウモリ",
+      "civicname2": "プログラミング",
+      "distance": 0.9681942462921143
+   },
+   {
+      "civicname1": "Code for Gumyoji",
+      "civicname2": "プログラミング",
+      "distance": 0.9681428074836731
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "防災",
+      "distance": 0.9680842757225037
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "LGBTQ・ジェンダー",
+      "distance": 0.9680531620979309
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "文化",
+      "distance": 0.9679105877876282
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "ゲーム",
+      "distance": 0.9678999781608582
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "観光",
+      "distance": 0.9678444266319275
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "機械学習",
+      "distance": 0.9678199887275696
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "チャットボット",
+      "distance": 0.9676769971847534
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "地域猫",
+      "distance": 0.9676260948181152
+   },
+   {
+      "civicname1": "Code for 中野",
+      "civicname2": "文化",
+      "distance": 0.9676226377487183
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "オープンデータ",
+      "distance": 0.9674349427223206
+   },
+   {
+      "civicname1": "Code for Nerima",
+      "civicname2": "異文化交流",
+      "distance": 0.9672911763191223
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "異文化交流",
+      "distance": 0.9671419262886047
+   },
+   {
+      "civicname1": "CODE for GIFU",
+      "civicname2": "林業",
+      "distance": 0.9670338034629822
+   },
+   {
+      "civicname1": "Code for Saga",
+      "civicname2": "オープンデータ",
+      "distance": 0.9669967293739319
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "観光",
+      "distance": 0.9669540524482727
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "オープンソースカンファレンス",
+      "distance": 0.9669329524040222
+   },
+   {
+      "civicname1": "Code For Kitakyusyu",
+      "civicname2": "ドローン",
+      "distance": 0.96673983335495
+   },
+   {
+      "civicname1": "Code for Kumagaya",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9667391180992126
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9667094349861145
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "ドローン",
+      "distance": 0.9666853547096252
+   },
+   {
+      "civicname1": "Code for SUSONO",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9666841626167297
+   },
+   {
+      "civicname1": "Code for Muroran",
+      "civicname2": "オープンデータ",
+      "distance": 0.966430127620697
+   },
+   {
+      "civicname1": "Code for Fuchu",
+      "civicname2": "オープンデータ",
+      "distance": 0.966404378414154
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9661909937858582
+   },
+   {
+      "civicname1": "Code for SUSONO",
+      "civicname2": "オープンデータ",
+      "distance": 0.9661240577697754
+   },
+   {
+      "civicname1": "Code for Sasayama+Tamba",
+      "civicname2": "文化",
+      "distance": 0.9661042094230652
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9660714864730835
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "MA ヒーローズリーグ",
+      "distance": 0.9660623669624329
+   },
+   {
+      "civicname1": "Code for SAKE",
+      "civicname2": "農業",
+      "distance": 0.9659148454666138
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9659071564674377
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "オープンデータ",
+      "distance": 0.9658923149108887
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "障害者支援",
+      "distance": 0.9658310413360596
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.96573406457901
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "防災",
+      "distance": 0.9656561017036438
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "オープンソースカンファレンス",
+      "distance": 0.9656257629394531
+   },
+   {
+      "civicname1": "Code for Kusatsu",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9656050801277161
+   },
+   {
+      "civicname1": "Code for TODA",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.965603232383728
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9655441641807556
+   },
+   {
+      "civicname1": "Code for NAGAREYAMA",
+      "civicname2": "オープンデータ",
+      "distance": 0.9655373096466064
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "環境",
+      "distance": 0.9654787182807922
+   },
+   {
+      "civicname1": "Code for SAKE",
+      "civicname2": "日本酒",
+      "distance": 0.9653892517089844
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "障害者支援",
+      "distance": 0.9653675556182861
+   },
+   {
+      "civicname1": "Code for Fukuoka",
+      "civicname2": "オープンデータ",
+      "distance": 0.9653580784797668
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9653310179710388
+   },
+   {
+      "civicname1": "Code for Ichikawa",
+      "civicname2": "オープンデータ",
+      "distance": 0.965277910232544
+   },
+   {
+      "civicname1": "Code for Nerima",
+      "civicname2": "観光",
+      "distance": 0.9652416110038757
+   },
+   {
+      "civicname1": "Code for Fuchu",
+      "civicname2": "ドローン",
+      "distance": 0.9651107788085938
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "プログラミング",
+      "distance": 0.9650554060935974
+   },
+   {
+      "civicname1": "CODE for GIFU",
+      "civicname2": "オープンソースカンファレンス",
+      "distance": 0.9649675488471985
+   },
+   {
+      "civicname1": "Code for Sasayama+Tamba",
+      "civicname2": "農業",
+      "distance": 0.9649618864059448
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "文化",
+      "distance": 0.9649367928504944
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "障害者支援",
+      "distance": 0.9648793339729309
+   },
+   {
+      "civicname1": "CODE for GIFU",
+      "civicname2": "MA ヒーローズリーグ",
+      "distance": 0.9648155570030212
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "MA ヒーローズリーグ",
+      "distance": 0.9648019075393677
+   },
+   {
+      "civicname1": "Code for SAKE",
+      "civicname2": "文化",
+      "distance": 0.9646729230880737
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.964575469493866
+   },
+   {
+      "civicname1": "Code for Suginami",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9644290804862976
+   },
+   {
+      "civicname1": "CODE for GIFU",
+      "civicname2": "福祉",
+      "distance": 0.9644123315811157
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "観光",
+      "distance": 0.9643789529800415
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "殺処分ゼロ",
+      "distance": 0.9643771648406982
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "異文化交流",
+      "distance": 0.9643203616142273
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "交通",
+      "distance": 0.9642152190208435
+   },
+   {
+      "civicname1": "Code for Aomori",
+      "civicname2": "オープンデータ",
+      "distance": 0.9642020463943481
+   },
+   {
+      "civicname1": "Code for Ichikawa",
+      "civicname2": "地域アーカイブ",
+      "distance": 0.9641550779342651
+   },
+   {
+      "civicname1": "Code for Kusatsu",
+      "civicname2": "チャレンジオープンガバナンス",
+      "distance": 0.9641368985176086
+   },
+   {
+      "civicname1": "Code for INZAI",
+      "civicname2": "データセンター",
+      "distance": 0.9641061425209045
+   },
+   {
+      "civicname1": "Code for WAKO",
+      "civicname2": "プログラミング",
+      "distance": 0.9640911817550659
+   },
+   {
+      "civicname1": "Code for Saga",
+      "civicname2": "地域アーカイブ",
+      "distance": 0.964001476764679
+   },
+   {
+      "civicname1": "Code for Aomori",
+      "civicname2": "官民協働",
+      "distance": 0.9639711380004883
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "観光",
+      "distance": 0.9639264941215515
+   },
+   {
+      "civicname1": "Code For Kitakyusyu",
+      "civicname2": "オープンデータ",
+      "distance": 0.9638171792030334
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "LGBTQ・ジェンダー",
+      "distance": 0.9637799263000488
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "地図",
+      "distance": 0.9637369513511658
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "地域アーカイブ",
+      "distance": 0.9637050628662109
+   },
+   {
+      "civicname1": "Code for Toyota",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9636557698249817
+   },
+   {
+      "civicname1": "Code for Akita",
+      "civicname2": "オープンデータ",
+      "distance": 0.963585376739502
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "通信(5G・LoRa)",
+      "distance": 0.9635773301124573
+   },
+   {
+      "civicname1": "Code for 中野",
+      "civicname2": "地域アーカイブ",
+      "distance": 0.9635474681854248
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "文化",
+      "distance": 0.9633991718292236
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9633844494819641
+   },
+   {
+      "civicname1": "Code for Kusatsu",
+      "civicname2": "オープンデータ",
+      "distance": 0.9633520245552063
+   },
+   {
+      "civicname1": "Code for SUSONO",
+      "civicname2": "文化",
+      "distance": 0.9633241891860962
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "文化",
+      "distance": 0.9633156061172485
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "公園",
+      "distance": 0.9632647037506104
+   },
+   {
+      "civicname1": "Code for SUSONO",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.963252067565918
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "政治",
+      "distance": 0.963249921798706
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "高齢者支援",
+      "distance": 0.9632433652877808
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "文化",
+      "distance": 0.9632238149642944
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "オープンデータ",
+      "distance": 0.9631431698799133
+   },
+   {
+      "civicname1": "Code for Kanagawa",
+      "civicname2": "オープンデータ",
+      "distance": 0.9631140232086182
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9630983471870422
+   },
+   {
+      "civicname1": "ハウモリ",
+      "civicname2": "チャットボット",
+      "distance": 0.963079571723938
+   },
+   {
+      "civicname1": "Code for Kusatsu",
+      "civicname2": "地域アーカイブ",
+      "distance": 0.9629912376403809
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "文化",
+      "distance": 0.9629887342453003
+   },
+   {
+      "civicname1": "Code for SUSONO",
+      "civicname2": "チャレンジオープンガバナンス",
+      "distance": 0.9629378318786621
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "文化",
+      "distance": 0.962913453578949
+   },
+   {
+      "civicname1": "Code for 中野",
+      "civicname2": "オープンデータ",
+      "distance": 0.9629121422767639
+   },
+   {
+      "civicname1": "Code for Muroran",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.962871789932251
+   },
+   {
+      "civicname1": "Code for Fukuoka",
+      "civicname2": "地域アーカイブ",
+      "distance": 0.9628432989120483
+   },
+   {
+      "civicname1": "Code for Suginami",
+      "civicname2": "商店街活性化",
+      "distance": 0.9626767039299011
+   },
+   {
+      "civicname1": "Code for Kumagaya",
+      "civicname2": "観光",
+      "distance": 0.9626291990280151
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9625622034072876
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "福祉",
+      "distance": 0.9623867869377136
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "ゲーム",
+      "distance": 0.9623836278915405
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "MA ヒーローズリーグ",
+      "distance": 0.9623728394508362
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "高齢者支援",
+      "distance": 0.9623652100563049
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "交通",
+      "distance": 0.9623533487319946
+   },
+   {
+      "civicname1": "Code for INZAI",
+      "civicname2": "子育て",
+      "distance": 0.9623487591743469
+   },
+   {
+      "civicname1": "Code for SENDAI",
+      "civicname2": "プログラミング",
+      "distance": 0.9623357057571411
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "チャレンジオープンガバナンス",
+      "distance": 0.9622654318809509
+   },
+   {
+      "civicname1": "Code for Suginami",
+      "civicname2": "オープンソースカンファレンス",
+      "distance": 0.9622050523757935
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "通信(5G・LoRa)",
+      "distance": 0.9622027277946472
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "MA ヒーローズリーグ",
+      "distance": 0.9621512293815613
+   },
+   {
+      "civicname1": "Code for Akita",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9620847702026367
+   },
+   {
+      "civicname1": "Code for Fukuoka",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9620090126991272
+   },
+   {
+      "civicname1": "Code for TODA",
+      "civicname2": "オープンデータ",
+      "distance": 0.9619778990745544
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.961828351020813
+   },
+   {
+      "civicname1": "Code for SENDAI",
+      "civicname2": "子育て",
+      "distance": 0.9617951512336731
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "障害者支援",
+      "distance": 0.9617718458175659
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "ロボット",
+      "distance": 0.9617618322372437
+   },
+   {
+      "civicname1": "Code for Tokushima",
+      "civicname2": "祭り",
+      "distance": 0.9617494940757751
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "チャットボット",
+      "distance": 0.9617055654525757
+   },
+   {
+      "civicname1": "Code for Saga",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9616819620132446
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9616331458091736
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "異文化交流",
+      "distance": 0.9614899754524231
+   },
+   {
+      "civicname1": "ハウモリ",
+      "civicname2": "オープンデータ",
+      "distance": 0.9614845514297485
+   },
+   {
+      "civicname1": "CODE for GIFU",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9614835381507874
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "産業",
+      "distance": 0.9613689184188843
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "公共施設",
+      "distance": 0.9612970948219299
+   },
+   {
+      "civicname1": "Code for Fuchu",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.961294412612915
+   },
+   {
+      "civicname1": "Code for Saga",
+      "civicname2": "交通",
+      "distance": 0.9612126350402832
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "ロボット",
+      "distance": 0.9611892700195312
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "異文化交流",
+      "distance": 0.9611838459968567
+   },
+   {
+      "civicname1": "Code for SAKE",
+      "civicname2": "オープンデータ",
+      "distance": 0.9611753225326538
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "オープンデータ",
+      "distance": 0.9611631035804749
+   },
+   {
+      "civicname1": "Code for NAGAREYAMA",
+      "civicname2": "チャレンジオープンガバナンス",
+      "distance": 0.9610697627067566
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "福祉",
+      "distance": 0.9610004425048828
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "Maker Faire",
+      "distance": 0.9609929919242859
+   },
+   {
+      "civicname1": "Code for INZAI",
+      "civicname2": "Code for Japan Summit 2020 ロゴデザイン(採用)",
+      "distance": 0.9609896540641785
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "観光",
+      "distance": 0.9609386324882507
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9608868360519409
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "都市計画",
+      "distance": 0.9608514904975891
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "地域アーカイブ",
+      "distance": 0.9608108997344971
+   },
+   {
+      "civicname1": "Code For Kitakyusyu",
+      "civicname2": "官民協働",
+      "distance": 0.9607415795326233
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "都市計画",
+      "distance": 0.9607332944869995
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "機械学習",
+      "distance": 0.9606884121894836
+   },
+   {
+      "civicname1": "Code for Shinagawa",
+      "civicname2": "子育て",
+      "distance": 0.9605813026428223
+   },
+   {
+      "civicname1": "Code for 中野",
+      "civicname2": "チャレンジオープンガバナンス",
+      "distance": 0.9605216383934021
+   },
+   {
+      "civicname1": "Code for Kusatsu",
+      "civicname2": "官民協働",
+      "distance": 0.9604020714759827
+   },
+   {
+      "civicname1": "Code for 中野",
+      "civicname2": "チャットボット",
+      "distance": 0.9603953957557678
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "オープンデータ",
+      "distance": 0.9603739976882935
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "MA ヒーローズリーグ",
+      "distance": 0.9602912664413452
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "交通",
+      "distance": 0.960077702999115
+   },
+   {
+      "civicname1": "Code for Saga",
+      "civicname2": "佐賀大学Dフェス",
+      "distance": 0.9600393176078796
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "オープンデータ",
+      "distance": 0.9599915146827698
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "チャレンジオープンガバナンス",
+      "distance": 0.9599857926368713
+   },
+   {
+      "civicname1": "Code for Kusatsu",
+      "civicname2": "グラレコ・ファシリテーション",
+      "distance": 0.9599511623382568
+   },
+   {
+      "civicname1": "Code for Akita",
+      "civicname2": "公共施設",
+      "distance": 0.9597679376602173
+   },
+   {
+      "civicname1": "Code for Shinagawa",
+      "civicname2": "ドローン",
+      "distance": 0.9597491025924683
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "子育て",
+      "distance": 0.9596672654151917
+   },
+   {
+      "civicname1": "Code for TODA",
+      "civicname2": "子育て",
+      "distance": 0.9596601128578186
+   },
+   {
+      "civicname1": "Code for Gumyoji",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9595773220062256
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "ドローン",
+      "distance": 0.9595681428909302
+   },
+   {
+      "civicname1": "Code for Gumyoji",
+      "civicname2": "チャレンジオープンガバナンス",
+      "distance": 0.9595384001731873
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "政治",
+      "distance": 0.9594526886940002
+   },
+   {
+      "civicname1": "Code for 中野",
+      "civicname2": "子育て",
+      "distance": 0.9594466090202332
+   },
+   {
+      "civicname1": "ハウモリ",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9593030214309692
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "オープンデータ",
+      "distance": 0.9592831134796143
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "漁業",
+      "distance": 0.9592692852020264
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "ドローン",
+      "distance": 0.9592615962028503
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "ドローン",
+      "distance": 0.9591398239135742
+   },
+   {
+      "civicname1": "ハウモリ",
+      "civicname2": "文化",
+      "distance": 0.9591394662857056
+   },
+   {
+      "civicname1": "Code For Kitakyusyu",
+      "civicname2": "Startup Weekend",
+      "distance": 0.9591072201728821
+   },
+   {
+      "civicname1": "Code for Suginami",
+      "civicname2": "観光",
+      "distance": 0.9589375853538513
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9588963985443115
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "公園",
+      "distance": 0.9588178396224976
+   },
+   {
+      "civicname1": "Code for Ichikawa",
+      "civicname2": "チャレンジオープンガバナンス",
+      "distance": 0.9587317109107971
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "地域アーカイブ",
+      "distance": 0.9586360454559326
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "オープンデータ",
+      "distance": 0.958602249622345
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "都市計画",
+      "distance": 0.958549439907074
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "グラレコ・ファシリテーション",
+      "distance": 0.9584672451019287
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "文化",
+      "distance": 0.9584454298019409
+   },
+   {
+      "civicname1": "CODE for GIFU",
+      "civicname2": "異文化交流",
+      "distance": 0.9584325551986694
+   },
+   {
+      "civicname1": "Code for Fukuoka",
+      "civicname2": "公園",
+      "distance": 0.9583995342254639
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "オープンデータ",
+      "distance": 0.9581874012947083
+   },
+   {
+      "civicname1": "Code for 中野",
+      "civicname2": "官民協働",
+      "distance": 0.9581562876701355
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9581533074378967
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "交通",
+      "distance": 0.9581393003463745
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "交通",
+      "distance": 0.9579055905342102
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "農業",
+      "distance": 0.957883894443512
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "公園",
+      "distance": 0.9578835368156433
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "文化",
+      "distance": 0.9578806161880493
+   },
+   {
+      "civicname1": "Code for Toshima",
+      "civicname2": "ノーコード",
+      "distance": 0.9578051567077637
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "オープンデータ",
+      "distance": 0.9577890634536743
+   },
+   {
+      "civicname1": "Code for Toyota",
+      "civicname2": "ノーコード",
+      "distance": 0.9577869176864624
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "オープンデータ",
+      "distance": 0.9577613472938538
+   },
+   {
+      "civicname1": "Code for Tokushima",
+      "civicname2": "MA ヒーローズリーグ",
+      "distance": 0.9577348828315735
+   },
+   {
+      "civicname1": "Code for NAGAREYAMA",
+      "civicname2": "子育て",
+      "distance": 0.9577320218086243
+   },
+   {
+      "civicname1": "Code for Ichikawa",
+      "civicname2": "政治",
+      "distance": 0.95771324634552
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "チャレンジオープンガバナンス",
+      "distance": 0.957654595375061
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "オープンデータ",
+      "distance": 0.9573160409927368
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "子育て",
+      "distance": 0.9572134017944336
+   },
+   {
+      "civicname1": "Code for SUSONO",
+      "civicname2": "官民協働",
+      "distance": 0.957191526889801
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "子育て",
+      "distance": 0.9569671154022217
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "Startup Weekend",
+      "distance": 0.956920325756073
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "チャレンジオープンガバナンス",
+      "distance": 0.9568813443183899
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9568682312965393
+   },
+   {
+      "civicname1": "Code for Tokushima",
+      "civicname2": "子育て",
+      "distance": 0.9567697644233704
+   },
+   {
+      "civicname1": "Code for Tokushima",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9566888213157654
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "都市計画",
+      "distance": 0.956684410572052
+   },
+   {
+      "civicname1": "Code for Kumagaya",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9566828608512878
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "政治",
+      "distance": 0.9566320180892944
+   },
+   {
+      "civicname1": "Code for Sasayama+Tamba",
+      "civicname2": "オープンデータ",
+      "distance": 0.9566301703453064
+   },
+   {
+      "civicname1": "Code for WAKO",
+      "civicname2": "まちづくり",
+      "distance": 0.9566296339035034
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "オープンデータ",
+      "distance": 0.9565847516059875
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "官民協働",
+      "distance": 0.9564717411994934
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.956433892250061
+   },
+   {
+      "civicname1": "Code for TODA",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9564208388328552
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "オープンデータ",
+      "distance": 0.9563969373703003
+   },
+   {
+      "civicname1": "Code for Fukuoka",
+      "civicname2": "グラレコ・ファシリテーション",
+      "distance": 0.9563629627227783
+   },
+   {
+      "civicname1": "Code for SENDAI",
+      "civicname2": "Tech for Non-Tech",
+      "distance": 0.9563069343566895
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "ガジェットまつり",
+      "distance": 0.9562814831733704
+   },
+   {
+      "civicname1": "CODE for GIFU",
+      "civicname2": "オープンデータ",
+      "distance": 0.956145703792572
+   },
+   {
+      "civicname1": "Code for Nerima",
+      "civicname2": "官民協働",
+      "distance": 0.9560579657554626
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "地方創生☆政策アイデアコンテスト",
+      "distance": 0.9559523463249207
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "官民協働",
+      "distance": 0.9557807445526123
+   },
+   {
+      "civicname1": "Code for Saga",
+      "civicname2": "グラレコ・ファシリテーション",
+      "distance": 0.955730676651001
+   },
+   {
+      "civicname1": "Code for Tokushima",
+      "civicname2": "交通",
+      "distance": 0.9556777477264404
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "農業",
+      "distance": 0.955586314201355
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "高齢者支援",
+      "distance": 0.9553341269493103
+   },
+   {
+      "civicname1": "Code for Gumyoji",
+      "civicname2": "オープンデータ",
+      "distance": 0.9553091526031494
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "子育て",
+      "distance": 0.9552701711654663
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "子育て",
+      "distance": 0.9551050066947937
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "Startup Weekend",
+      "distance": 0.9549290537834167
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "政治",
+      "distance": 0.9549086689949036
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9548983573913574
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "Startup Weekend",
+      "distance": 0.9547691345214844
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "グラレコ・ファシリテーション",
+      "distance": 0.954767107963562
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "官民協働",
+      "distance": 0.95456463098526
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "GIS・位置空間情報",
+      "distance": 0.9545536637306213
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9545305967330933
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "ドローン",
+      "distance": 0.9543828368186951
+   },
+   {
+      "civicname1": "Code for Fuchu",
+      "civicname2": "グラレコ・ファシリテーション",
+      "distance": 0.9543470740318298
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9542837142944336
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "グラレコ・ファシリテーション",
+      "distance": 0.9542083740234375
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "道路",
+      "distance": 0.9540780186653137
+   },
+   {
+      "civicname1": "Code for Shinagawa",
+      "civicname2": "スマートスピーカー",
+      "distance": 0.9539763927459717
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "チャレンジオープンガバナンス",
+      "distance": 0.9536123275756836
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "公共施設",
+      "distance": 0.9535688757896423
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "ゲーム",
+      "distance": 0.9535149931907654
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "ブロックチェーン",
+      "distance": 0.9534674882888794
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "官民協働",
+      "distance": 0.9532322287559509
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "ゲーム",
+      "distance": 0.9532261490821838
+   },
+   {
+      "civicname1": "Code for Shinagawa",
+      "civicname2": "チャレンジオープンガバナンス",
+      "distance": 0.9531490206718445
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "官民協働",
+      "distance": 0.9530178904533386
+   },
+   {
+      "civicname1": "Code for WAKO",
+      "civicname2": "官民協働",
+      "distance": 0.9530056715011597
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "子育て",
+      "distance": 0.9529368281364441
+   },
+   {
+      "civicname1": "Code for Suginami",
+      "civicname2": "オープンデータ",
+      "distance": 0.9528127908706665
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "河川",
+      "distance": 0.9528090357780457
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "子育て",
+      "distance": 0.9527212977409363
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9526841640472412
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "子育て",
+      "distance": 0.9526429176330566
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "政治",
+      "distance": 0.9525492787361145
+   },
+   {
+      "civicname1": "CODE for GIFU",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9525371789932251
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "官民協働",
+      "distance": 0.952440083026886
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "Call for Code",
+      "distance": 0.9523721933364868
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "農業",
+      "distance": 0.952109158039093
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "Startup Weekend",
+      "distance": 0.9520472288131714
+   },
+   {
+      "civicname1": "Code for NAGAREYAMA",
+      "civicname2": "ノーコード",
+      "distance": 0.9519524574279785
+   },
+   {
+      "civicname1": "Code for Kusatsu",
+      "civicname2": "子育て",
+      "distance": 0.951909065246582
+   },
+   {
+      "civicname1": "Code for Sasayama+Tamba",
+      "civicname2": "Code for JAPAN サミット神戸 出展",
+      "distance": 0.9518894553184509
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "河川",
+      "distance": 0.9518251419067383
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "ノーコード",
+      "distance": 0.9516666531562805
+   },
+   {
+      "civicname1": "Code for Suginami",
+      "civicname2": "官民協働",
+      "distance": 0.9515278339385986
+   },
+   {
+      "civicname1": "Code for Fuchu",
+      "civicname2": "ノーコード",
+      "distance": 0.9513164162635803
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "公共施設",
+      "distance": 0.9512317180633545
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "官民協働",
+      "distance": 0.9511750936508179
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "オープンデータ",
+      "distance": 0.9511463642120361
+   },
+   {
+      "civicname1": "Code for Fukuoka",
+      "civicname2": "子育て",
+      "distance": 0.9510847330093384
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "Startup Weekend",
+      "distance": 0.9510682225227356
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "官民協働",
+      "distance": 0.9509725570678711
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "子育て",
+      "distance": 0.9508707523345947
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "スマートスピーカー",
+      "distance": 0.9508258700370789
+   },
+   {
+      "civicname1": "CODE for GIFU",
+      "civicname2": "河川",
+      "distance": 0.9506385326385498
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "官民協働",
+      "distance": 0.9505214691162109
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "官民協働",
+      "distance": 0.9502277374267578
+   },
+   {
+      "civicname1": "Code for Ichikawa",
+      "civicname2": "ノーコード",
+      "distance": 0.9498897790908813
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "官民協働",
+      "distance": 0.9497866034507751
+   },
+   {
+      "civicname1": "Code for INZAI",
+      "civicname2": "まちづくり",
+      "distance": 0.9496686458587646
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "スマートスピーカー",
+      "distance": 0.9495894908905029
+   },
+   {
+      "civicname1": "Code for Saga",
+      "civicname2": "ノーコード",
+      "distance": 0.9493746757507324
+   },
+   {
+      "civicname1": "Code for Ichikawa",
+      "civicname2": "可視化",
+      "distance": 0.9489915370941162
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "官民協働",
+      "distance": 0.9488611221313477
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "官民協働",
+      "distance": 0.948813259601593
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "グラレコ・ファシリテーション",
+      "distance": 0.9486793875694275
+   },
+   {
+      "civicname1": "Code for WAKO",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9486228823661804
+   },
+   {
+      "civicname1": "Code for SUSONO",
+      "civicname2": "ノーコード",
+      "distance": 0.9484468698501587
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "可視化",
+      "distance": 0.9481757283210754
+   },
+   {
+      "civicname1": "Code for Fuchu",
+      "civicname2": "可視化",
+      "distance": 0.9474847316741943
+   },
+   {
+      "civicname1": "Code for SAKE",
+      "civicname2": "可視化",
+      "distance": 0.9474707841873169
+   },
+   {
+      "civicname1": "Code for Kumagaya",
+      "civicname2": "まちづくり",
+      "distance": 0.9474199414253235
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9472419023513794
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "ノーコード",
+      "distance": 0.9470805525779724
+   },
+   {
+      "civicname1": "Code for Saga",
+      "civicname2": "可視化",
+      "distance": 0.9470752477645874
+   },
+   {
+      "civicname1": "Code for Kanagawa",
+      "civicname2": "まちづくり",
+      "distance": 0.946995198726654
+   },
+   {
+      "civicname1": "ハウモリ",
+      "civicname2": "ノーコード",
+      "distance": 0.9466623067855835
+   },
+   {
+      "civicname1": "Code for Kusatsu",
+      "civicname2": "可視化",
+      "distance": 0.9463387131690979
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "グラレコ・ファシリテーション",
+      "distance": 0.9462653398513794
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "可視化",
+      "distance": 0.9459157586097717
+   },
+   {
+      "civicname1": "Code for Ichikawa",
+      "civicname2": "まちづくり",
+      "distance": 0.9451313614845276
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "可視化",
+      "distance": 0.9449253082275391
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "まちづくり",
+      "distance": 0.944390594959259
+   },
+   {
+      "civicname1": "Code for INZAI",
+      "civicname2": "ノーコード",
+      "distance": 0.944360613822937
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "アーバンデータチャレンジ",
+      "distance": 0.9438327550888062
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "まちづくり",
+      "distance": 0.9438210129737854
+   },
+   {
+      "civicname1": "Code for Shinagawa",
+      "civicname2": "まちづくり",
+      "distance": 0.9436931610107422
+   },
+   {
+      "civicname1": "Code for SAKE",
+      "civicname2": "まちづくり",
+      "distance": 0.9436283111572266
+   },
+   {
+      "civicname1": "Code for NAGAREYAMA",
+      "civicname2": "まちづくり",
+      "distance": 0.9433497786521912
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "ライタソン",
+      "distance": 0.9432674646377563
+   },
+   {
+      "civicname1": "Code for Sasayama+Tamba",
+      "civicname2": "まちづくり",
+      "distance": 0.9432130455970764
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "可視化",
+      "distance": 0.9431799650192261
+   },
+   {
+      "civicname1": "Code for TODA",
+      "civicname2": "まちづくり",
+      "distance": 0.9427672624588013
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "ノーコード",
+      "distance": 0.9425837993621826
+   },
+   {
+      "civicname1": "Code for Kusatsu",
+      "civicname2": "まちづくり",
+      "distance": 0.9425234198570251
+   },
+   {
+      "civicname1": "Code for Tokushima",
+      "civicname2": "オープンデータ",
+      "distance": 0.9424920678138733
+   },
+   {
+      "civicname1": "Code for Kusatsu",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9423535466194153
+   },
+   {
+      "civicname1": "Code for INZAI",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9422962665557861
+   },
+   {
+      "civicname1": "Code for SENDAI",
+      "civicname2": "OpenDataDay2019",
+      "distance": 0.9422719478607178
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "可視化",
+      "distance": 0.9420043230056763
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "官民協働",
+      "distance": 0.9417294859886169
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "マイニャンバー",
+      "distance": 0.9416764974594116
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "可視化",
+      "distance": 0.9414061903953552
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "トマソン",
+      "distance": 0.9413771629333496
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "可視化",
+      "distance": 0.9413771033287048
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "ノーコード",
+      "distance": 0.9411964416503906
+   },
+   {
+      "civicname1": "Code for SENDAI",
+      "civicname2": "まちづくり",
+      "distance": 0.9411022663116455
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "可視化",
+      "distance": 0.941045880317688
+   },
+   {
+      "civicname1": "Code for Gumyoji",
+      "civicname2": "まちづくり",
+      "distance": 0.9406206011772156
+   },
+   {
+      "civicname1": "Code for SUSONO",
+      "civicname2": "まちづくり",
+      "distance": 0.9405543208122253
+   },
+   {
+      "civicname1": "Code for Tokushima",
+      "civicname2": "COVID-19",
+      "distance": 0.9404597282409668
+   },
+   {
+      "civicname1": "Code for Suginami",
+      "civicname2": "可視化",
+      "distance": 0.9403793215751648
+   },
+   {
+      "civicname1": "Code for Akita",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9402250051498413
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "可視化",
+      "distance": 0.9401789307594299
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "まちづくり",
+      "distance": 0.9400507211685181
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "ノーコード",
+      "distance": 0.9399846792221069
+   },
+   {
+      "civicname1": "Code for Aomori",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9399784207344055
+   },
+   {
+      "civicname1": "Code for Nerima",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9395227432250977
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "グラレコ・ファシリテーション",
+      "distance": 0.9393009543418884
+   },
+   {
+      "civicname1": "Code for 中野",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9390180110931396
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "可視化",
+      "distance": 0.9388189911842346
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "まちづくり",
+      "distance": 0.9387783408164978
+   },
+   {
+      "civicname1": "Code for Kumagaya",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.938566267490387
+   },
+   {
+      "civicname1": "Code for SENDAI",
+      "civicname2": "オープンデータ",
+      "distance": 0.9381574392318726
+   },
+   {
+      "civicname1": "Code for Fuchu",
+      "civicname2": "まちづくり",
+      "distance": 0.9380728602409363
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "まちづくり",
+      "distance": 0.9380281567573547
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "まちづくり",
+      "distance": 0.9377375841140747
+   },
+   {
+      "civicname1": "Code for Kusatsu",
+      "civicname2": "Wikipedia・Wikidata",
+      "distance": 0.9376344680786133
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "まちづくり",
+      "distance": 0.937578558921814
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "可視化",
+      "distance": 0.937359094619751
+   },
+   {
+      "civicname1": "Code For Kitakyusyu",
+      "civicname2": "まちづくり",
+      "distance": 0.9372735619544983
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "Minatomirai Activate Program",
+      "distance": 0.9371631145477295
+   },
+   {
+      "civicname1": "ハウモリ",
+      "civicname2": "まちづくり",
+      "distance": 0.9371095895767212
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "まちづくり",
+      "distance": 0.9355008006095886
+   },
+   {
+      "civicname1": "Code for Saga",
+      "civicname2": "まちづくり",
+      "distance": 0.935279130935669
+   },
+   {
+      "civicname1": "Code for NAGAREYAMA",
+      "civicname2": "Wikipedia・Wikidata",
+      "distance": 0.9349861741065979
+   },
+   {
+      "civicname1": "CODE for GIFU",
+      "civicname2": "まちづくり",
+      "distance": 0.9345319867134094
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "まちづくり",
+      "distance": 0.9343839287757874
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9341620802879333
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9341506958007812
+   },
+   {
+      "civicname1": "Code for Ichikawa",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9340286254882812
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "ノーコード",
+      "distance": 0.9339214563369751
+   },
+   {
+      "civicname1": "Code for Suginami",
+      "civicname2": "まちづくり",
+      "distance": 0.9337859153747559
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "まちづくり",
+      "distance": 0.933732807636261
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9335665702819824
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "Wikipedia・Wikidata",
+      "distance": 0.9334465861320496
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "スタートアップ",
+      "distance": 0.9330338835716248
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "まちづくり",
+      "distance": 0.9328418970108032
+   },
+   {
+      "civicname1": "Code for SUSONO",
+      "civicname2": "Wikipedia・Wikidata",
+      "distance": 0.9323635697364807
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "可視化",
+      "distance": 0.9321957230567932
+   },
+   {
+      "civicname1": "Code for Sasayama+Tamba",
+      "civicname2": "食",
+      "distance": 0.9320886731147766
+   },
+   {
+      "civicname1": "Code for Fukuoka",
+      "civicname2": "Wikipedia・Wikidata",
+      "distance": 0.9318945407867432
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "まちづくり",
+      "distance": 0.9318896532058716
+   },
+   {
+      "civicname1": "Code for Gumyoji",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9318141341209412
+   },
+   {
+      "civicname1": "Code for Shinagawa",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9311460256576538
+   },
+   {
+      "civicname1": "Code for Ichikawa",
+      "civicname2": "Wikipedia・Wikidata",
+      "distance": 0.931098461151123
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "LODチャレンジ",
+      "distance": 0.9309708476066589
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "マイクラカップ2019",
+      "distance": 0.9309460520744324
+   },
+   {
+      "civicname1": "Code for Kumagaya",
+      "civicname2": "Wikipedia・Wikidata",
+      "distance": 0.9305853843688965
+   },
+   {
+      "civicname1": "Code for TODA",
+      "civicname2": "食",
+      "distance": 0.9305044412612915
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "食",
+      "distance": 0.9304216504096985
+   },
+   {
+      "civicname1": "Code for SAKE",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9301465153694153
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9301057457923889
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9296807050704956
+   },
+   {
+      "civicname1": "ハウモリ",
+      "civicname2": "Wikipedia・Wikidata",
+      "distance": 0.9294766187667847
+   },
+   {
+      "civicname1": "Code for Suginami",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9294407963752747
+   },
+   {
+      "civicname1": "Code for Fuchu",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9293439388275146
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "Wikipedia・Wikidata",
+      "distance": 0.9291755557060242
+   },
+   {
+      "civicname1": "Code for Kanagawa",
+      "civicname2": "Wikipedia・Wikidata",
+      "distance": 0.9290471076965332
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "Wikipedia・Wikidata",
+      "distance": 0.9289382696151733
+   },
+   {
+      "civicname1": "Code for Suginami",
+      "civicname2": "COVID-19",
+      "distance": 0.9284763336181641
+   },
+   {
+      "civicname1": "Code for SAKE",
+      "civicname2": "食",
+      "distance": 0.9283128976821899
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9280521273612976
+   },
+   {
+      "civicname1": "Code for SENDAI",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9269872903823853
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9268209934234619
+   },
+   {
+      "civicname1": "Code For Kitakyusyu",
+      "civicname2": "食",
+      "distance": 0.9267914295196533
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "LODチャレンジ",
+      "distance": 0.9267714619636536
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "SDGs",
+      "distance": 0.9264905452728271
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "COVID-19",
+      "distance": 0.9263502359390259
+   },
+   {
+      "civicname1": "Code for Ichikawa",
+      "civicname2": "食",
+      "distance": 0.9257155060768127
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "Wikipedia・Wikidata",
+      "distance": 0.9254228472709656
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9241251945495605
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "まちづくり",
+      "distance": 0.9241141676902771
+   },
+   {
+      "civicname1": "CODE for GIFU",
+      "civicname2": "COVID-19",
+      "distance": 0.9238955974578857
+   },
+   {
+      "civicname1": "Code for SAKE",
+      "civicname2": "Wikipedia・Wikidata",
+      "distance": 0.9237568974494934
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9232585430145264
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "食",
+      "distance": 0.9230230450630188
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "Wikipedia・Wikidata",
+      "distance": 0.9227011799812317
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "食",
+      "distance": 0.9225566387176514
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "食",
+      "distance": 0.9220362305641174
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9220223426818848
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "食",
+      "distance": 0.9219865202903748
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "食",
+      "distance": 0.9219443202018738
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "COVID-19",
+      "distance": 0.9209891557693481
+   },
+   {
+      "civicname1": "Code for Tokushima",
+      "civicname2": "IoT",
+      "distance": 0.9207630157470703
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "SDGs",
+      "distance": 0.9207397103309631
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "COVID-19",
+      "distance": 0.9204088449478149
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "食",
+      "distance": 0.9202767014503479
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "COVID-19",
+      "distance": 0.9195919632911682
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "市民活動連携・地域活動連携",
+      "distance": 0.9186550378799438
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "COVID-19",
+      "distance": 0.9185173511505127
+   },
+   {
+      "civicname1": "Code for Gumyoji",
+      "civicname2": "食",
+      "distance": 0.9182515144348145
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "IoT",
+      "distance": 0.9179427623748779
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "COVID-19",
+      "distance": 0.9170393347740173
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "LODチャレンジ",
+      "distance": 0.9159258604049683
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "Wikipedia・Wikidata",
+      "distance": 0.915571928024292
+   },
+   {
+      "civicname1": "Code for Suginami",
+      "civicname2": "SDGs",
+      "distance": 0.9143340587615967
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "COVID-19",
+      "distance": 0.9142243266105652
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "COVID-19",
+      "distance": 0.9138463139533997
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "COVID-19",
+      "distance": 0.9135673642158508
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "IoT",
+      "distance": 0.9116572141647339
+   },
+   {
+      "civicname1": "Code for Gumyoji",
+      "civicname2": "LODチャレンジ",
+      "distance": 0.9106358289718628
+   },
+   {
+      "civicname1": "Code for Fukuoka",
+      "civicname2": "COVID-19",
+      "distance": 0.9094734787940979
+   },
+   {
+      "civicname1": "ハウモリ",
+      "civicname2": "LODチャレンジ",
+      "distance": 0.9094653129577637
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "LODチャレンジ",
+      "distance": 0.9081891775131226
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "LODチャレンジ",
+      "distance": 0.9077736139297485
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "SDGs",
+      "distance": 0.9073574542999268
+   },
+   {
+      "civicname1": "Code for Suginami",
+      "civicname2": "IoT",
+      "distance": 0.9066604971885681
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "LODチャレンジ",
+      "distance": 0.9053370356559753
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "SDGs",
+      "distance": 0.90378338098526
+   },
+   {
+      "civicname1": "Code for Saga",
+      "civicname2": "COVID-19",
+      "distance": 0.9037559628486633
+   },
+   {
+      "civicname1": "Code for Aomori",
+      "civicname2": "COVID-19",
+      "distance": 0.9032507538795471
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "SDGs",
+      "distance": 0.9027634263038635
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "SDGs",
+      "distance": 0.9027225971221924
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "SDGs",
+      "distance": 0.902542769908905
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "LODチャレンジ",
+      "distance": 0.9020757079124451
+   },
+   {
+      "civicname1": "Code For Kitakyusyu",
+      "civicname2": "COVID-19",
+      "distance": 0.9017525315284729
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "SDGs",
+      "distance": 0.8999378681182861
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "COVID-19",
+      "distance": 0.8998755216598511
+   },
+   {
+      "civicname1": "Code for INZAI",
+      "civicname2": "COVID-19",
+      "distance": 0.8993576765060425
+   },
+   {
+      "civicname1": "Code for TODA",
+      "civicname2": "COVID-19",
+      "distance": 0.8989867568016052
+   },
+   {
+      "civicname1": "Code for NAGAREYAMA",
+      "civicname2": "COVID-19",
+      "distance": 0.898966372013092
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "COVID-19",
+      "distance": 0.898935854434967
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "IoT",
+      "distance": 0.8981788754463196
+   },
+   {
+      "civicname1": "Code for Akita",
+      "civicname2": "COVID-19",
+      "distance": 0.8969342708587646
+   },
+   {
+      "civicname1": "Code for Kumagaya",
+      "civicname2": "SDGs",
+      "distance": 0.8965400457382202
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "COVID-19",
+      "distance": 0.8963729739189148
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "IoT",
+      "distance": 0.8958742022514343
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "SDGs",
+      "distance": 0.8957780003547668
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "IoT",
+      "distance": 0.8956306576728821
+   },
+   {
+      "civicname1": "Code for Shiga / Biwako",
+      "civicname2": "IoT",
+      "distance": 0.8954835534095764
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "IoT",
+      "distance": 0.8950767517089844
+   },
+   {
+      "civicname1": "Code for Shinagawa",
+      "civicname2": "SDGs",
+      "distance": 0.8947131633758545
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "IoT",
+      "distance": 0.8914539217948914
+   },
+   {
+      "civicname1": "Code for Fukuoka",
+      "civicname2": "SDGs",
+      "distance": 0.8905661702156067
+   },
+   {
+      "civicname1": "Code for Nerima",
+      "civicname2": "IoT",
+      "distance": 0.8899931907653809
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "SNS",
+      "distance": 0.8893817067146301
+   },
+   {
+      "civicname1": "Code for Kusatsu",
+      "civicname2": "COVID-19",
+      "distance": 0.8886359333992004
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "IoT",
+      "distance": 0.8881628513336182
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "IoT",
+      "distance": 0.8879572749137878
+   },
+   {
+      "civicname1": "Code for Shinagawa",
+      "civicname2": "IoT",
+      "distance": 0.8862361311912537
+   },
+   {
+      "civicname1": "Code for Tokushima",
+      "civicname2": "SNS",
+      "distance": 0.8853820562362671
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "SNS",
+      "distance": 0.8839210867881775
+   },
+   {
+      "civicname1": "Code for Saga",
+      "civicname2": "SDGs",
+      "distance": 0.8836527466773987
+   },
+   {
+      "civicname1": "Code for SENDAI",
+      "civicname2": "SNS",
+      "distance": 0.8817728161811829
+   },
+   {
+      "civicname1": "Code for Fuchu",
+      "civicname2": "IoT",
+      "distance": 0.8807408809661865
+   },
+   {
+      "civicname1": "Code for 中野",
+      "civicname2": "SDGs",
+      "distance": 0.8788705468177795
+   },
+   {
+      "civicname1": "Code for SAKE",
+      "civicname2": "LODチャレンジ",
+      "distance": 0.8761107921600342
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "SDGs",
+      "distance": 0.8756695985794067
+   },
+   {
+      "civicname1": "Code for Suginami",
+      "civicname2": "RESASアプリコンテスト",
+      "distance": 0.8735027313232422
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "IoT",
+      "distance": 0.872527003288269
+   },
+   {
+      "civicname1": "Code for Hachioji",
+      "civicname2": "LODチャレンジ",
+      "distance": 0.8723086714744568
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "NASA Space Apps Challenge",
+      "distance": 0.8698068261146545
+   },
+   {
+      "civicname1": "CODE for AIZU",
+      "civicname2": "RESASアプリコンテスト",
+      "distance": 0.8678966760635376
+   },
+   {
+      "civicname1": "Code for WAKO",
+      "civicname2": "IoT",
+      "distance": 0.8675480484962463
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "SNS",
+      "distance": 0.8670079112052917
+   },
+   {
+      "civicname1": "CODE for GIFU",
+      "civicname2": "RESASアプリコンテスト",
+      "distance": 0.8666367530822754
+   },
+   {
+      "civicname1": "Code for Gumyoji",
+      "civicname2": "NASA Space Apps Challenge",
+      "distance": 0.8653680086135864
+   },
+   {
+      "civicname1": "Code for SUSONO",
+      "civicname2": "IoT",
+      "distance": 0.864319920539856
+   },
+   {
+      "civicname1": "Code for Mitaka / Musashino",
+      "civicname2": "SNS",
+      "distance": 0.8621039390563965
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "NASA Space Apps Challenge",
+      "distance": 0.8611747622489929
+   },
+   {
+      "civicname1": "Code for Kanazawa",
+      "civicname2": "SNS",
+      "distance": 0.8577942252159119
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "SNS",
+      "distance": 0.8575946092605591
+   },
+   {
+      "civicname1": "Code for Sabae",
+      "civicname2": "RESASアプリコンテスト",
+      "distance": 0.8572898507118225
+   },
+   {
+      "civicname1": "Code for Nerima",
+      "civicname2": "SNS",
+      "distance": 0.8561859726905823
+   },
+   {
+      "civicname1": "Code for Kumagaya",
+      "civicname2": "SNS",
+      "distance": 0.8557705879211426
+   },
+   {
+      "civicname1": "Code for YOKOHAMA",
+      "civicname2": "SNS",
+      "distance": 0.8518609404563904
+   },
+   {
+      "civicname1": "Code for MIKAWA",
+      "civicname2": "SNS",
+      "distance": 0.8511626720428467
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "RESASアプリコンテスト",
+      "distance": 0.8511145114898682
+   },
+   {
+      "civicname1": "Code for Fuchu",
+      "civicname2": "SNS",
+      "distance": 0.8471261262893677
+   },
+   {
+      "civicname1": "Code for Shiogama",
+      "civicname2": "SNS",
+      "distance": 0.8446523547172546
+   },
+   {
+      "civicname1": "Code for Sasayama+Tamba",
+      "civicname2": "SNS",
+      "distance": 0.841902494430542
+   },
+   {
+      "civicname1": "Code for INAGI",
+      "civicname2": "SNS",
+      "distance": 0.8388842344284058
+   },
+   {
+      "civicname1": "Code for Kanagawa",
+      "civicname2": "SNS",
+      "distance": 0.8357757329940796
+   },
+   {
+      "civicname1": "Code for Kobe",
+      "civicname2": "NASA Space Apps Challenge",
+      "distance": 0.8325318098068237
+   },
+   {
+      "civicname1": "Code for SAITAMA",
+      "civicname2": "FOSS4G",
+      "distance": 0.8300732970237732
+   },
+   {
+      "civicname1": "Code for Niigata",
+      "civicname2": "SNS",
+      "distance": 0.8297817707061768
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "WEB",
+      "distance": 0.8280280232429504
+   },
+   {
+      "civicname1": "Code for Ichikawa",
+      "civicname2": "SNS",
+      "distance": 0.8245443105697632
+   },
+   {
+      "civicname1": "Code for Yamagata",
+      "civicname2": "SEO",
+      "distance": 0.8119974732398987
+   },
+   {
+      "civicname1": "CODE for GIFU",
+      "civicname2": "FOSS4G",
+      "distance": 0.8067691326141357
+   },
+   {
+      "civicname1": "ハウモリ",
+      "civicname2": "FOSS4G",
+      "distance": 0.7955541014671326
+   },
+   {
+      "civicname1": "Code for CAT",
+      "civicname2": "FOSS4G",
+      "distance": 0.7921796441078186
+   },
+   {
+      "civicname1": "Code for Nagoya",
+      "civicname2": "FOSS4G",
+      "distance": 0.7865049242973328
+   },
+   {
+      "civicname1": "Code for AICHI",
+      "civicname2": "GUGEN",
+      "distance": 0.7181092500686646
+   },
+   {
+      "civicname1": "Code for SENDAI",
+      "civicname2": "LIFE-TECH INNOVATION SENDAI",
+      "distance": 0.7050750255584717
+   }
 ]
