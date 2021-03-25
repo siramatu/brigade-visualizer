@@ -5,5 +5,7 @@
 
 ## 手順
 1. bert_using_crawling.ipynbの
-```repository_dir = '/content/drive/MyDrive/research/brigade-visualizer/source_code/'```
-1. rawlingをしたデータ（https://drive.google.com/drive/folders/1CJM4aGf9h6shnBxsK24Ylagdiv5TXGBc?usp=sharing）を/dataディレクトリ直下に置く
+```repository_dir = '/content/drive/MyDrive/research/brigade-visualizer/source_code/'```を自分の環境にあわせて適宜編集。
+repository_dirの直下にdataというディレクトリが作られる
+1. rawlingをしたデータ（https://drive.google.com/drive/folders/1CJM4aGf9h6shnBxsK24Ylagdiv5TXGBc?usp=sharing）をdataディレクトリ直下に置く
+1. 
