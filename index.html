@@ -94,10 +94,10 @@
     new Vue({
       el: '#app',
       data: function() {
-        return { 
+        return {
             visible: false ,
-            selectedSource:'',
-            selectedValue:'',
+            selectedSource:'questionnaire',
+            selectedValue:'Code for Gifu',
             selectedKeyword:'',
             max_node:MAX_NODE,
             message:'',
@@ -112,7 +112,7 @@
               "questionnaire": null,
               "crawling": null
             },
-            isSelectedBrigades: true,
+            isSelectedBrigades: false,
             keywords:null,
             brigade_distance:{
               "questionnaire": null,
@@ -349,13 +349,17 @@
       },
       mounted: function () {
         //JSONデータの読み込み
-        axios.get("./json/brigades.json").then(response => (this.brigades["questionnaire"] = response.data));
-        axios.get("./json/brigades_crawling.json").then(response => (this.brigades["crawling"] = response.data));
-        axios.get("./json/keywords.json").then(response => (this.keywords = this.sortKeyword(response.data)));
-
-        axios.get("./json/brigade-distance-bert.json").then(response => (this.brigade_distance["questionnaire"] = response.data));
-        axios.get("./json/brigade-distance-bert_crawling.json").then(response => (this.brigade_distance["crawling"] = response.data));
-        axios.get("./json/brigade-keyword-distance-bert.json").then(response => (this.brigade_keyword_distance = response.data));
+        Promise.all([
+          axios.get("./json/brigades.json").then(response => (this.brigades["questionnaire"] = response.data)),
+          axios.get("./json/brigades_crawling.json").then(response => (this.brigades["crawling"] = response.data)),
+          axios.get("./json/keywords.json").then(response => (this.keywords = this.sortKeyword(response.data))),
+          axios.get("./json/brigade-distance-bert.json").then(response => (this.brigade_distance["questionnaire"] = response.data)),
+          axios.get("./json/brigade-distance-bert_crawling.json").then(response => (this.brigade_distance["crawling"] = response.data)),
+          axios.get("./json/brigade-keyword-distance-bert.json").then(response => (this.brigade_keyword_distance = response.data))
+        ]).then(() => {
+          // データ読み込み完了後に自動描画
+          this.draw();
+        });
 
         // bertを用いないで計算したベクトルにする場合は以下をコメントアウト
         // axios.get("./json/brigade-distance.json").then(response => (this.brigade_distance = response.data));
